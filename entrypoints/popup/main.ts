@@ -118,6 +118,7 @@ async function run() {
 
   setText("status", "Searching knowledge base...");
   const matchRes: any = await matchError(errorText);
+  setText("kbinfo", `KB source: ${matchRes?.kbSource ?? "unknown"}  Updated: ${matchRes?.kbUpdatedAt ?? "-"}`);
 
   const matches = matchRes?.matches ?? [];
   if (!matches.length) {
