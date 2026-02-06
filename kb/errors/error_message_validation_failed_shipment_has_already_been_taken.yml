@@ -1,0 +1,11 @@
+id: error_message_validation_failed_shipment_has_already_been_taken
+title: 'Error message: “Validation failed: Shipment has already been taken”'
+patterns:
+  - 'Error message: “Validation failed: Shipment has already been taken”'
+  - 'message'
+  - 'already'
+  - 'taken'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'

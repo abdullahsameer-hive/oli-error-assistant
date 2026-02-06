@@ -1,0 +1,38 @@
+id: when_the_order_has_issues_with_dhl_packstation
+title: 'When the order has issues with DHL Packstation'
+patterns:
+  - 'When the order has issues with DHL Packstation'
+  - 'order'
+  - 'issues'
+  - 'packstation'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # When the order has issues with DHL Packstation
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  1. Check if both Packstation number and Postnummer are present (for Packstations only)
+      1. If not → check the MX order in active admin and see if there is the information we did not sync 
+          1. If yes → add the missing information to the address 
+          2. If not -> `address validation` issue
+      2. If yes → next step 
+  2. Open the order in Google Maps and check if, in the Postal Code of the address, there is a Packstation or a Postfiliale with that Packstation number 
+      1. If no, create `address validation` for the Packstation number 
+      2. If yes, check in with Rohin how to troubleshoot this. 
+  3. If the order keeps coming back in delivery restrictions with this same issue, reach out to the merchant via ticket: 
+      
+      Hi **NAME**,
+      
+      Happy **DAY OF THE WEEK**! We are currently processing your order **ORDER ID**, but we cannot ship it as it seems there is an issue with the address provided by your customer:
+      
+      **ENTER ADDRESS**
+      
+      I looked into this and I cannot find the **PACKSTATION/POSTIFILIALE** **NUMBER** in the postal code **ENTER POSTAL CODE**. The DHL **PACKSTATION/POSTFILIALE** I can see in Google Maps is **NUMBER** instead of **NUMBER**.
+      
+      Can you please reach out to your customer to provide a valid address, so we can ship out the order?
+      
+      Let me know if you have any questions!

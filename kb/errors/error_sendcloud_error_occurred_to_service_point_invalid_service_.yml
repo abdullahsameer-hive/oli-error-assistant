@@ -1,0 +1,20 @@
+id: error_sendcloud_error_occurred_to_service_point_invalid_service_
+title: 'Error “Sendcloud error occurred: to_service_point: "Invalid service point" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.'
+patterns:
+  - 'Error “Sendcloud error occurred: to_service_point: "Invalid service point" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.'
+  - 'sendcloud'
+  - 'to_service_point'
+  - 'invalid'
+  - 'service'
+  - 'point'
+  - 'cases'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

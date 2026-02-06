@@ -1,0 +1,23 @@
+id: missing_house_number
+title: 'Missing house number'
+patterns:
+  - 'Missing house number'
+  - 'missing'
+  - 'house'
+  - 'number'
+fixSteps:
+  - 'Troubleshoot in the same way as address alerts.'
+  - '1. Check the address in Google Maps'
+  - '1. If the street has house numbers, create address validation issue for missing house number'
+  - '2. Id the address doesn’t have house numbers, enter a ‘-’ in the House number field.'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Missing house number
+  
+  FC:  🌏 General
+  Resolution: Troubleshoot in the same way as address alerts.
+  1. Check the address in Google Maps
+  
+      1. If the street has house numbers, create address validation issue for missing house number
+      2. Id the address doesn’t have house numbers, enter a ‘-’ in the House number field.

@@ -1,0 +1,24 @@
+id: errors_id_expected_string_to_be_a_id_glucose_goddess
+title: '{"errors":{"id":"expected String to be a id"}} - Glucose Goddess'
+patterns:
+  - '{"errors":{"id":"expected String to be a id"}} - Glucose Goddess'
+  - 'errors'
+  - 'expected'
+  - 'string'
+  - 'glucose'
+  - 'goddess'
+fixSteps:
+  - 'Shipment to Italy, Check on Google Map the location and select carrier as follows:'
+  - 'For Mainland: GLS Italy Hive / GLS IT National Express Mainland'
+  - 'For Saridinia: GLS Italy Hive / GLS IT National Express Saridinia'
+  - 'For Sicily Calabria: GLS Italy Hive / GLS IT National Express Sicily Calabria'
+tags:
+  - '🇮🇹 MIL1'
+detailsMarkdown: |
+  # {"errors":{"id":"expected String to be a id"}} - Glucose Goddess
+  
+  FC: 🇮🇹 MIL1
+  Resolution: Shipment to Italy, Check on Google Map the location and select carrier as follows:
+  For Mainland: GLS Italy Hive / GLS IT National Express Mainland
+  For Saridinia: GLS Italy Hive / GLS IT National Express Saridinia
+  For Sicily Calabria: GLS Italy Hive / GLS IT National Express Sicily Calabria

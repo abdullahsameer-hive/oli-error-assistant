@@ -1,0 +1,24 @@
+id: this_field_may_not_be_null
+title: 'This field may not be null'
+patterns:
+  - 'This field may not be null'
+  - 'field'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # This field may not be null
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  Open the edit button of the address field, see if there was missing number in the address that we did not assign to any field
+  
+  - If yes → add it to house number field
+  - If not → next steps
+  
+  Open Google Maps to see if the street has house numbers:
+  
+  - if it does → create address validation issue for ‘house number’ missing and resolve the delivery restrictions issue.
+  - if it doesn’t → enter a ‘-’ on the house number field and resolve the delivery restrictions issue.

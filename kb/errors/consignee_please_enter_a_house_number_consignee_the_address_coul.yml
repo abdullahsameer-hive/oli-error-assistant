@@ -1,0 +1,26 @@
+id: consignee_please_enter_a_house_number_consignee_the_address_coul
+title: '["consignee: Please enter a house number.", "consignee: The address could not be encoded to a routing code."]'
+patterns:
+  - '["consignee: Please enter a house number.", "consignee: The address could not be encoded to a routing code."]'
+  - 'consignee'
+  - 'please'
+  - 'enter'
+  - 'house'
+  - 'number'
+  - 'address'
+fixSteps:
+  - '1. Check if there is a space in the house number field or extra characters like “. , /”'
+  - '2. Check if there is any extra characters like “. , / “ in the street field'
+  - '3. Delete it'
+  - '4. Save the changes in the address'
+  - '5. Try to print the shipping label again'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Error message:  consignee: Please enter a house number.
+  consignee: The adress could not be encoded to a routing code.
+  
+  FC:  🌏 General
+  Resolution: Check if in the street name or house number has ‘ - ’ , ‘ / ’ sign
+  If yes → then delete these signs and put a space instead. And save the address and resolve the delivery restriction.
+  If not → then check the address and raise address validation issue if the address is not correct .

@@ -1,0 +1,20 @@
+id: sendcloud_error_occurred_non_field_errors_service_error_carrier_
+title: 'Sendcloud error occurred: non_field_errors: "Service error: Carrier response doesn''t contain a label."'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: Carrier response doesn''t contain a label."'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'service'
+  - 'carrier'
+  - 'response'
+  - 'doesn'
+fixSteps:
+  - 'look for unusual accents on the letters, and if you find some, this is likely the issue. Replace them with less unusual (but largely corresponding) letters'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

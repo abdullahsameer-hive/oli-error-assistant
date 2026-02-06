@@ -1,0 +1,21 @@
+id: orders_going_to_monaco_service_error_invalid_customs_value
+title: 'Orders going to Monaco - "Service error: Invalid Customs Value”'
+patterns:
+  - 'Orders going to Monaco - "Service error: Invalid Customs Value”'
+  - 'orders'
+  - 'going'
+  - 'monaco'
+  - 'service'
+  - 'invalid'
+  - 'customs'
+fixSteps:
+  - 'These orders require that the label gets created manually in sendcloud'
+  - 'Sendcloud error occurred: non_field_errors: "Service error: Invalid Customs Value”'
+tags:
+  - '🇮🇹 MIL1'
+detailsMarkdown: |
+  # Orders going to Monaco -  "Service error: Invalid Customs Value”
+  
+  FC: 🇮🇹 MIL1
+  Resolution: These orders require that the label gets created manually in sendcloud
+  Sendcloud error occurred: non_field_errors: "Service error: Invalid Customs Value”

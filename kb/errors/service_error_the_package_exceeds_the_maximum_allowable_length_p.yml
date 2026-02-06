@@ -1,0 +1,19 @@
+id: service_error_the_package_exceeds_the_maximum_allowable_length_p
+title: '"Service error: The package exceeds the maximum allowable length; please reduce its size to comply with carrier requirements."'
+patterns:
+  - '"Service error: The package exceeds the maximum allowable length; please reduce its size to comply with carrier requirements."'
+  - 'service'
+  - 'package'
+  - 'exceeds'
+  - 'maximum'
+  - 'allowable'
+  - 'length'
+fixSteps:
+  - 'Usually an error due to the shop order id being too long, for these we search the order on SC, check if there are any labels in incoming orders with issues or announcement failed errors, remove spaces or extra chars (so that it is <=20 chars) from the shop order id on SC and try printing the label again.'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # "Service error: The package exceeds the maximum allowable length; please reduce its size to comply with carrier requirements."
+  
+  FC:  🌏 General
+  Resolution: Usually an error due to the shop order id being too long, for these we search the order on SC, check if there are any labels in incoming orders with issues or announcement failed errors, remove spaces or extra chars (so that it is <=20 chars) from the shop order id on SC and try printing the label again.

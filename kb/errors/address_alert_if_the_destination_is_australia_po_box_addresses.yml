@@ -1,0 +1,22 @@
+id: address_alert_if_the_destination_is_australia_po_box_addresses
+title: 'ADDRESS ALERT: if the destination is Australia -PO BOX addresses'
+patterns:
+  - 'ADDRESS ALERT: if the destination is Australia -PO BOX addresses'
+  - 'address'
+  - 'alert'
+  - 'destination'
+  - 'australia'
+  - 'addresses'
+fixSteps:
+  - 'PO BOX —- street name'
+  - 'no. —- house number'
+  - 'doesnt need a number in the company name like dhl'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # ADDRESS ALERT: if the destination is Australia -PO BOX addresses
+  
+  FC:  🌏 General
+  Resolution: PO BOX —- street name 
+  no. —- house number 
+  doesnt need a number in the company name like dhl

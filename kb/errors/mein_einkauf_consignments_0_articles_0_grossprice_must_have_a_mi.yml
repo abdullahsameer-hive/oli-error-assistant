@@ -1,0 +1,28 @@
+id: mein_einkauf_consignments_0_articles_0_grossprice_must_have_a_mi
+title: 'Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01'
+patterns:
+  - 'Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01'
+  - 'einkauf'
+  - 'consignments'
+  - 'articles'
+  - 'grossprice'
+  - 'minimum'
+  - 'value'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  - Check if there are any SKUs without a cost or for which the cost is 0.0.
+      - If yes →
+          - Check if there are flyers marked as “SKU” SKU type.
+              - If yes → mark those to “Flyer”
+              - If not →
+          - Check which SKU does not have a cost or for which the cost is 0.0.
+              - Create a ticket to ask the merchant to update the cost and add a real value
+              - Once cost is synced, try to print the label again

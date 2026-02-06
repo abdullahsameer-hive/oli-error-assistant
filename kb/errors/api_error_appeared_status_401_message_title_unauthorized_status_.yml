@@ -1,0 +1,105 @@
+id: api_error_appeared_status_401_message_title_unauthorized_status_
+title: 'Api error appeared: status: 401, message: {title: "Unauthorized", status: 401, detail: "Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.", statusCode: 401}'
+patterns:
+  - 'Api error appeared: status: 401, message: {title: "Unauthorized", status: 401, detail: "Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.", statusCode: 401}'
+  - 'appeared'
+  - 'status'
+  - 'message'
+  - 'title'
+  - 'unauthorized'
+  - 'detail'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Api error appeared: status: 401, message: {title: "Unauthorized", status: 401, detail: "Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.", statusCode: 401}
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  This issue specifically happens for DHL carrier when the password or the login credentials are incorrect or expired. Follow these steps to resolve it.
+  
+  1. Check if the DHL contract is a merchant contract or Hive contract.
+  2. If its a merchant contract then we reach out to merchant in ZD ticket and ask them to provide the updated password for their DHL contract 
+  Example zendesk ticket [here](https://hiveapp.zendesk.com/agent/tickets/130192)
+      - **How to update the password for merchant DHL contracts?**
+          1. Open the External accounts table (link [here](https://app.hive.app/admin/external_accounts?q%5Bidentifier_cont%5D=dhl&commit=Filter&order=id_desc)) in AA and filter by 
+              1. Insert merchant id in the “`Owner`” field
+              2. Select Merchant in “`Owner type`” field
+              3. add “dhl” in the “`Identifier`” field (see screenshot)
+              
+              ![Screenshot 2025-07-25 at 10.02.00.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/Screenshot_2025-07-25_at_10.02.00.png)
+              
+          2. Open the result by clicking on the “Edit” button on the right side of the page  (see screenshot)
+              
+              ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image.png)
+              
+          3. Then scroll down and under “DHL Configuration” section  and check if the `Extra: GKP User*` is same if not update it, if it is same **then insert the new password in the field “`Extra: GKP Pass*`” and then click on “Update External  account”**
+          4. Once this is done the password update for the outbound labels is done and we can start shipping the orders.
+          5. Then next step is the password update on sendcloud for returns. Open the Main EU sendcloud account (sc+hive_main_EU@hive.app). Login credentials can be found in one password.
+              
+              ![Screenshot 2025-04-03 at 19.54.53.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/Screenshot_2025-04-03_at_19.54.53.png)
+              
+          6. Login into the account, then on the left side of the page click on “shipping” drop down and select the option “Carriers” and the page would be updated and then in the top middle page click on “My contracts”. Press command + F key and search merchant name. Then open DHL contract by clicking in the edit button on the left side of the page (see scresnhot). Open only the contract where the logo only says DHL
+              
+              ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image%201.png)
+              
+          7. Then once you click on edit button then check the field “`DHL Business Customer Portal Username (Systemuser)` Check if the username is same
+              1. **If yes, then insert the new password in the field “`DHL Business Customer Portal Password (Systemuser)`” and then scroll down and  click on “Save changes”**
+              2. **If no, then make sure you are in the right DHL contract if you are then insert the new usename in** `DHL Business Customer Portal Username (Systemuser)` and **new password in the field “`DHL Business Customer Portal Password (Systemuser)`” and then scroll down and  click on “Save changes”**
+              3. Once this is done password is also updated in sendcloud for returns.
+  3. If its a Hive contract then follow these steps:
+      1. 1st Inform the FC team and the TIM team that they should not print any labels unless the password is completely updated.
+      2. Then open the DHL business portal (link [here](https://sso.geschaeftskunden.dhl.de/auth/realms/GkpExternal/protocol/openid-connect/auth?client_id=gui&redirect_uri=https%3A%2F%2Fgeschaeftskunden.dhl.de%2F&state=c1f1d8d3-2a90-49d2-9976-db2b569bb5cd&response_mode=fragment&response_type=code&scope=openid&nonce=e6a289f2-ba5a-4fb4-b619-ac9523872601&ui_locales=en-GB&code_challenge=slce_u18XSg5fUHoCcWO7SNPyaoUEGZ3VJoIGdQwRFk&code_challenge_method=S256)) 
+      3. Insert the Username - “hivelogistics”, this can be found in one password by searching DHL Hive (see screenshot)
+          
+          ![Screenshot 2025-04-03 at 18.48.10.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/Screenshot_2025-04-03_at_18.48.10.png)
+          
+      4. Insert the username - “hivelogistics” and then click on the link in red “Forgot password or username?” (see screenshot)
+          
+          ![Screenshot 2025-04-03 at 18.50.46.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/Screenshot_2025-04-03_at_18.50.46.png)
+          
+      5. After clicking on this button the password rest link would be sent to the delivery.bee email id. Login to the delivery.bee email id, login details can be found in one password(see screenshot)
+          
+          ![Screenshot 2025-04-03 at 18.58.46.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/Screenshot_2025-04-03_at_18.58.46.png)
+          
+      6. After logging in search the mail - “DHL Geschaeftskundenportal” and the mail that says Rest your password open the mail and click on the link in the mail that says “Create new password” (see screenshot)
+          
+          ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image%202.png)
+          
+      7. Then it would take you to a new page and then update the password as per the instructions. Copy the password and save it somewhere so it can be used to update in Hive system.
+      8. Once the password is created we have to update the new password in all relevant places.
+      9. 1st step is to Update the password in One password: Open one password and search for “DHL hive” . Click on the “DHL - Hive hivelogistics” on the left side as shown in the screenshot below. Then click on the 3 dots on the top right corner and then click on “Edit” (see screenshot)
+          
+          ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image%203.png)
+          
+      10. Then click on the password field and insert the new password that we created and click on “Save”. The password in updated in one password 
+          
+          ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image%204.png)
+          
+      11. Then open the External accounts table in AA and filter by adding “dhl” in the Identifier field (link [here](https://app.hive.app/admin/external_accounts?q%5Bidentifier_cont%5D=dhl&commit=Filter&order=id_desc)) (see screenshot)
+          
+          ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image%205.png)
+          
+      12. Open all the results by clicking on the “Edit” button on the right side of the page  (see screenshot)
+          
+          ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image.png)
+          
+      13. Then on each page scroll down and under “DHL Configuration” section check if the “`Extra: GKP User*`” is “hivelogistics”
+          1. **If yes, then insert the new password in the field “`Extra: GKP Pass*`” and then click on “Update External  account” Do i**
+          2. **If no, then don’t do anything and close that tab**
+      14. Once this is done the password update for the outbound labels is done and we can start shipping the orders.
+      15. Then next step is the password update on sendcloud for returns. Open the Main EU sendcloud account (sc+hive_main_EU@hive.app). Login credentials can be found in one password.
+          
+          ![Screenshot 2025-04-03 at 19.54.53.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/Screenshot_2025-04-03_at_19.54.53.png)
+          
+      16. Login into the account, then on the left side of the page click on “shipping” drop down and select the option “Carriers” and the page would be updated and then in the top middle page click on “My contracts”. Press command + F key and search “DHL”. Then open each DHL contract one at a time by clicking in the edit button on the left side of the page (see scresnhot). Open only the contract where the logo only says DHL
+          
+          ![image.png](Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau/image%201.png)
+          
+      17. Then once you click on edit button then check the field “`DHL Business Customer Portal Username (Systemuser)`” if it “hivelogistics” 
+          1. **If yes, then insert the new password in the field “`DHL Business Customer Portal Password (Systemuser)`” and then scroll down and  click on “Save changes”**
+          2. **If no, then don’t do anything and click on “Back to my contracts”on the top of the page**
+          3. Do this one by one for all DHL contracts 
+          4. Once this is done password is also updated in sendcloud for returns.

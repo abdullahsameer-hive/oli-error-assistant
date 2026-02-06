@@ -1,0 +1,14 @@
+id: matiere_premiere_no_shipping_contract_method_matches_the_rules_o
+title: 'Matiere premiere - ”No shipping contract method matches the rules or selected one does not exist”'
+patterns:
+  - 'Matiere premiere - ”No shipping contract method matches the rules or selected one does not exist”'
+  - 'matiere'
+  - 'premiere'
+  - 'shipping'
+  - 'contract'
+  - 'method'
+  - 'matches'
+fixSteps:
+  - 'Select Chronopost Hive / Chronopost FR Classic DAP Europe if under 0.2kg and no shipping method available and country is on the https://app.hive.app/admin/shipping_rule_sets/10202'
+tags:
+  - '🇫🇷 PAR1'

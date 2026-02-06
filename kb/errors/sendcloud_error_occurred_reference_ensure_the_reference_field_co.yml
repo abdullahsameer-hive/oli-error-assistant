@@ -1,0 +1,25 @@
+id: sendcloud_error_occurred_reference_ensure_the_reference_field_co
+title: 'Sendcloud error occurred: reference: "Ensure the reference field contains no more than 20 characters.”'
+patterns:
+  - 'Sendcloud error occurred: reference: "Ensure the reference field contains no more than 20 characters.”'
+  - 'sendcloud'
+  - 'reference'
+  - 'ensure'
+  - 'field'
+  - 'contains'
+  - 'characters'
+fixSteps:
+  - 'This issue happens because the shop order ID exeeds 20 characters here is how to deal with it:'
+  - '1- open sendcloud to the right fc'
+  - '2- use the search funciton to search the shop order id to find the label'
+  - '3- click on edit and instead of x characters for the shop order id, shorten it to 20'
+  - '4- save adn print the label and manually upload it in the fc app( use the same shippping method )'
+  - '5- to find the tracking number, maek sure to search the new 20 character shop order id in sendcloud!!!'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

@@ -1,0 +1,27 @@
+id: phone_number_is_in_an_invalid_format
+title: 'Phone number is in an invalid format'
+patterns:
+  - 'Phone number is in an invalid format'
+  - 'phone'
+  - 'number'
+  - 'invalid'
+  - 'format'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Phone number is in an invalid format
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  1. Check if the phone number has a country code with a ‘+’ sign before, not 00. 
+      - If not → look for the country’s specific country code
+      - If yes → raise address validation issue for an invalid phone number because it most likely an incorrect phone number
+  2. **error message : telephone: "Spanish phone number is required for ePaq24 methods."**
+  For 🇪🇸: The phone number can’t be a landline (starts with 9). Spanish carriers only accept mobile phone numbers (9 digits and starts with 6) because they can't send SMS to landlinee. Create an address validations and please modify the address validation message to “Spanish mobile phone number”
+      
+      ![Screenshot 2024-08-28 at 09.09.19.png](Phone%20number%20is%20in%20an%20invalid%20format/Screenshot_2024-08-28_at_09.09.19.png)
+      
+  3. If the phone number just has letters, then remove it and try to print a shipping label

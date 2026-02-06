@@ -1,0 +1,21 @@
+id: mondial_relay_fr_parcel_point_unable_to_find_sendcloud_shipping_
+title: 'Mondial Relay FR Parcel Point- Unable to find sendcloud shipping method'
+patterns:
+  - 'Mondial Relay FR Parcel Point- Unable to find sendcloud shipping method'
+  - 'mondial'
+  - 'relay'
+  - 'parcel'
+  - 'point'
+  - 'unable'
+  - 'sendcloud'
+fixSteps:
+  - 'Check if weight is below 0.01 kg as Mondial does not accept it.'
+  - 'Update weight to 0.015'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Mondial Relay FR Parcel Point- Unable to find sendcloud shipping method
+  
+  FC:  🌏 General
+  Resolution: Check if weight is below 0.01 kg as Mondial does not accept it.
+  Update weight to 0.015

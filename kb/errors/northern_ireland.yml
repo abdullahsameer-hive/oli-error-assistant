@@ -1,0 +1,15 @@
+id: northern_ireland
+title: 'Northern Ireland'
+patterns:
+  - 'Northern Ireland'
+  - 'northern'
+  - 'ireland'
+fixSteps:
+  - 'Norther Ireland addresses need to have UK as the country not Ireland.'
+tags:
+  - '🇬🇧 NOT1/MAN1'
+detailsMarkdown: |
+  # Northern Ireland
+  
+  FC: 🇬🇧 NOT1/MAN1
+  Resolution: Norther Ireland addresses need to have UK as the country not Ireland.

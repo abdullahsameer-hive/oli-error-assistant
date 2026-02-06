@@ -1,0 +1,12 @@
+id: service_error_das_angegebene_produkt_ist_f_r_das_land_nicht_verf
+title: '“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\'
+patterns:
+  - '“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\'
+  - 'service'
+  - 'angegebene'
+  - 'produkt'
+  - 'nicht'
+fixSteps:
+  - 'Check if the line two has too many characters and if so, try to move the information to company field. Then resolve the issue and try again'
+tags:
+  - '🌏 General'

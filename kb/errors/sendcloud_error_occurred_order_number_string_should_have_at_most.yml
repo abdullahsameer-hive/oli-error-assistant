@@ -1,0 +1,19 @@
+id: sendcloud_error_occurred_order_number_string_should_have_at_most
+title: 'Sendcloud error occurred: order_number: "String should have at most 15 characters: order_number”'
+patterns:
+  - 'Sendcloud error occurred: order_number: "String should have at most 15 characters: order_number”'
+  - 'sendcloud'
+  - 'order_number'
+  - 'string'
+  - 'should'
+  - 'characters'
+fixSteps:
+  - 'Raise a linear ticket to ask the tech team to reduce the shop order ID to under 15 characters. After they do this we will be able to print the labels.'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

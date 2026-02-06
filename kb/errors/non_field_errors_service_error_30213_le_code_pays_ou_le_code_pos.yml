@@ -1,0 +1,20 @@
+id: non_field_errors_service_error_30213_le_code_pays_ou_le_code_pos
+title: 'non_field_errors: "Service error: 30213: Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni" - HUB ARMEES'
+patterns:
+  - 'non_field_errors: "Service error: 30213: Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni" - HUB ARMEES'
+  - 'non_field_errors'
+  - 'service'
+  - '30213'
+  - 'postal'
+  - 'destinataire'
+  - 'incorrect'
+fixSteps:
+  - 'If we get an order in PAR1 FC that needs to be shipped to HUB ARMEES (address would be - 00200 HUB ARMEES'
+  - 'France). Then change the shipping method to “Colissimo FR Delivery HUB Armee” and try to print the label it would work'
+tags:
+  - '🇫🇷 PAR1'
+detailsMarkdown: |
+  # Sendcloud error occurred: non_field_errors: "Service error: Please provide parcel dimensions to proceed with the courier method.”
+  
+  FC:  🌏 General
+  Resolution: This error hints at missing parcel dimensions.

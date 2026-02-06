@@ -1,0 +1,25 @@
+id: email_address_or_phone_number_missing
+title: 'Email address or phone number missing'
+patterns:
+  - 'Email address or phone number missing'
+  - 'email'
+  - 'address'
+  - 'phone'
+  - 'number'
+  - 'missing'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Email address or phone number missing
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  Check the email id and phone number (compulsory for some carriers): either email id or phone number is compulsory. So please check if the order has an email id or phone number. 
+  
+  Check if the order is an ITO: 
+  
+  - If ITO → enter the data from this notion page for the corresponding destination [Hive FC Addresses](https://www.notion.so/Hive-FC-Addresses-b0550bb089744ff5b42b545933d0d7b4?pvs=21)
+  - If not ITO → please create an `address validation` issue and select what is missing

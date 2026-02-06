@@ -1,5 +1,453 @@
 [
   {
+    "id": "404_error_label_api",
+    "title": "404 error/Label API",
+    "patterns": [
+      "404 error/Label API"
+    ],
+    "fixSteps": [
+      "Open the order and check if a label has been printed, but the order still shows as ‘Packed’.",
+      "If yes, create asana card for the FC to cancel the labels and reship the orders. E.g.: https://app.asana.com/0/1200737019007719/1206934937449352/f",
+      "If no then retry to print the label it should work as there might be a timeout error"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "address_alert_if_the_destination_is_australia_po_box_addresses",
+    "title": "ADDRESS ALERT: if the destination is Australia -PO BOX addresses",
+    "patterns": [
+      "ADDRESS ALERT: if the destination is Australia -PO BOX addresses",
+      "address",
+      "alert",
+      "destination",
+      "australia",
+      "addresses"
+    ],
+    "fixSteps": [
+      "PO BOX —- street name",
+      "no. —- house number",
+      "doesnt need a number in the company name like dhl"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "address_can_t_be_validated",
+    "title": "Address can’t be validated",
+    "patterns": [
+      "Address can’t be validated",
+      "address",
+      "validated"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "api_error_appeared_status_401_message_title_unauthorized_status_",
+    "title": "Api error appeared: status: 401, message: {title: \"Unauthorized\", status: 401, detail: \"Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.\", statusCode: 401}",
+    "patterns": [
+      "Api error appeared: status: 401, message: {title: \"Unauthorized\", status: 401, detail: \"Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.\", statusCode: 401}",
+      "appeared",
+      "status",
+      "message",
+      "title",
+      "unauthorized",
+      "detail"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "carrier_response_doesn_t_contain_a_label",
+    "title": "Carrier response doesn't contain a label.",
+    "patterns": [
+      "Carrier response doesn't contain a label.",
+      "carrier",
+      "response",
+      "doesn",
+      "contain"
+    ],
+    "fixSteps": [
+      "Check if the letters in the address are in the English alphabet; if they are not, ask Chat GPT to translate them for you and enter that into the address instead. You have to delete everything that is not in the English alphabet and then resolve the issue,"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "city_ensure_this_field_has_no_more_than_x_characters",
+    "title": "City \"Ensure this field has no more than X characters.”",
+    "patterns": [
+      "City \"Ensure this field has no more than X characters.”",
+      "ensure",
+      "field",
+      "characters"
+    ],
+    "fixSteps": [
+      "Count the X first characters in the city field in the address and delete the rest",
+      "Only if 30 characters:",
+      "Then open the shipping method in AA and click on edit: https://app.hive.app/admin/shipping_methods and click on the check box:"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "company_name_ensure_this_field_has_no_more_than_50_characters",
+    "title": "Company_name: \"Ensure this field has no more than 50 characters.”",
+    "patterns": [
+      "Company_name: \"Ensure this field has no more than 50 characters.”",
+      "company_name",
+      "ensure",
+      "field",
+      "characters"
+    ],
+    "fixSteps": [
+      "Count the 50 first characters in the company field in the address and delete the rest"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "consignee_please_enter_a_house_number_consignee_the_address_coul",
+    "title": "[\"consignee: Please enter a house number.\", \"consignee: The address could not be encoded to a routing code.\"]",
+    "patterns": [
+      "[\"consignee: Please enter a house number.\", \"consignee: The address could not be encoded to a routing code.\"]",
+      "consignee",
+      "please",
+      "enter",
+      "house",
+      "number",
+      "address"
+    ],
+    "fixSteps": [
+      "1. Check if there is a space in the house number field or extra characters like “. , /”",
+      "2. Check if there is any extra characters like “. , / “ in the street field",
+      "3. Delete it",
+      "4. Save the changes in the address",
+      "5. Try to print the shipping label again"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "customs_exporttype_please_enter_the_type_of_shipment_customs_exp",
+    "title": "[\"customs.exportType: Please enter the type of shipment.\", \"customs.exportType: The type of shipment entered is invalid.\", \"customs.items[0]: Please enter a description.\", \"customs.items[0]: Please enter an amount.\", \"customs.items[0]: Please enter the weight.\", \"customs.items[0]: Please enter the value of goods.\", \"customs.postalCharges.value: Please enter the postage charges for customs clearence purposes.\", \"customs.postalCharges.value: Please enter the postage charges for customs clearence purposes. If you do not charge postage charges, please enter 0.00.\", \"customs.items[0]: The value in the Weight / Unit field must be in the format 0.000 kg and value must be greater than 0.\"]",
+    "patterns": [
+      "[\"customs.exportType: Please enter the type of shipment.\", \"customs.exportType: The type of shipment entered is invalid.\", \"customs.items[0]: Please enter a description.\", \"customs.items[0]: Please enter an amount.\", \"customs.items[0]: Please enter the weight.\", \"customs.items[0]: Please enter the value of goods.\", \"customs.postalCharges.value: Please enter the postage charges for customs clearence purposes.\", \"customs.postalCharges.value: Please enter the postage charges for customs clearence purposes. If you do not charge postage charges, please enter 0.00.\", \"customs.items[0]: The value in the Weight / Unit field must be in the format 0.000 kg and value must be greater than 0.\"]",
+      "customs",
+      "exporttype",
+      "please",
+      "enter",
+      "entered",
+      "invalid"
+    ],
+    "fixSteps": [
+      "Basic checks!! - address → country"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "details_weight_value_parameter_value_must_not_exceed_a_value_of_",
+    "title": "[\"details.weight.value: Parameter value must not exceed a value of 31500.\"]",
+    "patterns": [
+      "[\"details.weight.value: Parameter value must not exceed a value of 31500.\"]",
+      "details",
+      "weight",
+      "value",
+      "parameter",
+      "exceed",
+      "31500"
+    ],
+    "fixSteps": [
+      "weight issue either asana or make it multiple shipments"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "dom_tom_regions",
+    "title": "DOM-TOM regions",
+    "patterns": [
+      "DOM-TOM regions",
+      "regions"
+    ],
+    "fixSteps": [
+      "• The country must not be France, but instead the Island of the location",
+      "• Addresses most of the time do not have house numbers, check on Google Maps before creating address validations"
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "email_address_or_phone_number_missing",
+    "title": "Email address or phone number missing",
+    "patterns": [
+      "Email address or phone number missing",
+      "email",
+      "address",
+      "phone",
+      "number",
+      "missing"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "endcloud_error_occurred_please_use_the_normal_printer_endpoint_w",
+    "title": "endcloud error occurred: Please use the normal_printer endpoint when printing A4 labels",
+    "patterns": [
+      "endcloud error occurred: Please use the normal_printer endpoint when printing A4 labels",
+      "endcloud",
+      "please",
+      "normal_printer",
+      "endpoint",
+      "printing",
+      "labels"
+    ],
+    "fixSteps": [
+      "Copy the picking basket --> On Shipment page, cancel the label --> Press Cmd +Ctrl+ Shift + B --> paste the picking basket number --> Retry printing the label."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "enter_a_valid_email_address",
+    "title": "Enter a valid email address",
+    "patterns": [
+      "Enter a valid email address",
+      "enter",
+      "valid",
+      "email",
+      "address"
+    ],
+    "fixSteps": [
+      "Check if the email address has a â, ë, ï, ö, or ǔ and if yes, change it to the equivalent without umlaut."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_consignments_0_articles_0_quantity_must_have_a_maximum_val",
+    "title": "Error : consignments[0].articles[0].quantity: Must have a maximum value of 500 for meineinkauf",
+    "patterns": [
+      "Error : consignments[0].articles[0].quantity: Must have a maximum value of 500 for meineinkauf",
+      "consignments",
+      "articles",
+      "quantity",
+      "maximum",
+      "value",
+      "meineinkauf"
+    ],
+    "fixSteps": [
+      "The limit is on single SKU.",
+      "So split the shipment into 2",
+      "https://hive-app-hq.slack.com/archives/C039C1DQB1R/p1763565749033869"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_message_consignee_please_enter_a_house_number_consignee_th",
+    "title": "Error message: consignee: Please enter a house number. consignee: The adress could not be encoded to a routing code.",
+    "patterns": [
+      "Error message: consignee: Please enter a house number. consignee: The adress could not be encoded to a routing code.",
+      "message",
+      "consignee",
+      "please",
+      "enter",
+      "house",
+      "number"
+    ],
+    "fixSteps": [
+      "Check if in the street name or house number has ‘ - ’ , ‘ / ’ sign",
+      "If yes → then delete these signs and put a space instead. And save the address and resolve the delivery restriction.",
+      "If not → then check the address and raise address validation issue if the address is not correct ."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_message_consignments_0_consignment_measurements_dimensions",
+    "title": "Error Message:[\"consignments[0]: Consignment measurements (dimensions, grossWeight, articleValue) exceed limitations of available shipment types\"]",
+    "patterns": [
+      "Error Message:[\"consignments[0]: Consignment measurements (dimensions, grossWeight, articleValue) exceed limitations of available shipment types\"]",
+      "message",
+      "consignments",
+      "consignment",
+      "measurements",
+      "dimensions",
+      "grossweight"
+    ],
+    "fixSteps": [
+      "If we get this error message and in address line to we have “Case Postale 262” and the carrier is",
+      "DPD CH MeinEinkauf DDP then we can change the shipping method to-Swiss Post CH MeinEinkauf DDP",
+      "As mentioned in https://linear.app/hive-logistics/issue/DFB2B-3506/tech-support-cannot-create-shipping-label linear ticket and the relevant slack https://hive-logistics.slack.com/archives/C039C1DQB1R/p1747906847431999"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_message_mentioned_postal_code",
+    "title": "Error message mentioned postal code",
+    "patterns": [
+      "Error message mentioned postal code",
+      "message",
+      "mentioned",
+      "postal"
+    ],
+    "fixSteps": [
+      "Open the order on Google Maps and check the postal code. Contrast the postal code on the order and the one in google maps, see if there are any issues, and create an address validation.",
+      "Check that the country is correct and if not correct → update it."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_message_no_shipping_contract_method_matches_the_rules_or_t",
+    "title": "Error message: “No shipping contract method matches the rules or the selected one does not exist”",
+    "patterns": [
+      "Error message: “No shipping contract method matches the rules or the selected one does not exist”",
+      "message",
+      "shipping",
+      "contract",
+      "method",
+      "matches",
+      "rules"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_message_refno_parameter_refno_shipment_reference_number_mu",
+    "title": "Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.",
+    "patterns": [
+      "Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.",
+      "message",
+      "refno",
+      "parameter",
+      "reference",
+      "number",
+      "between"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_message_validation_failed_shipment_has_already_been_taken",
+    "title": "Error message: “Validation failed: Shipment has already been taken”",
+    "patterns": [
+      "Error message: “Validation failed: Shipment has already been taken”",
+      "message",
+      "already",
+      "taken"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "error_sendcloud_error_occurred_to_service_point_invalid_service_",
+    "title": "Error “Sendcloud error occurred: to_service_point: \"Invalid service point\" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.",
+    "patterns": [
+      "Error “Sendcloud error occurred: to_service_point: \"Invalid service point\" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.",
+      "sendcloud",
+      "to_service_point",
+      "invalid",
+      "service",
+      "point",
+      "cases"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "errors_id_expected_string_to_be_a_id_glucose_goddess",
+    "title": "{\"errors\":{\"id\":\"expected String to be a id\"}} - Glucose Goddess",
+    "patterns": [
+      "{\"errors\":{\"id\":\"expected String to be a id\"}} - Glucose Goddess",
+      "errors",
+      "expected",
+      "string",
+      "glucose",
+      "goddess"
+    ],
+    "fixSteps": [
+      "Shipment to Italy, Check on Google Map the location and select carrier as follows:",
+      "For Mainland: GLS Italy Hive / GLS IT National Express Mainland",
+      "For Saridinia: GLS Italy Hive / GLS IT National Express Saridinia",
+      "For Sicily Calabria: GLS Italy Hive / GLS IT National Express Sicily Calabria"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
     "id": "sendcloud_house_number_too_long",
     "title": "Sendcloud error occurred: house_number: \"Ensure that house number has at most 8 characters (it has 9).\"",
     "patterns": [
@@ -19,6 +467,1079 @@
     "links": []
   },
   {
+    "id": "for_all_other_merchants_except_glucose_goddess_with_the_error_me",
+    "title": "For all other merchants except Glucose Goddess with the error message: Sendcloud error occurred: non_field_errors: \"Service error: The order value is not in Euros; convert it to Euros for Delivengo, as only Euros are accepted.\"",
+    "patterns": [
+      "For all other merchants except Glucose Goddess with the error message: Sendcloud error occurred: non_field_errors: \"Service error: The order value is not in Euros; convert it to Euros for Delivengo, as only Euros are accepted.\"",
+      "other",
+      "merchants",
+      "except",
+      "glucose",
+      "goddess",
+      "message"
+    ],
+    "fixSteps": [
+      "Reach out to the merchant and give them the following two options:",
+      "• Cancel the shipment and create a duplicate with the order value in EUR, so we can process it with Delivengo.",
+      "• Switch the carrier to Colissimo FR Domicile DAP International, which accepts GBP values."
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "for_cod_orders_sendcleoud_error_occurred_this_carrier_is_not_ava",
+    "title": "For COD orders - “Sendcleoud error occurred: This carrier is not available for this shipment”",
+    "patterns": [
+      "For COD orders - “Sendcleoud error occurred: This carrier is not available for this shipment”",
+      "orders",
+      "sendcleoud",
+      "carrier",
+      "available"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "gls_carrier_in_germany_gls_de_unable_to_find_sendcloud_shipping_",
+    "title": "GLS carrier in Germany (GLS DE)- Unable to find sendcloud shipping method",
+    "patterns": [
+      "GLS carrier in Germany (GLS DE)- Unable to find sendcloud shipping method",
+      "carrier",
+      "germany",
+      "unable",
+      "sendcloud",
+      "shipping",
+      "method"
+    ],
+    "fixSteps": [
+      "Check if weight is below 0.1 kg as GLS does not accept it.",
+      "Update weight to 0.101"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "gls_non_field_errors_service_error_the_receiver_address_cannot_b",
+    "title": "GLS non_field_errors: \"Service error: The receiver address cannot be validated by carrier. Please check city and state.\"",
+    "patterns": [
+      "GLS non_field_errors: \"Service error: The receiver address cannot be validated by carrier. Please check city and state.\"",
+      "non_field_errors",
+      "service",
+      "receiver",
+      "address",
+      "cannot",
+      "validated"
+    ],
+    "fixSteps": [
+      "This is because the City field is not recognized as a city. To fix this take the State/Province code and chop it in the city field, and take what was previously in the city field and put it in address line 2",
+      "Make sure to write the full state name in city field"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "gls_specific_the_order_number_already_exists_the_provided_order_",
+    "title": "GLS Specific “The order number already exists” / ‘’The provided order number already exists’’/ Service error: This order number is already used—please enter a unique order number to proceed.",
+    "patterns": [
+      "GLS Specific “The order number already exists” / ‘’The provided order number already exists’’/ Service error: This order number is already used—please enter a unique order number to proceed.",
+      "specific",
+      "order",
+      "number",
+      "already",
+      "exists",
+      "provided"
+    ],
+    "fixSteps": [
+      "We can only ship one shipment per day with the same order ID across all of our GLS Spain shipments.",
+      "Wait for one day to resolve the issue.",
+      "https://hive-logistics.slack.com/archives/C01C81H9KST/p1713187506510009?thread_ts=1713181020.382169&cid=C01C81H9KST for reference"
+    ],
+    "tags": [
+      "🇪🇸 MAD3 / 🇪🇸 MAD4"
+    ],
+    "links": []
+  },
+  {
+    "id": "incorrect_phone_number_phone_number_too_short_phone_number_too_l",
+    "title": "Incorrect phone number/phone number too short/phone number too long",
+    "patterns": [
+      "Incorrect phone number/phone number too short/phone number too long",
+      "incorrect",
+      "phone",
+      "number",
+      "short"
+    ],
+    "fixSteps": [
+      "Create an address validation and resolve the delivery restrictions issue.",
+      "Do not delete the phone number"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "international_orders_being_shipped_with_correos_carrier_error_me",
+    "title": "International orders being shipped with Correos carrier Error message - https://www.notion.so/Delivery-setup-b1a0056bf74d4f4fb5690d305cd2538d?pvs=21https://www.notion.so/Delivery-setup-b1a0056bf74d4f4fb5690d305cd2538d?pvs=21",
+    "patterns": [
+      "International orders being shipped with Correos carrier Error message - https://www.notion.so/Delivery-setup-b1a0056bf74d4f4fb5690d305cd2538d?pvs=21https://www.notion.so/Delivery-setup-b1a0056bf74d4f4fb5690d305cd2538d?pvs=21",
+      "international",
+      "orders",
+      "being",
+      "shipped",
+      "correos",
+      "carrier"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇪🇸 MAD3 / 🇪🇸 MAD4"
+    ],
+    "links": []
+  },
+  {
+    "id": "invalid_service_point_or_service_point_no_longer_operational_or_",
+    "title": "‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: \"Service point carrier does not match shipping method.””",
+    "patterns": [
+      "‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: \"Service point carrier does not match shipping method.””",
+      "invalid",
+      "service",
+      "point",
+      "longer",
+      "operational",
+      "sendcloud"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "livigno_orders_from_mil1_error_message_may_be_customs_shipment_t",
+    "title": "Livigno orders - from MIL1 error message may be “customs_shipment_type: \"This field is required.\", customs_invoice_nr: \"This field is required.\", parcel_items: \"At least one parcel item is required””",
+    "patterns": [
+      "Livigno orders - from MIL1 error message may be “customs_shipment_type: \"This field is required.\", customs_invoice_nr: \"This field is required.\", parcel_items: \"At least one parcel item is required””",
+      "livigno",
+      "orders",
+      "message",
+      "customs_shipment_type",
+      "field",
+      "required"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "matiere_premiere_no_shipping_contract_method_matches_the_rules_o",
+    "title": "Matiere premiere - ”No shipping contract method matches the rules or selected one does not exist”",
+    "patterns": [
+      "Matiere premiere - ”No shipping contract method matches the rules or selected one does not exist”",
+      "matiere",
+      "premiere",
+      "shipping",
+      "contract",
+      "method",
+      "matches"
+    ],
+    "fixSteps": [
+      "Select Chronopost Hive / Chronopost FR Classic DAP Europe if under 0.2kg and no shipping method available and country is on the https://app.hive.app/admin/shipping_rule_sets/10202"
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "maximum_number_of_characters_exceeded",
+    "title": "Maximum number of characters exceeded",
+    "patterns": [
+      "Maximum number of characters exceeded",
+      "maximum",
+      "number",
+      "characters",
+      "exceeded"
+    ],
+    "fixSteps": [
+      "This usually happens for the fields City and Street 2 try to put the information somewhere else and if we still can’t create a shipping label, remove the leftovers."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "mein_einkauf_consignments_0_articles_0_grossprice_must_have_a_mi",
+    "title": "Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01",
+    "patterns": [
+      "Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01",
+      "einkauf",
+      "consignments",
+      "articles",
+      "grossprice",
+      "minimum",
+      "value"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "meineinkauf_provided_incomplete_response_label_could_not_be_gene",
+    "title": "MeinEinkauf: “Provided incomplete response” / label could not be generated/order ID is not valid",
+    "patterns": [
+      "MeinEinkauf: “Provided incomplete response” / label could not be generated/order ID is not valid",
+      "meineinkauf",
+      "provided",
+      "incomplete",
+      "response",
+      "could",
+      "generated"
+    ],
+    "fixSteps": [
+      "Usually a time out error. Try to print the label again.",
+      "If it doesn’t work, you’ll need to continue investigations as usual."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "missing_house_number",
+    "title": "Missing house number",
+    "patterns": [
+      "Missing house number",
+      "missing",
+      "house",
+      "number"
+    ],
+    "fixSteps": [
+      "Troubleshoot in the same way as address alerts.",
+      "1. Check the address in Google Maps",
+      "1. If the street has house numbers, create address validation issue for missing house number",
+      "2. Id the address doesn’t have house numbers, enter a ‘-’ in the House number field."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "mondial_relay_fr_parcel_point_unable_to_find_sendcloud_shipping_",
+    "title": "Mondial Relay FR Parcel Point- Unable to find sendcloud shipping method",
+    "patterns": [
+      "Mondial Relay FR Parcel Point- Unable to find sendcloud shipping method",
+      "mondial",
+      "relay",
+      "parcel",
+      "point",
+      "unable",
+      "sendcloud"
+    ],
+    "fixSteps": [
+      "Check if weight is below 0.01 kg as Mondial does not accept it.",
+      "Update weight to 0.015"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "mondial_relay_parcel_points_error_message_invalid_service_point_",
+    "title": "Mondial Relay parcel points (error message - ‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: \"Service point carrier does not match shipping method.””)",
+    "patterns": [
+      "Mondial Relay parcel points (error message - ‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: \"Service point carrier does not match shipping method.””)",
+      "mondial",
+      "relay",
+      "parcel",
+      "points",
+      "message",
+      "invalid"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇩🇪 BER3"
+    ],
+    "links": []
+  },
+  {
+    "id": "non_field_errors_service_error_30213_le_code_pays_ou_le_code_pos",
+    "title": "non_field_errors: \"Service error: 30213: Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni\" - HUB ARMEES",
+    "patterns": [
+      "non_field_errors: \"Service error: 30213: Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni\" - HUB ARMEES",
+      "non_field_errors",
+      "service",
+      "30213",
+      "postal",
+      "destinataire",
+      "incorrect"
+    ],
+    "fixSteps": [
+      "If we get an order in PAR1 FC that needs to be shipped to HUB ARMEES (address would be - 00200 HUB ARMEES",
+      "France). Then change the shipping method to “Colissimo FR Delivery HUB Armee” and try to print the label it would work"
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "northern_ireland",
+    "title": "Northern Ireland",
+    "patterns": [
+      "Northern Ireland",
+      "northern",
+      "ireland"
+    ],
+    "fixSteps": [
+      "Norther Ireland addresses need to have UK as the country not Ireland."
+    ],
+    "tags": [
+      "🇬🇧 NOT1/MAN1"
+    ],
+    "links": []
+  },
+  {
+    "id": "only_with_gls_25020_flero_bs_italy",
+    "title": "Only with GLS - 25020 Flero BS Italy",
+    "patterns": [
+      "Only with GLS - 25020 Flero BS Italy",
+      "25020",
+      "flero",
+      "italy"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "order_to_bosnia_and_herzegovina",
+    "title": "Order to Bosnia and Herzegovina",
+    "patterns": [
+      "Order to Bosnia and Herzegovina",
+      "order",
+      "bosnia",
+      "herzegovina"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇪🇸 MAD3 / 🇪🇸 MAD4"
+    ],
+    "links": []
+  },
+  {
+    "id": "orders_going_to_monaco_service_error_invalid_customs_value",
+    "title": "Orders going to Monaco - \"Service error: Invalid Customs Value”",
+    "patterns": [
+      "Orders going to Monaco - \"Service error: Invalid Customs Value”",
+      "orders",
+      "going",
+      "monaco",
+      "service",
+      "invalid",
+      "customs"
+    ],
+    "fixSteps": [
+      "These orders require that the label gets created manually in sendcloud",
+      "Sendcloud error occurred: non_field_errors: \"Service error: Invalid Customs Value”"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "orders_going_to_portugal_madeira_azores_from_spain",
+    "title": "Orders going to Portugal (Madeira & Azores) from Spain",
+    "patterns": [
+      "Orders going to Portugal (Madeira & Azores) from Spain",
+      "orders",
+      "going",
+      "portugal",
+      "madeira",
+      "azores",
+      "spain"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇪🇸 MAD3 / 🇪🇸 MAD4"
+    ],
+    "links": []
+  },
+  {
+    "id": "orders_to_puerto_rico_state_not_found",
+    "title": "Orders to Puerto Rico “state not found”",
+    "patterns": [
+      "Orders to Puerto Rico “state not found”",
+      "orders",
+      "puerto",
+      "state",
+      "found"
+    ],
+    "fixSteps": [
+      "Change the country from USA to Puerto Rico, not only the state"
+    ],
+    "tags": [
+      "🇬🇧 NOT1/MAN1"
+    ],
+    "links": []
+  },
+  {
+    "id": "parcel_label_number_running_out",
+    "title": "Parcel label number running out",
+    "patterns": [
+      "Parcel label number running out",
+      "parcel",
+      "number",
+      "running"
+    ],
+    "fixSteps": [
+      "Service error: Failed to parse carrier response with the: Parcel label number",
+      "Reach out to AM, we probably need new parcel label numbers because the carrier ran out."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "phone_number_is_in_an_invalid_format",
+    "title": "Phone number is in an invalid format",
+    "patterns": [
+      "Phone number is in an invalid format",
+      "phone",
+      "number",
+      "invalid",
+      "format"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "postal_code_is_invalid_missing",
+    "title": "Postal code is invalid/missing",
+    "patterns": [
+      "Postal code is invalid/missing",
+      "postal",
+      "invalid",
+      "missing"
+    ],
+    "fixSteps": [
+      "United Arab Emirates and Hong Kong do not have postal codes. Therefore:",
+      "• if we receive an error saying that it’s missing, add 00000 to the postal code",
+      "• if we receive an error saying that postal code is not needed, remove it"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "san_marino_orders_from_mil1_only_error_message_maybe_unable_to_f",
+    "title": "San Marino orders - from MIL1 only error message maybe “Unable to find Sendcloud shipping method”",
+    "patterns": [
+      "San Marino orders - from MIL1 only error message maybe “Unable to find Sendcloud shipping method”",
+      "marino",
+      "orders",
+      "message",
+      "maybe",
+      "unable",
+      "sendcloud"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_complete_to_address_1_shipping_to_a_pac",
+    "title": "Sendcloud error occurred: complete_to_address_1: \"Shipping to a \"Packstation\" address is not supported by this carrier.”",
+    "patterns": [
+      "Sendcloud error occurred: complete_to_address_1: \"Shipping to a \"Packstation\" address is not supported by this carrier.”",
+      "sendcloud",
+      "complete_to_address_1",
+      "shipping",
+      "packstation",
+      "address",
+      "supported"
+    ],
+    "fixSteps": [
+      "if the address is to a packstation, this isnt possible with the shipment method wonderpack. Raise an address validation issue for full home address"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_customs_shipment_type_this_field_is_req",
+    "title": "Sendcloud error occurred: customs_shipment_type: \"This field is required.\", customs_invoice_nr: \"This field is required.\", parcel_items: \"At least one parcel item is required”",
+    "patterns": [
+      "Sendcloud error occurred: customs_shipment_type: \"This field is required.\", customs_invoice_nr: \"This field is required.\", parcel_items: \"At least one parcel item is required”",
+      "sendcloud",
+      "customs_shipment_type",
+      "field",
+      "required",
+      "customs_invoice_nr",
+      "parcel_items"
+    ],
+    "fixSteps": [
+      "If the shipping method is Correos Hive / Correos ES Paq Ligero DAP International and the order is going to Portugal islands then for the time being we can use CTT Express Hive / CTT Express ES Portugal Madeira"
+    ],
+    "tags": [
+      "🇪🇸 MAD3 / 🇪🇸 MAD4"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_carrier_",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: Carrier response doesn't contain a label.\"",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: Carrier response doesn't contain a label.\"",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "carrier",
+      "response",
+      "doesn"
+    ],
+    "fixSteps": [
+      "look for unusual accents on the letters, and if you find some, this is likely the issue. Replace them with less unusual (but largely corresponding) letters"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_failed_t",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: Failed to parse carrier response with the: {http://error.global/}\"",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: Failed to parse carrier response with the: {http://error.global/}\"",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "parse",
+      "carrier",
+      "response"
+    ],
+    "fixSteps": [
+      "Happens with AVA&MAY in BER3 with their Poste Italiana contract. If there is any ‘ or special characters in the address, edit them to only have regular carachters. For example, Cassano d’Adda→ Cassano de Adda"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_no_shipp",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: No shipping method selected. Please choose a shipping method to proceed.”",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: No shipping method selected. Please choose a shipping method to proceed.”",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "shipping",
+      "method",
+      "selected"
+    ],
+    "fixSteps": [
+      "Check if order is going to France:",
+      "• if the merchant name is Baroni, change shipping method to Chronopost",
+      "• If not, change to Colissimo FR Domicile w/o Signature"
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_please_p",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: Please provide parcel dimensions to proceed with the courier method.”",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: Please provide parcel dimensions to proceed with the courier method.”",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "please",
+      "provide",
+      "parcel"
+    ],
+    "fixSteps": [
+      "This error hints at missing parcel dimensions."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_the_carr",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: The carrier response could not be parsed due to an issue with the recipient's name. Please verify the recipient's name fields and try again.\", uncategorized: \"non_field_errors”",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: The carrier response could not be parsed due to an issue with the recipient's name. Please verify the recipient's name fields and try again.\", uncategorized: \"non_field_errors”",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "carrier",
+      "response",
+      "could"
+    ],
+    "fixSteps": [
+      "Look for “;” in the name, company or address fields, → remove it and retry, it should work"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_the_orde",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: The order number you provided is already in use, please verify it and try again.”",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: The order number you provided is already in use, please verify it and try again.”",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "order",
+      "number",
+      "provided"
+    ],
+    "fixSteps": [
+      "wait for a day, and retry the OLI tomorrow, should work"
+    ],
+    "tags": [
+      "🇪🇸 MAD3 / 🇪🇸 MAD4"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_the_roya",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: The Royal Mail Service MP7 is suspended for the selected destination or format; please choose a different shipping service.”",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: The Royal Mail Service MP7 is suspended for the selected destination or format; please choose a different shipping service.”",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "royal",
+      "suspended",
+      "selected"
+    ],
+    "fixSteps": [
+      "FROM NOT1 - USA( ONLY in this case",
+      "0- do basic checks( address, weight and api)",
+      "1- maek sure there are no dangerous goods in the shipment",
+      "2- It is under 5 kg",
+      "3- if both conditions appl >>> change the shipping method to -",
+      "DPD UK - Hive (wonderpack) / DPD UK Direct International"
+    ],
+    "tags": [
+      "🇬🇧 NOT1"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_the_serv",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: The service selected is not suitable for the contents and destination of the shipment; please verify service options.”",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: The service selected is not suitable for the contents and destination of the shipment; please verify service options.”",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "selected",
+      "suitable",
+      "contents"
+    ],
+    "fixSteps": [
+      "Usually a message that hints that the shipping method selected is not valid for the destination. Verify the available shipping options on SC and the delivery pricing sheet. consult with the team for more alternatives."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_validati",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: validation_failed. Details: receiver.address.building_number - required\"",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: validation_failed. Details: receiver.address.building_number - required\"",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "validation_failed",
+      "details",
+      "receiver"
+    ],
+    "fixSteps": [
+      "Delete the house number and Apt.0 from the street field only make sure that there is a house number in the ‘house number’ field"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_your_lab",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: Your label could not be announced at this moment, most likely because of an outage. For more information please see: status.sendcloud.com\"",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: Your label could not be announced at this moment, most likely because of an outage. For more information please see: status.sendcloud.com\"",
+      "sendcloud",
+      "non_field_errors",
+      "service",
+      "could",
+      "announced",
+      "moment"
+    ],
+    "fixSteps": [
+      "If this appears it means there is some issue from sendcloud side. Mostly its a service error between sendcloud and carrier side. It gets solved after sometime or we can see the status in http://status.sendcloud.com or contact sendcloud support chat"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_order_number_string_should_have_at_most",
+    "title": "Sendcloud error occurred: order_number: \"String should have at most 15 characters: order_number”",
+    "patterns": [
+      "Sendcloud error occurred: order_number: \"String should have at most 15 characters: order_number”",
+      "sendcloud",
+      "order_number",
+      "string",
+      "should",
+      "characters"
+    ],
+    "fixSteps": [
+      "Raise a linear ticket to ask the tech team to reduce the shop order ID to under 15 characters. After they do this we will be able to print the labels."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_parcel_items_sku_this_field_may_not_be_",
+    "title": "Sendcloud error occurred: parcel_items: \"{}, {'sku': ['This field may not be null.']}, {}\"x",
+    "patterns": [
+      "Sendcloud error occurred: parcel_items: \"{}, {'sku': ['This field may not be null.']}, {}\"x",
+      "sendcloud",
+      "parcel_items",
+      "field"
+    ],
+    "fixSteps": [
+      "Check if the SKUs in the order all have SKU IDs.",
+      "If not, create SKU customs information missing issue."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_postal_code_enter_a_valid_zip_code",
+    "title": "Sendcloud error occurred: postal_code: \"Enter a valid zip code.\"",
+    "patterns": [
+      "Sendcloud error occurred: postal_code: \"Enter a valid zip code.\"",
+      "sendcloud",
+      "postal_code",
+      "enter",
+      "valid"
+    ],
+    "fixSteps": [
+      "Check the postal code on G Maps (exceptions: RoyalMail finder → UK orders | GLS Portal for IT orders shipped via GLS)"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_reference_ensure_the_reference_field_co",
+    "title": "Sendcloud error occurred: reference: \"Ensure the reference field contains no more than 20 characters.”",
+    "patterns": [
+      "Sendcloud error occurred: reference: \"Ensure the reference field contains no more than 20 characters.”",
+      "sendcloud",
+      "reference",
+      "ensure",
+      "field",
+      "contains",
+      "characters"
+    ],
+    "fixSteps": [
+      "This issue happens because the shop order ID exeeds 20 characters here is how to deal with it:",
+      "1- open sendcloud to the right fc",
+      "2- use the search funciton to search the shop order id to find the label",
+      "3- click on edit and instead of x characters for the shop order id, shorten it to 20",
+      "4- save adn print the label and manually upload it in the fc app( use the same shippping method )",
+      "5- to find the tracking number, maek sure to search the new 20 character shop order id in sendcloud!!!"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_this_shipment_does_not_match_the_sendcl",
+    "title": "Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions - COD orders",
+    "patterns": [
+      "Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions - COD orders",
+      "sendcloud",
+      "match",
+      "shipping",
+      "method",
+      "restrictions",
+      "orders"
+    ],
+    "fixSteps": [
+      "- Is the order more than one shipment and all are COD ?",
+      "- Does it say shipped for one of them?",
+      "if yes> wait, as the first shipment have to be delivered (confirm with the link or sendcloud)before the second shipment can be shipped",
+      "then the second shipment will be shipped with a non COD service",
+      "→if the first one was returned : contact the merchant and tell them to cancel adn create a new order"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_to_service_point_service_point_carrier_",
+    "title": "Sendcloud error occurred: to_service_point: \"Service point carrier does not match shipping method.”",
+    "patterns": [
+      "Sendcloud error occurred: to_service_point: \"Service point carrier does not match shipping method.”",
+      "sendcloud",
+      "to_service_point",
+      "service",
+      "point",
+      "carrier",
+      "match"
+    ],
+    "fixSteps": [
+      "Check the parcel point selected in PPP, this error usually indicates that the parcel point selected doesnt match the carrier"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_barcode_range_depleted_for_current_contract",
+    "title": "\"Service error: Barcode range depleted for current contract.”",
+    "patterns": [
+      "\"Service error: Barcode range depleted for current contract.”",
+      "service",
+      "barcode",
+      "range",
+      "depleted",
+      "current",
+      "contract"
+    ],
+    "fixSteps": [
+      "This is an error with Lettre Verte, we need to ask the Ops offering team to ask the carrier for more barcodes (order IDs)."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_carrier_error_unable_to_save_document_in_the_datab",
+    "title": "\"Service error: Carrier error: unable to save document in the database; try resubmitting the form.”",
+    "patterns": [
+      "\"Service error: Carrier error: unable to save document in the database; try resubmitting the form.”",
+      "service",
+      "carrier",
+      "unable",
+      "document",
+      "database",
+      "resubmitting"
+    ],
+    "fixSteps": [
+      "from 🇩🇪BER3 shipping to ITALY 🇮🇹 → solution: remove special characters eg: “ c‘e ” “D’ aguila” from ALL FIELDS and retry."
+    ],
+    "tags": [
+      "🇩🇪 BER3"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_carrier_returned_an_arror_with_code_10055_and_mess",
+    "title": "Service error: Carrier returned an arror with code 10055 and message: The sorting plan was not found for the product Home (HOM), the country Portugal, the postal code 9000-254 and the collection point (if selected)”",
+    "patterns": [
+      "Service error: Carrier returned an arror with code 10055 and message: The sorting plan was not found for the product Home (HOM), the country Portugal, the postal code 9000-254 and the collection point (if selected)”",
+      "service",
+      "carrier",
+      "returned",
+      "arror",
+      "10055",
+      "message"
+    ],
+    "fixSteps": [
+      "f shipping to Portuguese Islands, change the Mondial Relay shipping method to Colissimo FR Domicile DAP Europe"
+    ],
+    "tags": [
+      "🇫🇷 PAR1"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_carrier_returned_error_the_tracking_label_was_not_",
+    "title": "\"Service error: Carrier returned error: the tracking label was not generated. Check the shipment documentation and try again.”",
+    "patterns": [
+      "\"Service error: Carrier returned error: the tracking label was not generated. Check the shipment documentation and try again.”",
+      "service",
+      "carrier",
+      "returned",
+      "tracking",
+      "generated",
+      "check"
+    ],
+    "fixSteps": [
+      "Check for any special characters within the address and name fields - remove them and retry"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_das_angegebene_produkt_ist_f_r_das_land_nicht_verf",
+    "title": "“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\\",
+    "patterns": [
+      "“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\\",
+      "service",
+      "angegebene",
+      "produkt",
+      "nicht"
+    ],
+    "fixSteps": [
+      "Check if the line two has too many characters and if so, try to move the information to company field. Then resolve the issue and try again"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_die_gewichtsangabe_ist_kleiner_als_im_cn23_formula",
+    "title": "\"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”",
+    "patterns": [
+      "\"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”",
+      "service",
+      "gewichtsangabe",
+      "kleiner",
+      "formular"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_failed_to_parse_carrier_response_with_the_generals",
+    "title": "\"Service error: Failed to parse carrier response with the: generalShipmentData.recipient.name2\"",
+    "patterns": [
+      "\"Service error: Failed to parse carrier response with the: generalShipmentData.recipient.name2\"",
+      "service",
+      "parse",
+      "carrier",
+      "response",
+      "generalshipmentdata",
+      "recipient"
+    ],
+    "fixSteps": [
+      "Appears to be line2 character limit related"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "service_error_the_package_exceeds_the_maximum_allowable_length_p",
+    "title": "\"Service error: The package exceeds the maximum allowable length; please reduce its size to comply with carrier requirements.\"",
+    "patterns": [
+      "\"Service error: The package exceeds the maximum allowable length; please reduce its size to comply with carrier requirements.\"",
+      "service",
+      "package",
+      "exceeds",
+      "maximum",
+      "allowable",
+      "length"
+    ],
+    "fixSteps": [
+      "Usually an error due to the shop order id being too long, for these we search the order on SC, check if there are any labels in incoming orders with issues or announcement failed errors, remove spaces or extra chars (so that it is <=20 chars) from the shop order id on SC and try printing the label again."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "shipments_to_south_korea",
+    "title": "Shipments to South Korea",
+    "patterns": [
+      "Shipments to South Korea",
+      "shipments",
+      "south",
+      "korea"
+    ],
+    "fixSteps": [
+      "Shipment method DHL DE Economy Paket DAP International",
+      "Maximum weight limit of each shipment is 20 Kgs."
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
     "id": "example_timeout",
     "title": "Sendcloud error occurred: house_number: \"Ensure that house number has at most 8 characters (it has 9).\"",
     "patterns": [
@@ -34,6 +1555,199 @@
     "tags": [
       "shipping",
       "sendcloud"
+    ],
+    "links": []
+  },
+  {
+    "id": "the_customer_has_asked_to_cancel_could_you_kindly_cancel_this_or",
+    "title": "”The customer has asked to cancel. Could you kindly cancel this order for us on your end, please?” - in address fields",
+    "patterns": [
+      "”The customer has asked to cancel. Could you kindly cancel this order for us on your end, please?” - in address fields",
+      "customer",
+      "asked",
+      "cancel",
+      "could",
+      "kindly",
+      "order"
+    ],
+    "fixSteps": [
+      "Merchant: Reformed ( asana card should always be external) - more steps on the page"
+    ],
+    "tags": [
+      "🇬🇧 MAN1"
+    ],
+    "links": []
+  },
+  {
+    "id": "this_carrier_is_not_available_for_this_shipment_sendcloud_error_",
+    "title": "‘This carrier is not available for this shipment/ Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions",
+    "patterns": [
+      "‘This carrier is not available for this shipment/ Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions",
+      "carrier",
+      "available",
+      "sendcloud",
+      "match",
+      "shipping",
+      "method"
+    ],
+    "fixSteps": [
+      "this error indicates that the shipment doesnt meet the selected shipping method requirments (i.e usually this is due to the shipment destination not being supported by the selected method)"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "this_field_may_not_be_null",
+    "title": "This field may not be null",
+    "patterns": [
+      "This field may not be null",
+      "field"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "unable_to_create_label_only_for_amazon_exporto_meineinkauf",
+    "title": "“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)",
+    "patterns": [
+      "“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)",
+      "unable",
+      "create",
+      "amazon",
+      "exporto",
+      "meineinkauf"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "unable_to_find_sendcloud_sencloud_shipping_method_minarda_piume_",
+    "title": "unable to find sendcloud sencloud shipping method - minarda Piume COD orders - one order waiting for picking OOS",
+    "patterns": [
+      "unable to find sendcloud sencloud shipping method - minarda Piume COD orders - one order waiting for picking OOS",
+      "unable",
+      "sendcloud",
+      "sencloud",
+      "shipping",
+      "method",
+      "minarda"
+    ],
+    "fixSteps": [
+      "However, one of the shipments is waiting for pickign and out of stock",
+      "1- if they all shipments are packed, make the label manually",
+      "2- because one is waiting for picking — check if it is out of stock, click on the sku that is out of stock inventory information( check stock levels )- restock shipment - check if any are shipped or arrived— if if is wait until they are( if it soon) if not contact merchant to let them know about the delay in their shipment and why and what steps they want us to take as it is out of stock"
+    ],
+    "tags": [
+      "🇮🇹 MIL1"
+    ],
+    "links": []
+  },
+  {
+    "id": "unable_to_find_sendcloud_shipping_method_invalid_shipment_id_car",
+    "title": "Unable to find Sendcloud shipping method / Invalid shipment id / Carrier not available/Sendcloud error occurred: non_field_errors: \"Service error: Requested service has been denied. Please contact your DPD Account Manager.”: / No shipping contract method matches the rules or selected one does not exist / This shipment does not match the sendcloud shipping method restrictions",
+    "patterns": [
+      "Unable to find Sendcloud shipping method / Invalid shipment id / Carrier not available/Sendcloud error occurred: non_field_errors: \"Service error: Requested service has been denied. Please contact your DPD Account Manager.”: / No shipping contract method matches the rules or selected one does not exist / This shipment does not match the sendcloud shipping method restrictions",
+      "unable",
+      "sendcloud",
+      "shipping",
+      "method",
+      "invalid",
+      "carrier"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "we_apologize_for_the_inconvenience_we_cannot_ship_the_order_beca",
+    "title": "We apologize for the inconvenience. We cannot ship the order because there are no upcoming pickup slots available.Please adjust the pickup slot and retry. (Code: S-503)",
+    "patterns": [
+      "We apologize for the inconvenience. We cannot ship the order because there are no upcoming pickup slots available.Please adjust the pickup slot and retry. (Code: S-503)",
+      "apologize",
+      "inconvenience",
+      "cannot",
+      "order",
+      "because",
+      "there"
+    ],
+    "fixSteps": [
+      "Check address fields - probably an address issue."
+    ],
+    "tags": [
+      "🌏 General -Amazon"
+    ],
+    "links": []
+  },
+  {
+    "id": "we_apologize_for_the_inconvenience_we_cannot_ship_the_order_due_",
+    "title": "We apologize for the inconvenience. We cannot ship the order due to an internal service error. Please contact us for additional support. (S-900)",
+    "patterns": [
+      "We apologize for the inconvenience. We cannot ship the order due to an internal service error. Please contact us for additional support. (S-900)",
+      "apologize",
+      "inconvenience",
+      "cannot",
+      "order",
+      "internal",
+      "service"
+    ],
+    "fixSteps": [
+      "Is this for the FC NOT1?",
+      "if yes>ignore",
+      "- For FC MIL1,",
+      "there are three reasons for this error 1- too many characters 2- address is incorrect ( esp check the postal code) 3- incorrect characters"
+    ],
+    "tags": [
+      "🇮🇹 MIL1 + 🇬🇧 NOT1"
+    ],
+    "links": []
+  },
+  {
+    "id": "when_the_order_has_issues_with_dhl_packstation",
+    "title": "When the order has issues with DHL Packstation",
+    "patterns": [
+      "When the order has issues with DHL Packstation",
+      "order",
+      "issues",
+      "packstation"
+    ],
+    "fixSteps": [
+      "Open page for resolution"
+    ],
+    "tags": [
+      "🌏 General"
+    ],
+    "links": []
+  },
+  {
+    "id": "when_the_order_has_issues_with_postfiliale",
+    "title": "When the order has issues with Postfiliale",
+    "patterns": [
+      "When the order has issues with Postfiliale",
+      "order",
+      "issues",
+      "postfiliale"
+    ],
+    "fixSteps": [
+      "Postfiliales do not require a postnummer, so if the error message is “Postnummer or e-mail address is required” you can add 00000000 in the company field, to allow the order to be shipped as placeholder."
+    ],
+    "tags": [
+      "🌏 General"
     ],
     "links": []
   }

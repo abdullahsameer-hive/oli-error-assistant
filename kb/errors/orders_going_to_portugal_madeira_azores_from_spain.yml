@@ -1,0 +1,26 @@
+id: orders_going_to_portugal_madeira_azores_from_spain
+title: 'Orders going to Portugal (Madeira & Azores) from Spain'
+patterns:
+  - 'Orders going to Portugal (Madeira & Azores) from Spain'
+  - 'orders'
+  - 'going'
+  - 'portugal'
+  - 'madeira'
+  - 'azores'
+  - 'spain'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🇪🇸 MAD3 / 🇪🇸 MAD4'
+detailsMarkdown: |
+  # Orders going to Portugal (Madeira & Azores) from Spain
+  
+  FC: 🇪🇸 MAD3 / 🇪🇸 MAD4
+  Resolution: Open page for resolution
+  
+  if the error message is: ‘This carrier is not available for this shipment/ Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions
+   and the shipping method selected is “CTT Express Hive / CTT Express Mainland Portugal” , then:
+  1. Check the address in GMaps to see if it is Madeira (Island) or Azores (Island)
+  
+  1. Change the shipping method to “ CTT Express Hive / CTT Express ES Portugal Madeira “
+  2. If Madeira or Azores are not the address, don’t change anything.

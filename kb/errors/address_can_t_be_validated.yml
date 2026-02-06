@@ -1,0 +1,10 @@
+id: address_can_t_be_validated
+title: 'Address can’t be validated'
+patterns:
+  - 'Address can’t be validated'
+  - 'address'
+  - 'validated'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🇮🇹 MIL1'

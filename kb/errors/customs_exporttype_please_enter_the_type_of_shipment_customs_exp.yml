@@ -1,0 +1,19 @@
+id: customs_exporttype_please_enter_the_type_of_shipment_customs_exp
+title: '["customs.exportType: Please enter the type of shipment.", "customs.exportType: The type of shipment entered is invalid.", "customs.items[0]: Please enter a description.", "customs.items[0]: Please enter an amount.", "customs.items[0]: Please enter the weight.", "customs.items[0]: Please enter the value of goods.", "customs.postalCharges.value: Please enter the postage charges for customs clearence purposes.", "customs.postalCharges.value: Please enter the postage charges for customs clearence purposes. If you do not charge postage charges, please enter 0.00.", "customs.items[0]: The value in the Weight / Unit field must be in the format 0.000 kg and value must be greater than 0."]'
+patterns:
+  - '["customs.exportType: Please enter the type of shipment.", "customs.exportType: The type of shipment entered is invalid.", "customs.items[0]: Please enter a description.", "customs.items[0]: Please enter an amount.", "customs.items[0]: Please enter the weight.", "customs.items[0]: Please enter the value of goods.", "customs.postalCharges.value: Please enter the postage charges for customs clearence purposes.", "customs.postalCharges.value: Please enter the postage charges for customs clearence purposes. If you do not charge postage charges, please enter 0.00.", "customs.items[0]: The value in the Weight / Unit field must be in the format 0.000 kg and value must be greater than 0."]'
+  - 'customs'
+  - 'exporttype'
+  - 'please'
+  - 'enter'
+  - 'entered'
+  - 'invalid'
+fixSteps:
+  - 'Basic checks!! - address → country'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # ["customs.exportType: Please enter the type of shipment.", "customs.exportType: The type of shipment entered is invalid.", "customs.items[0]: Please enter a description.", "customs.items[0]: Please enter an amount.", "customs.items[0]: Please enter the weight.", "customs.items[0]: Please enter the value of goods.", "customs.postalCharges.value: Please enter the postage charges for customs clearence purposes.", "customs.postalCharges.value: Please enter the postage charges for customs clearence purposes. If you do not charge postage charges, please enter 0.00.", "customs.items[0]: The value in the Weight / Unit field must be in the format 0.000 kg and value must be greater than 0."]
+  
+  FC:  🌏 General
+  Resolution: Basic checks!! - address → country

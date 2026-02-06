@@ -1,0 +1,18 @@
+id: shipments_to_south_korea
+title: 'Shipments to South Korea'
+patterns:
+  - 'Shipments to South Korea'
+  - 'shipments'
+  - 'south'
+  - 'korea'
+fixSteps:
+  - 'Shipment method DHL DE Economy Paket DAP International'
+  - 'Maximum weight limit of each shipment is 20 Kgs.'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Shipments to South Korea
+  
+  FC:  🌏 General
+  Resolution: Shipment method DHL DE Economy Paket DAP International
+  Maximum weight limit of each shipment is 20 Kgs.

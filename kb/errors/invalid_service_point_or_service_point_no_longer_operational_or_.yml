@@ -1,0 +1,20 @@
+id: invalid_service_point_or_service_point_no_longer_operational_or_
+title: '‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.””'
+patterns:
+  - '‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.””'
+  - 'invalid'
+  - 'service'
+  - 'point'
+  - 'longer'
+  - 'operational'
+  - 'sendcloud'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🇫🇷 PAR1'
+detailsMarkdown: |
+  # Orders going to Monaco -  "Service error: Invalid Customs Value”
+  
+  FC: 🇮🇹 MIL1
+  Resolution: These orders require that the label gets created manually in sendcloud
+  Sendcloud error occurred: non_field_errors: "Service error: Invalid Customs Value”

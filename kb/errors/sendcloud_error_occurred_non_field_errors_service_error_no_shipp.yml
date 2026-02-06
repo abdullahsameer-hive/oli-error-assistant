@@ -1,0 +1,22 @@
+id: sendcloud_error_occurred_non_field_errors_service_error_no_shipp
+title: 'Sendcloud error occurred: non_field_errors: "Service error: No shipping method selected. Please choose a shipping method to proceed.”'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: No shipping method selected. Please choose a shipping method to proceed.”'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'service'
+  - 'shipping'
+  - 'method'
+  - 'selected'
+fixSteps:
+  - 'Check if order is going to France:'
+  - '• if the merchant name is Baroni, change shipping method to Chronopost'
+  - '• If not, change to Colissimo FR Domicile w/o Signature'
+tags:
+  - '🇫🇷 PAR1'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

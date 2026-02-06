@@ -1,0 +1,17 @@
+id: company_name_ensure_this_field_has_no_more_than_50_characters
+title: 'Company_name: "Ensure this field has no more than 50 characters.”'
+patterns:
+  - 'Company_name: "Ensure this field has no more than 50 characters.”'
+  - 'company_name'
+  - 'ensure'
+  - 'field'
+  - 'characters'
+fixSteps:
+  - 'Count the 50 first characters in the company field in the address and delete the rest'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Company_name: "Ensure this field has no more than 50 characters.”
+  
+  FC:  🌏 General
+  Resolution: Count the 50 first characters in the company field in the address and delete the rest

@@ -1,0 +1,20 @@
+id: sendcloud_error_occurred_to_service_point_service_point_carrier_
+title: 'Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.”'
+patterns:
+  - 'Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.”'
+  - 'sendcloud'
+  - 'to_service_point'
+  - 'service'
+  - 'point'
+  - 'carrier'
+  - 'match'
+fixSteps:
+  - 'Check the parcel point selected in PPP, this error usually indicates that the parcel point selected doesnt match the carrier'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

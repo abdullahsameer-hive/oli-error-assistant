@@ -1,0 +1,14 @@
+id: this_carrier_is_not_available_for_this_shipment_sendcloud_error_
+title: '‘This carrier is not available for this shipment/ Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions'
+patterns:
+  - '‘This carrier is not available for this shipment/ Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions'
+  - 'carrier'
+  - 'available'
+  - 'sendcloud'
+  - 'match'
+  - 'shipping'
+  - 'method'
+fixSteps:
+  - 'this error indicates that the shipment doesnt meet the selected shipping method requirments (i.e usually this is due to the shipment destination not being supported by the selected method)'
+tags:
+  - '🌏 General'

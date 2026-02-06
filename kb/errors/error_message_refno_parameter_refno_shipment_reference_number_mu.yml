@@ -1,0 +1,23 @@
+id: error_message_refno_parameter_refno_shipment_reference_number_mu
+title: 'Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.'
+patterns:
+  - 'Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.'
+  - 'message'
+  - 'refno'
+  - 'parameter'
+  - 'reference'
+  - 'number'
+  - 'between'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  - If the carrier selected for the order is DHL. This is a DHL API integration issue. This error means the reference number is too long. In DHL API integration the refNo (Shipment reference number) means **- shop order id + shipment number.** To solve this contact tech team and ask them to reduce the (Shipment reference number)
+  Issue was mentioned [**here**](https://hive-logistics.slack.com/archives/C06A88QNRFW/p1711637770619759) for tech team
+  - Create a linear ticket for the Tech team. Reference ticket [here](https://linear.app/hive-logistics/issue/SCD-2444/dhl-reference-number-too-long)

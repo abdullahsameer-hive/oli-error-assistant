@@ -1,0 +1,13 @@
+id: unable_to_create_label_only_for_amazon_exporto_meineinkauf
+title: '“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)'
+patterns:
+  - '“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)'
+  - 'unable'
+  - 'create'
+  - 'amazon'
+  - 'exporto'
+  - 'meineinkauf'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'

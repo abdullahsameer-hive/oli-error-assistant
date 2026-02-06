@@ -1,0 +1,26 @@
+id: service_error_die_gewichtsangabe_ist_kleiner_als_im_cn23_formula
+title: '"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”'
+patterns:
+  - '"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”'
+  - 'service'
+  - 'gewichtsangabe'
+  - 'kleiner'
+  - 'formular'
+fixSteps:
+  - 'Open page for resolution'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # "Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”
+  
+  FC:  🌏 General
+  Resolution: Open page for resolution
+  
+  Create Asana Card for the Fc to weight the order again and try to ship the order. 
+  
+  1. Check that the weight of the shipment is correct 
+      1. If outrageous (e.g: 3000 kg or more than 30 kg) → create asana card to ask the FC to weight it again and try to ship  it after
+          1. [Asana card](https://app.asana.com/0/1202697314992899/1208817454455965) here for refrence
+          2. Always be sure to select the right project board, it would be always FC name + Outbound (see screenshot)
+              
+              ![Screenshot 2024-11-22 at 10.41.56.png](Service%20error%20Die%20Gewichtsangabe%20ist%20kleiner%20als%20i/Screenshot_2024-11-22_at_10.41.56.png)

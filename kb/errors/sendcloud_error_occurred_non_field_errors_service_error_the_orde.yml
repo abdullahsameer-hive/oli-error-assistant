@@ -1,0 +1,20 @@
+id: sendcloud_error_occurred_non_field_errors_service_error_the_orde
+title: 'Sendcloud error occurred: non_field_errors: "Service error: The order number you provided is already in use, please verify it and try again.”'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: The order number you provided is already in use, please verify it and try again.”'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'service'
+  - 'order'
+  - 'number'
+  - 'provided'
+fixSteps:
+  - 'wait for a day, and retry the OLI tomorrow, should work'
+tags:
+  - '🇪🇸 MAD3 / 🇪🇸 MAD4'
+detailsMarkdown: |
+  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
+  
+  FC:  🌏 General
+  Resolution: Check if the SKUs in the order all have SKU IDs.
+  If not, create SKU customs information missing issue.

@@ -1,0 +1,13 @@
+id: city_ensure_this_field_has_no_more_than_x_characters
+title: 'City "Ensure this field has no more than X characters.”'
+patterns:
+  - 'City "Ensure this field has no more than X characters.”'
+  - 'ensure'
+  - 'field'
+  - 'characters'
+fixSteps:
+  - 'Count the X first characters in the city field in the address and delete the rest'
+  - 'Only if 30 characters:'
+  - 'Then open the shipping method in AA and click on edit: https://app.hive.app/admin/shipping_methods and click on the check box:'
+tags:
+  - '🌏 General'

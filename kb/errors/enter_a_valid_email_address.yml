@@ -1,0 +1,17 @@
+id: enter_a_valid_email_address
+title: 'Enter a valid email address'
+patterns:
+  - 'Enter a valid email address'
+  - 'enter'
+  - 'valid'
+  - 'email'
+  - 'address'
+fixSteps:
+  - 'Check if the email address has a â, ë, ï, ö, or ǔ and if yes, change it to the equivalent without umlaut.'
+tags:
+  - '🌏 General'
+detailsMarkdown: |
+  # Enter a valid email address
+  
+  FC:  🌏 General
+  Resolution: Check if the email address has a â, ë, ï, ö, or ǔ and if yes, change it to the equivalent without umlaut.
