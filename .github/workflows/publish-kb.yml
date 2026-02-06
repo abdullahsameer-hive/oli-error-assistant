@@ -1,0 +1,42 @@
+name: Publish KB to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "kb/errors/**"
+      - "scripts/build-kb.mjs"
+      - "package.json"
+      - "package-lock.json"
+  schedule:
+    - cron: "0 * * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - run: npm ci
+
+      - name: Build public/errors.json
+        run: node scripts/build-kb.mjs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4
