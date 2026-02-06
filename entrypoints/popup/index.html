@@ -3,11 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Default Popup Title</title>
+    <title>OLI Error Assistant</title>
     <meta name="manifest.type" content="browser_action" />
   </head>
   <body>
-    <div id="app"></div>
+    <button id="runBtn">Capture and match</button>
+
+    <h3>Captured text</h3>
+    <pre id="captured"></pre>
+
+    <h3>Status</h3>
+    <pre id="status"></pre>
+
+    <h3>Payload to DB</h3>
+    <pre id="payload"></pre>
+
+    <h3>Matches</h3>
+    <div id="results"></div>
+
     <script type="module" src="./main.ts"></script>
   </body>
 </html>

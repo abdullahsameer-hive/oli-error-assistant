@@ -1,4 +1,10 @@
-import { defineConfig } from 'wxt';
+import { defineConfig } from "wxt";
 
-// See https://wxt.dev/api/config.html
-export default defineConfig({});
+export default defineConfig({
+  manifest: {
+    name: "OLI Error Assistant",
+    description: "Captures error messages from pages and suggests known fixes.",
+    permissions: ["activeTab", "storage"],
+    host_permissions: ["https://fc.hive.app/*"],
+  },
+});

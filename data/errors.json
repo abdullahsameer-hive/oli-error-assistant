@@ -1,0 +1,22 @@
+[
+  {
+    "id": "example_timeout",
+    "title": "Request timed out",
+    "patterns": [
+      "timed out",
+      "timeout",
+      "ETIMEDOUT"
+    ],
+    "symptoms": "The page shows a timeout error and the request fails.",
+    "rootCause": "Network instability or upstream service latency.",
+    "fixSteps": [
+      "Retry once after 1 to 2 minutes.",
+      "Check VPN or network connection.",
+      "If it persists, report with timestamp and affected URL."
+    ],
+    "links": [
+      { "label": "Troubleshooting", "url": "https://example.com/runbook" }
+    ],
+    "tags": ["network"]
+  }
+]
