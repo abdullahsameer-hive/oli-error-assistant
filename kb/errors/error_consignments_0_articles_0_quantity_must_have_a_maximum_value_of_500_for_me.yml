@@ -1,0 +1,10 @@
+id: 'error_consignments_0_articles_0_quantity_must_have_a_maximum_value_of_500_for_me'
+title: 'Error : consignments[0].articles[0].quantity: Must have a maximum value of 500 for meineinkauf'
+patterns:
+  - 'Error : consignments[0].articles[0].quantity: Must have a maximum value of 500 for meineinkauf'
+fixSteps:
+  - 'The limit is on single SKU.'
+  - 'So split the shipment into 2'
+  - 'https://hive-app-hq.slack.com/archives/C039C1DQB1R/p1763565749033869'
+tags:
+  - '🌏 General'

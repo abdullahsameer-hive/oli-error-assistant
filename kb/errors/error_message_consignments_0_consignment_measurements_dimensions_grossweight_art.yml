@@ -1,0 +1,11 @@
+id: 'error_message_consignments_0_consignment_measurements_dimensions_grossweight_art'
+title: 'Error Message:["consignments[0]: Consignment measurements (dimensions, grossWeight, articleValue) exceed limitations of available shipment types"]'
+patterns:
+  - 'Error Message:["consignments[0]: Consignment measurements (dimensions, grossWeight, articleValue) exceed limitations of available shipment types"]'
+  - 'weight'
+fixSteps:
+  - 'If we get this error message and in address line to we have “Case Postale 262” and the carrier is'
+  - 'DPD CH MeinEinkauf DDP then we can change the shipping method to-Swiss Post CH MeinEinkauf DDP'
+  - 'As mentioned in https://linear.app/hive-logistics/issue/DFB2B-3506/tech-support-cannot-create-shipping-label linear ticket and the relevant slack https://hive-logistics.slack.com/archives/C039C1DQB1R/p1747906847431999'
+tags:
+  - '🌏 General'

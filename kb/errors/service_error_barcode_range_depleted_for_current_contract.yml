@@ -1,19 +1,8 @@
-id: service_error_barcode_range_depleted_for_current_contract
+id: 'service_error_barcode_range_depleted_for_current_contract'
 title: '"Service error: Barcode range depleted for current contract.”'
 patterns:
   - '"Service error: Barcode range depleted for current contract.”'
-  - 'service'
-  - 'barcode'
-  - 'range'
-  - 'depleted'
-  - 'current'
-  - 'contract'
 fixSteps:
   - 'This is an error with Lettre Verte, we need to ask the Ops offering team to ask the carrier for more barcodes (order IDs).'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # "Service error: Barcode range depleted for current contract.”
-  
-  FC:  🌏 General
-  Resolution: This is an error with Lettre Verte, we need to ask the Ops offering team to ask the carrier for more barcodes (order IDs).
+  - '🌏 General'

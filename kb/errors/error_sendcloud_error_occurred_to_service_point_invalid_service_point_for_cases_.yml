@@ -1,0 +1,10 @@
+id: 'error_sendcloud_error_occurred_to_service_point_invalid_service_point_for_cases_'
+title: 'Error “Sendcloud error occurred: to_service_point: "Invalid service point" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.'
+patterns:
+  - 'Error “Sendcloud error occurred: to_service_point: "Invalid service point" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.'
+  - 'to_service_point'
+  - 'sendcloud'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20%E2%80%9CSendcloud%20error%20occurred%20to_service_point%20I%202ff0c0de327d819a84ccdc31785f85cb.md'
+tags:
+  - '🌏 General'

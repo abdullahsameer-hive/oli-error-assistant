@@ -1,0 +1,8 @@
+id: 'we_apologize_for_the_inconvenience_we_cannot_ship_the_order_because_there_are_cu'
+title: 'We apologize for the inconvenience. We cannot ship the order because there are currently no shipping services available for the recipient address. Please validate the recipient address and try again. If address is accurate, please ship these orders with a different shipping provider. (Code: A-300)'
+patterns:
+  - 'We apologize for the inconvenience. We cannot ship the order because there are currently no shipping services available for the recipient address. Please validate the recipient address and try again. If address is accurate, please ship these orders with a different shipping provider. (Code: A-300)'
+fixSteps:
+  - 'Verify the address on G-Maps, make sure the street, city and zip code match. Check https://weblabeling.gls-italy.com/ if the gls service is down for that area'
+tags:
+  - '🇮🇹 MIL1'

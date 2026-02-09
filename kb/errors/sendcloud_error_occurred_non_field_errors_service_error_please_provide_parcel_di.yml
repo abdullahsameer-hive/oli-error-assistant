@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_please_provide_parcel_di'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: Please provide parcel dimensions to proceed with the courier method.”'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: Please provide parcel dimensions to proceed with the courier method.”'
+  - 'sendcloud'
+fixSteps:
+  - 'This error hints at missing parcel dimensions.'
+tags:
+  - '🌏 General'

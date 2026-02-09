@@ -1,0 +1,11 @@
+id: 'for_all_other_merchants_except_glucose_goddess_with_the_error_message_sendcloud_'
+title: 'For all other merchants except Glucose Goddess with the error message: Sendcloud error occurred: non_field_errors: "Service error: The order value is not in Euros; convert it to Euros for Delivengo, as only Euros are accepted."'
+patterns:
+  - 'For all other merchants except Glucose Goddess with the error message: Sendcloud error occurred: non_field_errors: "Service error: The order value is not in Euros; convert it to Euros for Delivengo, as only Euros are accepted."'
+  - 'sendcloud'
+fixSteps:
+  - 'Reach out to the merchant and give them the following two options:'
+  - '• Cancel the shipment and create a duplicate with the order value in EUR, so we can process it with Delivengo.'
+  - '• Switch the carrier to Colissimo FR Domicile DAP International, which accepts GBP values.'
+tags:
+  - '🇫🇷 PAR1'

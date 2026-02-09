@@ -1,0 +1,13 @@
+id: 'sendcloud_error_occurred_this_shipment_does_not_match_the_sendcloud_shipping_met'
+title: 'Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions - COD orders'
+patterns:
+  - 'Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions - COD orders'
+  - 'sendcloud'
+fixSteps:
+  - 'Is the order more than one shipment and all are COD ?'
+  - 'Does it say shipped for one of them?'
+  - 'if yes> wait, as the first shipment have to be delivered (confirm with the link or sendcloud)before the second shipment can be shipped'
+  - 'then the second shipment will be shipped with a non COD service'
+  - '→if the first one was returned : contact the merchant and tell them to cancel adn create a new order'
+tags:
+  - '🇮🇹 MIL1'

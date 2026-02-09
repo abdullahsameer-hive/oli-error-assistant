@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_the_order_number_you_pro'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: The order number you provided is already in use, please verify it and try again.”'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: The order number you provided is already in use, please verify it and try again.”'
+  - 'sendcloud'
+fixSteps:
+  - 'wait for a day, and retry the OLI tomorrow, should work'
+tags:
+  - '🇪🇸 MAD3 / 🇪🇸 MAD4'

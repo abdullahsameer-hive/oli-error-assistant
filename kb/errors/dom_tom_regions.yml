@@ -1,16 +1,9 @@
-id: dom_tom_regions
+id: 'dom_tom_regions'
 title: 'DOM-TOM regions'
 patterns:
   - 'DOM-TOM regions'
-  - 'regions'
 fixSteps:
   - '• The country must not be France, but instead the Island of the location'
   - '• Addresses most of the time do not have house numbers, check on Google Maps before creating address validations'
 tags:
-  - '🇫🇷 PAR1'
-detailsMarkdown: |
-  # DOM-TOM regions
-  
-  FC: 🇫🇷 PAR1
-  Resolution: • The country must not be France, but instead the Island of the location
-  • Addresses most of the time do not have house numbers, check on Google Maps before creating address validations
+  - '🇫🇷 PAR1'

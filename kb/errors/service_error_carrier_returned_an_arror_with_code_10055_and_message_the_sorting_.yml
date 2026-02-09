@@ -1,0 +1,9 @@
+id: 'service_error_carrier_returned_an_arror_with_code_10055_and_message_the_sorting_'
+title: 'Service error: Carrier returned an arror with code 10055 and message: The sorting plan was not found for the product Home (HOM), the country Portugal, the postal code 9000-254 and the collection point (if selected)”'
+patterns:
+  - 'Service error: Carrier returned an arror with code 10055 and message: The sorting plan was not found for the product Home (HOM), the country Portugal, the postal code 9000-254 and the collection point (if selected)”'
+  - 'postal'
+fixSteps:
+  - 'f shipping to Portuguese Islands, change the Mondial Relay shipping method to Colissimo FR Domicile DAP Europe'
+tags:
+  - '🇫🇷 PAR1'

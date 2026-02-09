@@ -1,20 +1,11 @@
-id: postal_code_is_invalid_missing
+id: 'postal_code_is_invalid_missing'
 title: 'Postal code is invalid/missing'
 patterns:
   - 'Postal code is invalid/missing'
   - 'postal'
-  - 'invalid'
-  - 'missing'
 fixSteps:
   - 'United Arab Emirates and Hong Kong do not have postal codes. Therefore:'
   - '• if we receive an error saying that it’s missing, add 00000 to the postal code'
   - '• if we receive an error saying that postal code is not needed, remove it'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # Postal code is invalid/missing
-  
-  FC:  🌏 General
-  Resolution: United Arab Emirates and Hong Kong do not have postal codes. Therefore:
-  • if we receive an error saying that it’s missing, add 00000 to the postal code
-  • if we receive an error saying that postal code is not needed, remove it
+  - '🌏 General'

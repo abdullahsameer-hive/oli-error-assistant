@@ -1,0 +1,8 @@
+id: 'mein_einkauf_consignments_0_articles_0_grossprice_must_have_a_minimum_value_of_0'
+title: 'Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01'
+patterns:
+  - 'Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Mein%20Einkauf%20consignments%5B0%5D%20articles%5B0%5D%20grossPric%202ff0c0de327d81878cbcd68912df497b.md'
+tags:
+  - '🌏 General'

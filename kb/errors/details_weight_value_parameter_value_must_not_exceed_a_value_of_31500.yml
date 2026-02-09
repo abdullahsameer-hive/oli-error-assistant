@@ -1,0 +1,9 @@
+id: 'details_weight_value_parameter_value_must_not_exceed_a_value_of_31500'
+title: '["details.weight.value: Parameter value must not exceed a value of 31500."]'
+patterns:
+  - '["details.weight.value: Parameter value must not exceed a value of 31500."]'
+  - 'weight'
+fixSteps:
+  - 'weight issue either asana or make it multiple shipments'
+tags:
+  - '🌏 General'

@@ -1,0 +1,10 @@
+id: 'sendcloud_error_occurred_parcel_items_sku_this_field_may_not_be_null_x'
+title: 'Sendcloud error occurred: parcel_items: "{}, {''sku'': [''This field may not be null.'']}, {}"x'
+patterns:
+  - 'Sendcloud error occurred: parcel_items: "{}, {''sku'': [''This field may not be null.'']}, {}"x'
+  - 'sendcloud'
+fixSteps:
+  - 'Check if the SKUs in the order all have SKU IDs.'
+  - 'If not, create SKU customs information missing issue.'
+tags:
+  - '🌏 General'

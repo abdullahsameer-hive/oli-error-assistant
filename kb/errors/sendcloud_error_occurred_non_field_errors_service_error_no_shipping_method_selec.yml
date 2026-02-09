@@ -1,0 +1,11 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_no_shipping_method_selec'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: No shipping method selected. Please choose a shipping method to proceed.”'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: No shipping method selected. Please choose a shipping method to proceed.”'
+  - 'sendcloud'
+fixSteps:
+  - 'Check if order is going to France:'
+  - '• if the merchant name is Baroni, change shipping method to Chronopost'
+  - '• If not, change to Colissimo FR Domicile w/o Signature'
+tags:
+  - '🇫🇷 PAR1'

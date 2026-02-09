@@ -1,16 +1,8 @@
-id: when_the_order_has_issues_with_postfiliale
+id: 'when_the_order_has_issues_with_postfiliale'
 title: 'When the order has issues with Postfiliale'
 patterns:
   - 'When the order has issues with Postfiliale'
-  - 'order'
-  - 'issues'
-  - 'postfiliale'
 fixSteps:
   - 'Postfiliales do not require a postnummer, so if the error message is “Postnummer or e-mail address is required” you can add 00000000 in the company field, to allow the order to be shipped as placeholder.'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # When the order has issues with Postfiliale
-  
-  FC:  🌏 General
-  Resolution: Postfiliales do not require a postnummer, so if the error message is “Postnummer or e-mail address is required” you can add 00000000 in the company field, to allow the order to be shipped as placeholder.
+  - '🌏 General'

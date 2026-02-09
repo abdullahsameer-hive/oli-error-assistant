@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_complete_to_address_1_shipping_to_a_packstation_address'
+title: 'Sendcloud error occurred: complete_to_address_1: "Shipping to a "Packstation" address is not supported by this carrier.”'
+patterns:
+  - 'Sendcloud error occurred: complete_to_address_1: "Shipping to a "Packstation" address is not supported by this carrier.”'
+  - 'sendcloud'
+fixSteps:
+  - 'if the address is to a packstation, this isnt possible with the shipment method wonderpack. Raise an address validation issue for full home address'
+tags:
+  - '🌏 General'

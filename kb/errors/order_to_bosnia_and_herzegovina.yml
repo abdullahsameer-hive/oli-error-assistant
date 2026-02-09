@@ -1,24 +1,8 @@
-id: order_to_bosnia_and_herzegovina
+id: 'order_to_bosnia_and_herzegovina'
 title: 'Order to Bosnia and Herzegovina'
 patterns:
   - 'Order to Bosnia and Herzegovina'
-  - 'order'
-  - 'bosnia'
-  - 'herzegovina'
 fixSteps:
-  - 'Open page for resolution'
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Order%20to%20Bosnia%20and%20Herzegovina%202ff0c0de327d81399db0faec55d82b00.md'
 tags:
-  - '🇪🇸 MAD3 / 🇪🇸 MAD4'
-detailsMarkdown: |
-  # Order to Bosnia and Herzegovina
-  
-  FC: 🇪🇸 MAD3 / 🇪🇸 MAD4
-  Resolution: Open page for resolution
-  
-  We don’t have any shipping methods currently available to ship orders to this country from our Spanish FCs. So we need to contact the merchant and let them know the options: 
-  
-  1. We restock and cancel the order and they refund the customer 
-  2. They place a B2B order and provide us with a shipping label 
-  3. They can ship it from their office. 
-  
-  Reference: https://hive-logistics.slack.com/archives/C01C81H9KST/p1722332309040709?thread_ts=1720786261.746509&cid=C01C81H9KST ticket - https://hiveapp.zendesk.com/agent/tickets/96286
+  - '🇪🇸 MAD3 / 🇪🇸 MAD4'

@@ -1,10 +1,8 @@
-id: address_can_t_be_validated
+id: 'address_can_t_be_validated'
 title: 'Address can’t be validated'
 patterns:
   - 'Address can’t be validated'
-  - 'address'
-  - 'validated'
 fixSteps:
-  - 'Open page for resolution'
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Address%20can%E2%80%99t%20be%20validated%202ff0c0de327d812c83e7d692f1d091fd.md'
 tags:
-  - '🇮🇹 MIL1'
+  - '🇮🇹 MIL1'

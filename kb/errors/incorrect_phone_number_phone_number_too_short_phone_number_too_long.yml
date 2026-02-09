@@ -1,0 +1,10 @@
+id: 'incorrect_phone_number_phone_number_too_short_phone_number_too_long'
+title: 'Incorrect phone number/phone number too short/phone number too long'
+patterns:
+  - 'Incorrect phone number/phone number too short/phone number too long'
+  - 'phone'
+fixSteps:
+  - 'Create an address validation and resolve the delivery restrictions issue.'
+  - 'Do not delete the phone number'
+tags:
+  - '🌏 General'

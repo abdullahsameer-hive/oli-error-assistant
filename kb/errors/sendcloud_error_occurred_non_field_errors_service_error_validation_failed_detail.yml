@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_validation_failed_detail'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: validation_failed. Details: receiver.address.building_number - required"'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: validation_failed. Details: receiver.address.building_number - required"'
+  - 'sendcloud'
+fixSteps:
+  - 'Delete the house number and Apt.0 from the street field only make sure that there is a house number in the ‘house number’ field'
+tags:
+  - '🌏 General'

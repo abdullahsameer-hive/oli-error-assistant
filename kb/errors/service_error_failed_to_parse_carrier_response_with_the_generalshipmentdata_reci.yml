@@ -1,0 +1,8 @@
+id: 'service_error_failed_to_parse_carrier_response_with_the_generalshipmentdata_reci'
+title: '"Service error: Failed to parse carrier response with the: generalShipmentData.recipient.name2"'
+patterns:
+  - '"Service error: Failed to parse carrier response with the: generalShipmentData.recipient.name2"'
+fixSteps:
+  - 'Appears to be line2 character limit related'
+tags:
+  - '🌏 General'

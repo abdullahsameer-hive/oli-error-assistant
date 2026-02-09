@@ -1,0 +1,12 @@
+id: 'error_message_consignee_please_enter_a_house_number_consignee_the_adress_could_n'
+title: 'Error message:  consignee: Please enter a house number.
+consignee: The adress could not be encoded to a routing code.'
+patterns:
+  - 'Error message:  consignee: Please enter a house number.
+consignee: The adress could not be encoded to a routing code.'
+fixSteps:
+  - 'Check if in the street name or house number has ‘ - ’ , ‘ / ’ sign'
+  - 'If yes → then delete these signs and put a space instead. And save the address and resolve the delivery restriction.'
+  - 'If not → then check the address and raise address validation issue if the address is not correct .'
+tags:
+  - '🌏 General'

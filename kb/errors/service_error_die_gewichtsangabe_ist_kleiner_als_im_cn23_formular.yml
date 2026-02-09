@@ -1,0 +1,8 @@
+id: 'service_error_die_gewichtsangabe_ist_kleiner_als_im_cn23_formular'
+title: '"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”'
+patterns:
+  - '"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Service%20error%20Die%20Gewichtsangabe%20ist%20kleiner%20als%20i%202ff0c0de327d813c8220f0d0a643a62b.md'
+tags:
+  - '🌏 General'

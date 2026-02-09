@@ -1,0 +1,8 @@
+id: 'livigno_orders_from_mil1_error_message_may_be_customs_shipment_type_this_field_i'
+title: 'Livigno orders - from MIL1  error message may be “customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required””'
+patterns:
+  - 'Livigno orders - from MIL1  error message may be “customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required””'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Livigno%20orders%20-%20from%20MIL1%20error%20message%20may%20be%20%E2%80%9Cc%202ff0c0de327d81549fa9e38515b5ee55.md'
+tags:
+  - '🇮🇹 MIL1'

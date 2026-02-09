@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_customs_shipment_type_this_field_is_required_customs_in'
+title: 'Sendcloud error occurred: customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required”'
+patterns:
+  - 'Sendcloud error occurred: customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required”'
+  - 'sendcloud'
+fixSteps:
+  - 'If the shipping method is Correos Hive / Correos ES Paq Ligero DAP International  and the order is going to Portugal islands then for the time being we can use CTT Express Hive / CTT Express ES Portugal Madeira'
+tags:
+  - '🇪🇸 MAD3 / 🇪🇸 MAD4'

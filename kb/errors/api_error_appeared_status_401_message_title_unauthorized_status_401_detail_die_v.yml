@@ -1,0 +1,8 @@
+id: 'api_error_appeared_status_401_message_title_unauthorized_status_401_detail_die_v'
+title: 'Api error appeared: status: 401, message: {title: "Unauthorized", status: 401, detail: "Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.", statusCode: 401}'
+patterns:
+  - 'Api error appeared: status: 401, message: {title: "Unauthorized", status: 401, detail: "Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.", statusCode: 401}'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau%202ff0c0de327d813b8c02db6951022b21.md'
+tags:
+  - '🌏 General'

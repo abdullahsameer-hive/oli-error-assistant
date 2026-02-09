@@ -1,0 +1,10 @@
+id: 'invalid_service_point_or_service_point_no_longer_operational_or_sendcloud_error_'
+title: '‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.””'
+patterns:
+  - '‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.””'
+  - 'to_service_point'
+  - 'sendcloud'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/%E2%80%98invalid%20service%20point%E2%80%99%20or%20%E2%80%98service%20point%20no%20longe%202ff0c0de327d815ca8f7c882b9b2df75.md'
+tags:
+  - '🇫🇷 PAR1'

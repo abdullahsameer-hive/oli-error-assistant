@@ -1,0 +1,9 @@
+id: 'san_marino_orders_from_mil1_only_error_message_maybe_unable_to_find_sendcloud_sh'
+title: 'San Marino orders - from MIL1 only error message maybe “Unable to find Sendcloud shipping method”'
+patterns:
+  - 'San Marino orders - from MIL1 only error message maybe “Unable to find Sendcloud shipping method”'
+  - 'sendcloud'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/San%20Marino%20orders%20-%20from%20MIL1%20only%20error%20message%20m%202ff0c0de327d81eb859fd53b0bd5a75d.md'
+tags:
+  - '🇮🇹 MIL1'

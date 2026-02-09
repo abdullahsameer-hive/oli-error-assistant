@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_failed_to_parse_carrier_'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: Failed to parse carrier response with the: {http://error.global/}"'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: Failed to parse carrier response with the: {http://error.global/}"'
+  - 'sendcloud'
+fixSteps:
+  - 'Happens with AVA&MAY in BER3 with their Poste Italiana contract. If there is any ‘ or special characters in the address, edit them to only have regular carachters. For example, Cassano d’Adda→ Cassano de Adda'
+tags:
+  - '🌏 General'

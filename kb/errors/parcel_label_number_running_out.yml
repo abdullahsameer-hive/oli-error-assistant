@@ -1,18 +1,9 @@
-id: parcel_label_number_running_out
+id: 'parcel_label_number_running_out'
 title: 'Parcel label number running out'
 patterns:
   - 'Parcel label number running out'
-  - 'parcel'
-  - 'number'
-  - 'running'
 fixSteps:
   - 'Service error: Failed to parse carrier response with the: Parcel label number'
   - 'Reach out to AM, we probably need new parcel label numbers because the carrier ran out.'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # Parcel label number running out
-  
-  FC:  🌏 General
-  Resolution: Service error: Failed to parse carrier response with the: Parcel label number
-  Reach out to AM, we probably need new parcel label numbers because the carrier ran out.
+  - '🌏 General'

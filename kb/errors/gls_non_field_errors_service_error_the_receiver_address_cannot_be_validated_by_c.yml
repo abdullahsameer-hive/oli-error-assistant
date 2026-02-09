@@ -1,0 +1,10 @@
+id: 'gls_non_field_errors_service_error_the_receiver_address_cannot_be_validated_by_c'
+title: 'GLS non_field_errors: "Service error: The receiver address cannot be validated by carrier. Please check city and state."'
+patterns:
+  - 'GLS non_field_errors: "Service error: The receiver address cannot be validated by carrier. Please check city and state."'
+  - 'city'
+fixSteps:
+  - 'This is because the City field is not recognized as a city. To fix this take the State/Province code and chop it in the city field, and take what was previously in the city field and put it in address line 2'
+  - 'Make sure to write the full state name in city field'
+tags:
+  - '🇮🇹 MIL1'

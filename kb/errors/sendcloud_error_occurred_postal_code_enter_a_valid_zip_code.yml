@@ -1,18 +1,10 @@
-id: sendcloud_error_occurred_postal_code_enter_a_valid_zip_code
+id: 'sendcloud_error_occurred_postal_code_enter_a_valid_zip_code'
 title: 'Sendcloud error occurred: postal_code: "Enter a valid zip code."'
 patterns:
   - 'Sendcloud error occurred: postal_code: "Enter a valid zip code."'
+  - 'postal'
   - 'sendcloud'
-  - 'postal_code'
-  - 'enter'
-  - 'valid'
 fixSteps:
   - 'Check the postal code on G Maps (exceptions: RoyalMail finder → UK orders | GLS Portal for IT orders shipped via GLS)'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # Sendcloud error occurred: parcel_items: "{}, {'sku': ['This field may not be null.']}, {}"x
-  
-  FC:  🌏 General
-  Resolution: Check if the SKUs in the order all have SKU IDs.
-  If not, create SKU customs information missing issue.
+  - '🌏 General'

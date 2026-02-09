@@ -1,0 +1,12 @@
+id: 'consignee_please_enter_a_house_number_consignee_the_address_could_not_be_encoded'
+title: '["consignee: Please enter a house number.", "consignee: The address could not be encoded to a routing code."]'
+patterns:
+  - '["consignee: Please enter a house number.", "consignee: The address could not be encoded to a routing code."]'
+fixSteps:
+  - '1. Check if there is a space in the house number field or extra characters like “. , /”'
+  - '2. Check if there is  any extra characters like “. , / “ in the street field'
+  - '3. Delete it'
+  - '4. Save the changes in the address'
+  - '5. Try to print the shipping label again'
+tags:
+  - '🌏 General'

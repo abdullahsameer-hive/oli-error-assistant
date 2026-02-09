@@ -1,17 +1,8 @@
-id: maximum_number_of_characters_exceeded
+id: 'maximum_number_of_characters_exceeded'
 title: 'Maximum number of characters exceeded'
 patterns:
   - 'Maximum number of characters exceeded'
-  - 'maximum'
-  - 'number'
-  - 'characters'
-  - 'exceeded'
 fixSteps:
   - 'This usually happens for the fields City and Street 2 try to put the information somewhere else and if we still can’t create a shipping label, remove the leftovers.'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # Maximum number of characters exceeded
-  
-  FC:  🌏 General
-  Resolution: This usually happens for the fields City and Street 2 try to put the information somewhere else and if we still can’t create a shipping label, remove the leftovers.
+  - '🌏 General'

@@ -1,0 +1,10 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_the_carrier_returned_an_'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: The carrier returned an error with code 99999: Unknown reference number. Please verify the reference number and try again."'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: The carrier returned an error with code 99999: Unknown reference number. Please verify the reference number and try again."'
+  - 'sendcloud'
+fixSteps:
+  - 'Check the shop order id. Check if its too long then shorten it.'
+  - 'Eg Merchant : ExpertWC'
+tags:
+  - '🌏 General'

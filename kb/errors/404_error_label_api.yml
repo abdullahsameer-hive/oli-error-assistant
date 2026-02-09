@@ -1,4 +1,4 @@
-id: 404_error_label_api
+id: '404_error_label_api'
 title: '404 error/Label API'
 patterns:
   - '404 error/Label API'
@@ -7,4 +7,4 @@ fixSteps:
   - 'If yes, create asana card for the FC to cancel the labels and reship the orders. E.g.: https://app.asana.com/0/1200737019007719/1206934937449352/f'
   - 'If no then retry to print the label it should work as there might be a timeout error'
 tags:
-  - '🌏 General'
+  - '🌏 General'

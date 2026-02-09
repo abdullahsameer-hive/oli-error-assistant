@@ -1,0 +1,9 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_carrier_response_doesn_t'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: Carrier response doesn''t contain a label."'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: Carrier response doesn''t contain a label."'
+  - 'sendcloud'
+fixSteps:
+  - 'look for unusual accents on the letters, and if you find some, this is likely the issue. Replace them with less unusual (but largely corresponding) letters'
+tags:
+  - '🌏 General'

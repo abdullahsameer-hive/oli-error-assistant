@@ -1,0 +1,11 @@
+id: 'unable_to_find_sendcloud_sencloud_shipping_method_minarda_piume_cod_orders_one_o'
+title: 'unable to find sendcloud sencloud shipping method - minarda Piume COD orders - one order waiting for picking OOS'
+patterns:
+  - 'unable to find sendcloud sencloud shipping method - minarda Piume COD orders - one order waiting for picking OOS'
+  - 'sendcloud'
+fixSteps:
+  - 'However, one of the shipments is waiting for pickign and out of stock'
+  - '1- if they all shipments are packed, make the label manually'
+  - '2- because one is waiting for picking — check if it is out of stock, click on the sku that is out of stock inventory information( check stock levels )-  restock shipment - check if any are shipped or arrived— if if is wait until they are( if it soon) if not contact merchant to let them know about the delay in their shipment and why and what steps they want us to take as it is out of stock'
+tags:
+  - '🇮🇹 MIL1'

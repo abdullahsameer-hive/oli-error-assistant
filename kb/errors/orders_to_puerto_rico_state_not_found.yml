@@ -1,12 +1,10 @@
-id: orders_to_puerto_rico_state_not_found
-title: 'Orders to Puerto Rico “state not found”'
+id: 'orders_to_puerto_rico_state_not_found'
+title: 'Orders to Puerto Rico
+“state not found”'
 patterns:
-  - 'Orders to Puerto Rico “state not found”'
-  - 'orders'
-  - 'puerto'
-  - 'state'
-  - 'found'
+  - 'Orders to Puerto Rico
+“state not found”'
 fixSteps:
   - 'Change the country from USA to Puerto Rico, not only the state'
 tags:
-  - '🇬🇧 NOT1/MAN1'
+  - '🇬🇧 NOT1/MAN1'

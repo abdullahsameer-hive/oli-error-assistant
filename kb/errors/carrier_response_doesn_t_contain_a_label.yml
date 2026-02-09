@@ -1,17 +1,8 @@
-id: carrier_response_doesn_t_contain_a_label
+id: 'carrier_response_doesn_t_contain_a_label'
 title: 'Carrier response doesn''t contain a label.'
 patterns:
   - 'Carrier response doesn''t contain a label.'
-  - 'carrier'
-  - 'response'
-  - 'doesn'
-  - 'contain'
 fixSteps:
   - 'Check if the letters in the address are in the English alphabet; if they are not, ask Chat GPT to translate them for you and enter that into the address instead. You have to delete everything that is not in the English alphabet and then resolve the issue,'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # Carrier response doesn't contain a label.
-  
-  FC:  🌏 General
-  Resolution: Check if the letters in the address are in the English alphabet; if they are not, ask Chat GPT to translate them for you and enter that into the address instead. You have to delete everything that is not in the English alphabet and then resolve the issue,
+  - '🌏 General'

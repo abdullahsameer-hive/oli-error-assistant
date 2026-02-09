@@ -1,11 +1,8 @@
-id: error_message_validation_failed_shipment_has_already_been_taken
+id: 'error_message_validation_failed_shipment_has_already_been_taken'
 title: 'Error message: “Validation failed: Shipment has already been taken”'
 patterns:
   - 'Error message: “Validation failed: Shipment has already been taken”'
-  - 'message'
-  - 'already'
-  - 'taken'
 fixSteps:
-  - 'Open page for resolution'
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20message%20%E2%80%9CValidation%20failed%20Shipment%20has%20alre%202ff0c0de327d8114992fc5b0141127aa.md'
 tags:
-  - '🌏 General'
+  - '🌏 General'

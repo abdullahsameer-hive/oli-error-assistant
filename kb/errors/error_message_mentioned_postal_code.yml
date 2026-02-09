@@ -1,18 +1,10 @@
-id: error_message_mentioned_postal_code
+id: 'error_message_mentioned_postal_code'
 title: 'Error message mentioned postal code'
 patterns:
   - 'Error message mentioned postal code'
-  - 'message'
-  - 'mentioned'
   - 'postal'
 fixSteps:
   - 'Open the order on Google Maps and check the postal code. Contrast the postal code on the order and the one in google maps, see if there are any issues, and create an address validation.'
   - 'Check that the country is correct and if not correct → update it.'
 tags:
-  - '🌏 General'
-detailsMarkdown: |
-  # Error message mentioned postal code
-  
-  FC:  🌏 General
-  Resolution: Open the order on Google Maps and check the postal code. Contrast the postal code on the order and the one in google maps, see if there are any issues, and create an address validation.
-  Check that the country is correct and if not correct → update it.
+  - '🌏 General'

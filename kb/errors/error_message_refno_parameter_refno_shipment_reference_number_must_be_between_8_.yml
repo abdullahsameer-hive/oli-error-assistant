@@ -1,0 +1,8 @@
+id: 'error_message_refno_parameter_refno_shipment_reference_number_must_be_between_8_'
+title: 'Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.'
+patterns:
+  - 'Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.'
+fixSteps:
+  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20message%20-%20refNo%20Parameter%20refNo%20(Shipment%20re%202ff0c0de327d81f9a246fe0381ae0f10.md'
+tags:
+  - '🌏 General'
