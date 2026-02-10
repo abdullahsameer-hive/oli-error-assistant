@@ -1,4 +1,4 @@
-id: error_message_consignee_please_enter_a_house_number_consignee_th
+id: 'error_message_consignee_please_enter_a_house_number_consignee_th'
 title: 'Error message: consignee: Please enter a house number. consignee: The adress could not be encoded to a routing code.'
 patterns:
   - 'Error message: consignee: Please enter a house number. consignee: The adress could not be encoded to a routing code.'

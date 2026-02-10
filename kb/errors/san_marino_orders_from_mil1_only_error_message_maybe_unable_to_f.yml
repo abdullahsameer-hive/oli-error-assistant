@@ -1,4 +1,4 @@
-id: san_marino_orders_from_mil1_only_error_message_maybe_unable_to_f
+id: 'san_marino_orders_from_mil1_only_error_message_maybe_unable_to_f'
 title: 'San Marino orders - from MIL1 only error message maybe “Unable to find Sendcloud shipping method”'
 patterns:
   - 'San Marino orders - from MIL1 only error message maybe “Unable to find Sendcloud shipping method”'

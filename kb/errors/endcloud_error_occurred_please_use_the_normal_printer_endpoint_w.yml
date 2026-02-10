@@ -1,4 +1,4 @@
-id: endcloud_error_occurred_please_use_the_normal_printer_endpoint_w
+id: 'endcloud_error_occurred_please_use_the_normal_printer_endpoint_w'
 title: 'endcloud error occurred: Please use the normal_printer endpoint when printing A4 labels'
 patterns:
   - 'endcloud error occurred: Please use the normal_printer endpoint when printing A4 labels'

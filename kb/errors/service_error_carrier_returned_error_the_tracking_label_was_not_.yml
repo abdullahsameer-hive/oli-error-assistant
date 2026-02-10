@@ -1,4 +1,4 @@
-id: service_error_carrier_returned_error_the_tracking_label_was_not_
+id: 'service_error_carrier_returned_error_the_tracking_label_was_not_'
 title: '"Service error: Carrier returned error: the tracking label was not generated. Check the shipment documentation and try again.”'
 patterns:
   - '"Service error: Carrier returned error: the tracking label was not generated. Check the shipment documentation and try again.”'

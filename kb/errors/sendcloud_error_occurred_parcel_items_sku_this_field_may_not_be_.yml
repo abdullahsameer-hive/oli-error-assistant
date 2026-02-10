@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_parcel_items_sku_this_field_may_not_be_
+id: 'sendcloud_error_occurred_parcel_items_sku_this_field_may_not_be_'
 title: 'Sendcloud error occurred: parcel_items: "{}, {''sku'': [''This field may not be null.'']}, {}"x'
 patterns:
   - 'Sendcloud error occurred: parcel_items: "{}, {''sku'': [''This field may not be null.'']}, {}"x'

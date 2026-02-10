@@ -1,4 +1,4 @@
-id: service_error_die_gewichtsangabe_ist_kleiner_als_im_cn23_formula
+id: 'service_error_die_gewichtsangabe_ist_kleiner_als_im_cn23_formula'
 title: '"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”'
 patterns:
   - '"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”'

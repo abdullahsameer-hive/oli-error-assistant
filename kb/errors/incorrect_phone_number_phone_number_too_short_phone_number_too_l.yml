@@ -1,4 +1,4 @@
-id: incorrect_phone_number_phone_number_too_short_phone_number_too_l
+id: 'incorrect_phone_number_phone_number_too_short_phone_number_too_l'
 title: 'Incorrect phone number/phone number too short/phone number too long'
 patterns:
   - 'Incorrect phone number/phone number too short/phone number too long'

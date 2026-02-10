@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_customs_shipment_type_this_field_is_req
+id: 'sendcloud_error_occurred_customs_shipment_type_this_field_is_req'
 title: 'Sendcloud error occurred: customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required”'
 patterns:
   - 'Sendcloud error occurred: customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required”'

@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_non_field_errors_service_error_validati
+id: 'sendcloud_error_occurred_non_field_errors_service_error_validati'
 title: 'Sendcloud error occurred: non_field_errors: "Service error: validation_failed. Details: receiver.address.building_number - required"'
 patterns:
   - 'Sendcloud error occurred: non_field_errors: "Service error: validation_failed. Details: receiver.address.building_number - required"'

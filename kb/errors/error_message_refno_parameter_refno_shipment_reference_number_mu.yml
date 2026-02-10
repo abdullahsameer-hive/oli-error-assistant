@@ -1,4 +1,4 @@
-id: error_message_refno_parameter_refno_shipment_reference_number_mu
+id: 'error_message_refno_parameter_refno_shipment_reference_number_mu'
 title: 'Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.'
 patterns:
   - 'Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long.'

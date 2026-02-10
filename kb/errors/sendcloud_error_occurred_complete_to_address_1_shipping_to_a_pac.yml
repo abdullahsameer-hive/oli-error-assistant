@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_complete_to_address_1_shipping_to_a_pac
+id: 'sendcloud_error_occurred_complete_to_address_1_shipping_to_a_pac'
 title: 'Sendcloud error occurred: complete_to_address_1: "Shipping to a "Packstation" address is not supported by this carrier.”'
 patterns:
   - 'Sendcloud error occurred: complete_to_address_1: "Shipping to a "Packstation" address is not supported by this carrier.”'

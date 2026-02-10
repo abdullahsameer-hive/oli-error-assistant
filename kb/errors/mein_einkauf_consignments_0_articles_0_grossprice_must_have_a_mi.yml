@@ -1,4 +1,4 @@
-id: mein_einkauf_consignments_0_articles_0_grossprice_must_have_a_mi
+id: 'mein_einkauf_consignments_0_articles_0_grossprice_must_have_a_mi'
 title: 'Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01'
 patterns:
   - 'Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01'

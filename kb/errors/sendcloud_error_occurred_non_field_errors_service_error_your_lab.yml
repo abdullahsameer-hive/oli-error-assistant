@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_non_field_errors_service_error_your_lab
+id: 'sendcloud_error_occurred_non_field_errors_service_error_your_lab'
 title: 'Sendcloud error occurred: non_field_errors: "Service error: Your label could not be announced at this moment, most likely because of an outage. For more information please see: status.sendcloud.com"'
 patterns:
   - 'Sendcloud error occurred: non_field_errors: "Service error: Your label could not be announced at this moment, most likely because of an outage. For more information please see: status.sendcloud.com"'

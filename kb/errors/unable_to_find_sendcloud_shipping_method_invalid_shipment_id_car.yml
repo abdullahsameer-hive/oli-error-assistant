@@ -1,4 +1,4 @@
-id: unable_to_find_sendcloud_shipping_method_invalid_shipment_id_car
+id: 'unable_to_find_sendcloud_shipping_method_invalid_shipment_id_car'
 title: 'Unable to find Sendcloud shipping method / Invalid shipment id / Carrier not available/Sendcloud error occurred: non_field_errors: "Service error: Requested service has been denied. Please contact your DPD Account Manager.”: / No shipping contract method matches the rules or selected one does not exist / This shipment does not match the sendcloud shipping method restrictions'
 patterns:
   - 'Unable to find Sendcloud shipping method / Invalid shipment id / Carrier not available/Sendcloud error occurred: non_field_errors: "Service error: Requested service has been denied. Please contact your DPD Account Manager.”: / No shipping contract method matches the rules or selected one does not exist / This shipment does not match the sendcloud shipping method restrictions'

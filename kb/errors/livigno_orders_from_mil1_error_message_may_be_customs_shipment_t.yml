@@ -1,4 +1,4 @@
-id: livigno_orders_from_mil1_error_message_may_be_customs_shipment_t
+id: 'livigno_orders_from_mil1_error_message_may_be_customs_shipment_t'
 title: 'Livigno orders - from MIL1 error message may be “customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required””'
 patterns:
   - 'Livigno orders - from MIL1 error message may be “customs_shipment_type: "This field is required.", customs_invoice_nr: "This field is required.", parcel_items: "At least one parcel item is required””'

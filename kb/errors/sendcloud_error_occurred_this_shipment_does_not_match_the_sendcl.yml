@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_this_shipment_does_not_match_the_sendcl
+id: 'sendcloud_error_occurred_this_shipment_does_not_match_the_sendcl'
 title: 'Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions - COD orders'
 patterns:
   - 'Sendcloud error occurred: This shipment does not match the sendcloud shipping method restrictions - COD orders'

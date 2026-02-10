@@ -1,4 +1,4 @@
-id: gls_specific_the_order_number_already_exists_the_provided_order_
+id: 'gls_specific_the_order_number_already_exists_the_provided_order_'
 title: 'GLS Specific “The order number already exists” / ‘’The provided order number already exists’’/ Service error: This order number is already used—please enter a unique order number to proceed.'
 patterns:
   - 'GLS Specific “The order number already exists” / ‘’The provided order number already exists’’/ Service error: This order number is already used—please enter a unique order number to proceed.'

@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_non_field_errors_service_error_failed_t
+id: 'sendcloud_error_occurred_non_field_errors_service_error_failed_t'
 title: 'Sendcloud error occurred: non_field_errors: "Service error: Failed to parse carrier response with the: {http://error.global/}"'
 patterns:
   - 'Sendcloud error occurred: non_field_errors: "Service error: Failed to parse carrier response with the: {http://error.global/}"'

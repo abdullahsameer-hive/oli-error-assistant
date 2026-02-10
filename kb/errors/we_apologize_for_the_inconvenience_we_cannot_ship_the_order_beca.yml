@@ -1,4 +1,4 @@
-id: we_apologize_for_the_inconvenience_we_cannot_ship_the_order_beca
+id: 'we_apologize_for_the_inconvenience_we_cannot_ship_the_order_beca'
 title: 'We apologize for the inconvenience. We cannot ship the order because there are no upcoming pickup slots available.Please adjust the pickup slot and retry. (Code: S-503)'
 patterns:
   - 'We apologize for the inconvenience. We cannot ship the order because there are no upcoming pickup slots available.Please adjust the pickup slot and retry. (Code: S-503)'

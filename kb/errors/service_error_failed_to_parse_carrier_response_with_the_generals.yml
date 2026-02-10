@@ -1,4 +1,4 @@
-id: service_error_failed_to_parse_carrier_response_with_the_generals
+id: 'service_error_failed_to_parse_carrier_response_with_the_generals'
 title: '"Service error: Failed to parse carrier response with the: generalShipmentData.recipient.name2"'
 patterns:
   - '"Service error: Failed to parse carrier response with the: generalShipmentData.recipient.name2"'

@@ -1,4 +1,4 @@
-id: sendcloud_house_number_too_long
+id: 'sendcloud_house_number_too_long'
 title: 'Sendcloud error occurred: house_number: "Ensure that house number has at most 8 characters (it has 9)."'
 patterns:
   - Sendcloud error occurred

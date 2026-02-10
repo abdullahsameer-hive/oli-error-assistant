@@ -1,4 +1,4 @@
-id: meineinkauf_provided_incomplete_response_label_could_not_be_gene
+id: 'meineinkauf_provided_incomplete_response_label_could_not_be_gene'
 title: 'MeinEinkauf: “Provided incomplete response” / label could not be generated/order ID is not valid'
 patterns:
   - 'MeinEinkauf: “Provided incomplete response” / label could not be generated/order ID is not valid'

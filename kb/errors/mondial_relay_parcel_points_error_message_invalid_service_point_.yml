@@ -1,4 +1,4 @@
-id: mondial_relay_parcel_points_error_message_invalid_service_point_
+id: 'mondial_relay_parcel_points_error_message_invalid_service_point_'
 title: 'Mondial Relay parcel points (error message - ‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.””)'
 patterns:
   - 'Mondial Relay parcel points (error message - ‘invalid service point’ or ‘service point no longer operational or “Sendcloud error occurred: to_service_point: "Service point carrier does not match shipping method.””)'

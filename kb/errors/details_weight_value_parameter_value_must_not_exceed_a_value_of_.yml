@@ -1,4 +1,4 @@
-id: details_weight_value_parameter_value_must_not_exceed_a_value_of_
+id: 'details_weight_value_parameter_value_must_not_exceed_a_value_of_'
 title: '["details.weight.value: Parameter value must not exceed a value of 31500."]'
 patterns:
   - '["details.weight.value: Parameter value must not exceed a value of 31500."]'

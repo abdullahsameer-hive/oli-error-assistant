@@ -1,4 +1,4 @@
-id: non_field_errors_service_error_30213_le_code_pays_ou_le_code_pos
+id: 'non_field_errors_service_error_30213_le_code_pays_ou_le_code_pos'
 title: 'non_field_errors: "Service error: 30213: Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni" - HUB ARMEES'
 patterns:
   - 'non_field_errors: "Service error: 30213: Le code pays ou le code postal du destinataire est incorrect pour le code produit fourni" - HUB ARMEES'

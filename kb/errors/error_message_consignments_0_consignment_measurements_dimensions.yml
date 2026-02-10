@@ -1,4 +1,4 @@
-id: error_message_consignments_0_consignment_measurements_dimensions
+id: 'error_message_consignments_0_consignment_measurements_dimensions'
 title: 'Error Message:["consignments[0]: Consignment measurements (dimensions, grossWeight, articleValue) exceed limitations of available shipment types"]'
 patterns:
   - 'Error Message:["consignments[0]: Consignment measurements (dimensions, grossWeight, articleValue) exceed limitations of available shipment types"]'

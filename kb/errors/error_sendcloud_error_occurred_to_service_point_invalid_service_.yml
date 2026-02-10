@@ -1,4 +1,4 @@
-id: error_sendcloud_error_occurred_to_service_point_invalid_service_
+id: 'error_sendcloud_error_occurred_to_service_point_invalid_service_'
 title: 'Error “Sendcloud error occurred: to_service_point: "Invalid service point" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.'
 patterns:
   - 'Error “Sendcloud error occurred: to_service_point: "Invalid service point" - For cases where the order is INTERNATIONAL and the merchant requested the delivery method to be changed from Home delivery -> Parcel point.'

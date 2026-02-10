@@ -1,4 +1,4 @@
-id: service_error_carrier_returned_an_arror_with_code_10055_and_mess
+id: 'service_error_carrier_returned_an_arror_with_code_10055_and_mess'
 title: 'Service error: Carrier returned an arror with code 10055 and message: The sorting plan was not found for the product Home (HOM), the country Portugal, the postal code 9000-254 and the collection point (if selected)”'
 patterns:
   - 'Service error: Carrier returned an arror with code 10055 and message: The sorting plan was not found for the product Home (HOM), the country Portugal, the postal code 9000-254 and the collection point (if selected)”'

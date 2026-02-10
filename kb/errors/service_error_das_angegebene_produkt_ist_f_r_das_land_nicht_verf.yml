@@ -1,4 +1,4 @@
-id: service_error_das_angegebene_produkt_ist_f_r_das_land_nicht_verf
+id: 'service_error_das_angegebene_produkt_ist_f_r_das_land_nicht_verf'
 title: '“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\'
 patterns:
   - '“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\'

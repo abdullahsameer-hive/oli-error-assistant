@@ -1,4 +1,4 @@
-id: error_message_no_shipping_contract_method_matches_the_rules_or_t
+id: 'error_message_no_shipping_contract_method_matches_the_rules_or_t'
 title: 'Error message: “No shipping contract method matches the rules or the selected one does not exist”'
 patterns:
   - 'Error message: “No shipping contract method matches the rules or the selected one does not exist”'

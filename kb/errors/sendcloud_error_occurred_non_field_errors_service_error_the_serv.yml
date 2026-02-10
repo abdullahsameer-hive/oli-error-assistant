@@ -1,4 +1,4 @@
-id: sendcloud_error_occurred_non_field_errors_service_error_the_serv
+id: 'sendcloud_error_occurred_non_field_errors_service_error_the_serv'
 title: 'Sendcloud error occurred: non_field_errors: "Service error: The service selected is not suitable for the contents and destination of the shipment; please verify service options.”'
 patterns:
   - 'Sendcloud error occurred: non_field_errors: "Service error: The service selected is not suitable for the contents and destination of the shipment; please verify service options.”'

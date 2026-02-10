@@ -1,4 +1,4 @@
-id: for_all_other_merchants_except_glucose_goddess_with_the_error_me
+id: 'for_all_other_merchants_except_glucose_goddess_with_the_error_me'
 title: 'For all other merchants except Glucose Goddess with the error message: Sendcloud error occurred: non_field_errors: "Service error: The order value is not in Euros; convert it to Euros for Delivengo, as only Euros are accepted."'
 patterns:
   - 'For all other merchants except Glucose Goddess with the error message: Sendcloud error occurred: non_field_errors: "Service error: The order value is not in Euros; convert it to Euros for Delivengo, as only Euros are accepted."'
