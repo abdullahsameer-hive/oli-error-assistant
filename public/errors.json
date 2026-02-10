@@ -38,12 +38,17 @@
       "Address can’t be validated"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Address%20can%E2%80%99t%20be%20validated%202ff0c0de327d812c83e7d692f1d091fd.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇮🇹 MIL1"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Address-can-t-be-validated-2ff0c0de327d812c83e7d692f1d091fd?source=copy_link](https://www.notion.so/hivetechnologies/Address-can-t-be-validated-2ff0c0de327d812c83e7d692f1d091fd?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "api_error_appeared_status_401_message_title_unauthorized_status_",
@@ -72,12 +77,17 @@
       "Api error appeared: status: 401, message: {title: \"Unauthorized\", status: 401, detail: \"Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.\", statusCode: 401}"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Api%20error%20appeared%20status%20401,%20message%20%7Btitle%20Unau%202ff0c0de327d813b8c02db6951022b21.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Api-error-appeared-status-401-message-title-Unauthorized-status-401-detail-Die-von-Ihne-2ff0c0de327d813b8c02db6951022b21?source=copy_link](https://www.notion.so/hivetechnologies/Api-error-appeared-status-401-message-title-Unauthorized-status-401-detail-Die-von-Ihne-2ff0c0de327d813b8c02db6951022b21?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "carrier_response_doesn_t_contain_a_label",
@@ -262,12 +272,17 @@
       "phone"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Email%20address%20or%20phone%20number%20missing%202ff0c0de327d8103b2e6ff760cea85a1.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Email-address-or-phone-number-missing-2ff0c0de327d8103b2e6ff760cea85a1?source=copy_link](https://www.notion.so/hivetechnologies/Email-address-or-phone-number-missing-2ff0c0de327d8103b2e6ff760cea85a1?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "endcloud_error_occurred_please_use_the_normal_printer_endpoint_w",
@@ -476,12 +491,17 @@
       "Error message: “No shipping contract method matches the rules or the selected one does not exist”"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20message%20%E2%80%9CNo%20shipping%20contract%20method%20matches%202ff0c0de327d8192b91bda51b0eddc4e.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Error-message-No-shipping-contract-method-matches-the-rules-or-the-selected-one-does-not-exist-2ff0c0de327d8192b91bda51b0eddc4e?source=copy_link](https://www.notion.so/hivetechnologies/Error-message-No-shipping-contract-method-matches-the-rules-or-the-selected-one-does-not-exist-2ff0c0de327d8192b91bda51b0eddc4e?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "error_message_refno_parameter_refno_shipment_reference_number_mu",
@@ -510,12 +530,17 @@
       "Error message - refNo: Parameter refNo (Shipment reference number) must be between 8 and 35 characters long."
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20message%20-%20refNo%20Parameter%20refNo%20(Shipment%20re%202ff0c0de327d81f9a246fe0381ae0f10.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Error-message-refNo-Parameter-refNo-Shipment-reference-number-must-be-between-8-and-35-characte-2ff0c0de327d81f9a246fe0381ae0f10?source=copy_link](https://www.notion.so/hivetechnologies/Error-message-refNo-Parameter-refNo-Shipment-reference-number-must-be-between-8-and-35-characte-2ff0c0de327d81f9a246fe0381ae0f10?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "error_message_validation_failed_shipment_has_already_been_taken",
@@ -524,12 +549,17 @@
       "Error message: “Validation failed: Shipment has already been taken”"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20message%20%E2%80%9CValidation%20failed%20Shipment%20has%20alre%202ff0c0de327d8114992fc5b0141127aa.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Error-message-Validation-failed-Shipment-has-already-been-taken-2ff0c0de327d8114992fc5b0141127aa?source=copy_link](https://www.notion.so/hivetechnologies/Error-message-Validation-failed-Shipment-has-already-been-taken-2ff0c0de327d8114992fc5b0141127aa?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "error_sendcloud_error_occurred_to_service_point_invalid_service_",
@@ -560,12 +590,17 @@
       "sendcloud"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Error%20%E2%80%9CSendcloud%20error%20occurred%20to_service_point%20I%202ff0c0de327d819a84ccdc31785f85cb.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Error-Sendcloud-error-occurred-to_service_point-Invalid-service-point-For-cases-where-the-ord-2ff0c0de327d819a84ccdc31785f85cb?source=copy_link](https://www.notion.so/hivetechnologies/Error-Sendcloud-error-occurred-to_service_point-Invalid-service-point-For-cases-where-the-ord-2ff0c0de327d819a84ccdc31785f85cb?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "errors_id_expected_string_to_be_a_id_glucose_goddess",
@@ -667,12 +702,17 @@
       "For COD orders - “Sendcleoud error occurred: This carrier is not available for this shipment”"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/For%20COD%20orders%20-%20%E2%80%9CSendcleoud%20error%20occurred%20This%20c%202ff0c0de327d81ba91dbc7be1ac35057.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇮🇹 MIL1"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/For-COD-orders-Sendcleoud-error-occurred-This-carrier-is-not-available-for-this-shipment-2ff0c0de327d81ba91dbc7be1ac35057?source=copy_link](https://www.notion.so/hivetechnologies/For-COD-orders-Sendcleoud-error-occurred-This-carrier-is-not-available-for-this-shipment-2ff0c0de327d81ba91dbc7be1ac35057?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "gls_carrier_in_germany_gls_de_unable_to_find_sendcloud_shipping_",
@@ -848,12 +888,17 @@
       "International orders being shipped with Correos carrier Error message - https://www.notion.so/Delivery-setup-b1a0056bf74d4f4fb5690d305cd2538d?pvs=21https://www.notion.so/Delivery-setup-b1a0056bf74d4f4fb5690d305cd2538d?pvs=21"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/International%20orders%20being%20shipped%20with%20Correos%20ca%202ff0c0de327d81be8abeda520f43d83c.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇪🇸 MAD3 / 🇪🇸 MAD4"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/International-orders-being-shipped-with-Correos-carrier-Error-message-parcel_items_non_field_erro-2ff0c0de327d81be8abeda520f43d83c?source=copy_link](https://www.notion.so/hivetechnologies/International-orders-being-shipped-with-Correos-carrier-Error-message-parcel_items_non_field_erro-2ff0c0de327d81be8abeda520f43d83c?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "invalid_service_point_or_service_point_no_longer_operational_or_",
@@ -884,12 +929,17 @@
       "sendcloud"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/%E2%80%98invalid%20service%20point%E2%80%99%20or%20%E2%80%98service%20point%20no%20longe%202ff0c0de327d815ca8f7c882b9b2df75.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇫🇷 PAR1"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/invalid-service-point-or-service-point-no-longer-operational-or-Sendcloud-error-occurred-to_serv-2ff0c0de327d815ca8f7c882b9b2df75?source=copy_link](https://www.notion.so/hivetechnologies/invalid-service-point-or-service-point-no-longer-operational-or-Sendcloud-error-occurred-to_serv-2ff0c0de327d815ca8f7c882b9b2df75?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "livigno_orders_from_mil1_error_message_may_be_customs_shipment_t",
@@ -918,12 +968,17 @@
       "Livigno orders - from MIL1 error message may be “customs_shipment_type: \"This field is required.\", customs_invoice_nr: \"This field is required.\", parcel_items: \"At least one parcel item is required””"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Livigno%20orders%20-%20from%20MIL1%20error%20message%20may%20be%20%E2%80%9Cc%202ff0c0de327d81549fa9e38515b5ee55.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇮🇹 MIL1"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Livigno-orders-from-MIL1-error-message-may-be-customs_shipment_type-This-field-is-required--2ff0c0de327d81549fa9e38515b5ee55?source=copy_link](https://www.notion.so/hivetechnologies/Livigno-orders-from-MIL1-error-message-may-be-customs_shipment_type-This-field-is-required--2ff0c0de327d81549fa9e38515b5ee55?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "matiere_premiere_no_shipping_contract_method_matches_the_rules_o",
@@ -1000,12 +1055,17 @@
       "Mein Einkauf: consignments[0].articles[0].grossPrice: Must have a minimum value of 0.01"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Mein%20Einkauf%20consignments%5B0%5D%20articles%5B0%5D%20grossPric%202ff0c0de327d81878cbcd68912df497b.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Mein-Einkauf-consignments-0-articles-0-grossPrice-Must-have-a-minimum-value-of-0-01-2ff0c0de327d81878cbcd68912df497b?source=copy_link](https://www.notion.so/hivetechnologies/Mein-Einkauf-consignments-0-articles-0-grossPrice-Must-have-a-minimum-value-of-0-01-2ff0c0de327d81878cbcd68912df497b?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "meineinkauf_provided_incomplete_response_label_could_not_be_gene",
@@ -1126,12 +1186,17 @@
       "sendcloud"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Mondial%20Relay%20parcel%20points%20(error%20message%20-%20%E2%80%98inva%202ff0c0de327d81b192a9e9a8ced49a1f.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇩🇪 BER3"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Mondial-Relay-parcel-points-error-message-invalid-service-point-or-service-point-no-longer-ope-2ff0c0de327d81b192a9e9a8ced49a1f?source=copy_link](https://www.notion.so/hivetechnologies/Mondial-Relay-parcel-points-error-message-invalid-service-point-or-service-point-no-longer-ope-2ff0c0de327d81b192a9e9a8ced49a1f?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "non_field_errors_service_error_30213_le_code_pays_ou_le_code_pos",
@@ -1191,12 +1256,17 @@
       "Only with GLS - 25020 Flero BS Italy"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Only%20with%20GLS%20-%2025020%20Flero%20BS%20Italy%202ff0c0de327d817bb446e231aa0bb2f1.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇮🇹 MIL1"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Only-with-GLS-25020-Flero-BS-Italy-2ff0c0de327d817bb446e231aa0bb2f1?source=copy_link](https://www.notion.so/hivetechnologies/Only-with-GLS-25020-Flero-BS-Italy-2ff0c0de327d817bb446e231aa0bb2f1?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "order_to_bosnia_and_herzegovina",
@@ -1205,12 +1275,17 @@
       "Order to Bosnia and Herzegovina"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Order%20to%20Bosnia%20and%20Herzegovina%202ff0c0de327d81399db0faec55d82b00.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇪🇸 MAD3 / 🇪🇸 MAD4"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Order-to-Bosnia-and-Herzegovina-2ff0c0de327d81399db0faec55d82b00?source=copy_link](https://www.notion.so/hivetechnologies/Order-to-Bosnia-and-Herzegovina-2ff0c0de327d81399db0faec55d82b00?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "orders_going_to_monaco_service_error_invalid_customs_value",
@@ -1234,12 +1309,17 @@
       "Orders going to Portugal (Madeira & Azores) from Spain"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Orders%20going%20to%20Portugal%20(Madeira%20&%20Azores)%20from%20S%202ff0c0de327d81e68970c4a8932ac152.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇪🇸 MAD3 / 🇪🇸 MAD4"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Orders-going-to-Portugal-Madeira-Azores-from-Spain-2ff0c0de327d81e68970c4a8932ac152?source=copy_link](https://www.notion.so/hivetechnologies/Orders-going-to-Portugal-Madeira-Azores-from-Spain-2ff0c0de327d81e68970c4a8932ac152?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "orders_to_puerto_rico_state_not_found",
@@ -1278,12 +1358,17 @@
       "phone"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Phone%20number%20is%20in%20an%20invalid%20format%202ff0c0de327d81e38841d5bb9d929e01.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Phone-number-is-in-an-invalid-format-2ff0c0de327d81e38841d5bb9d929e01?source=copy_link](https://www.notion.so/hivetechnologies/Phone-number-is-in-an-invalid-format-2ff0c0de327d81e38841d5bb9d929e01?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "postal_code_is_invalid_missing",
@@ -1330,12 +1415,17 @@
       "sendcloud"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/San%20Marino%20orders%20-%20from%20MIL1%20only%20error%20message%20m%202ff0c0de327d81eb859fd53b0bd5a75d.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🇮🇹 MIL1"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/San-Marino-orders-from-MIL1-only-error-message-maybe-Unable-to-find-Sendcloud-shipping-method-2ff0c0de327d81eb859fd53b0bd5a75d?source=copy_link](https://www.notion.so/hivetechnologies/San-Marino-orders-from-MIL1-only-error-message-maybe-Unable-to-find-Sendcloud-shipping-method-2ff0c0de327d81eb859fd53b0bd5a75d?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "sendcloud_error_occurred_complete_to_address_1_shipping_to_a_pac",
@@ -2187,12 +2277,17 @@
       "\"Service error: Die Gewichtsangabe ist kleiner als im CN23-Formular”"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Service%20error%20Die%20Gewichtsangabe%20ist%20kleiner%20als%20i%202ff0c0de327d813c8220f0d0a643a62b.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Service-error-Die-Gewichtsangabe-ist-kleiner-als-im-CN23-Formular-2ff0c0de327d813c8220f0d0a643a62b?source=copy_link](https://www.notion.so/hivetechnologies/Service-error-Die-Gewichtsangabe-ist-kleiner-als-im-CN23-Formular-2ff0c0de327d813c8220f0d0a643a62b?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "service_error_failed_to_parse_carrier_response_with_the_generals",
@@ -2372,12 +2467,17 @@
       "This field may not be null"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/This%20field%20may%20not%20be%20null%202ff0c0de327d8141985ef81078696306.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/This-field-may-not-be-null-2ff0c0de327d8141985ef81078696306?source=copy_link](https://www.notion.so/hivetechnologies/This-field-may-not-be-null-2ff0c0de327d8141985ef81078696306?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "unable_to_create_label_only_for_amazon_exporto_meineinkauf",
@@ -2386,12 +2486,17 @@
       "“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/%E2%80%9CUnable%20to%20create%20label%E2%80%9D%20(only%20for%20Amazon%20Exporto%20%202ff0c0de327d81e6ba5bf75da1fe6f11.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Unable-to-create-label-only-for-Amazon-Exporto-MeinEinkauf-2ff0c0de327d81e6ba5bf75da1fe6f11?source=copy_link](https://www.notion.so/hivetechnologies/Unable-to-create-label-only-for-Amazon-Exporto-MeinEinkauf-2ff0c0de327d81e6ba5bf75da1fe6f11?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "unable_to_find_sendcloud_sencloud_shipping_method_minarda_piume_",
@@ -2460,12 +2565,17 @@
       "sendcloud"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Unable%20to%20find%20Sendcloud%20shipping%20method%20Invalid%20s%202ff0c0de327d81b7b1b2c70ba8db72d0.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/Unable-to-find-Sendcloud-shipping-method-Invalid-shipment-id-Carrier-not-available-Sendcloud-err-2ff0c0de327d81b7b1b2c70ba8db72d0?source=copy_link](https://www.notion.so/hivetechnologies/Unable-to-find-Sendcloud-shipping-method-Invalid-shipment-id-Carrier-not-available-Sendcloud-err-2ff0c0de327d81b7b1b2c70ba8db72d0?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "we_apologize_for_the_inconvenience_we_cannot_ship_the_order_beca",
@@ -2562,12 +2672,17 @@
       "When the order has issues with DHL Packstation"
     ],
     "fixSteps": [
-      "Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/When%20the%20order%20has%20issues%20with%20DHL%20Packstation%202ff0c0de327d81e295cce527ca68a0dc.md"
+      "Open URL for resolution"
     ],
     "tags": [
       "🌏 General"
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Open resolution",
+        "url": "[https://www.notion.so/hivetechnologies/When-the-order-has-issues-with-DHL-Packstation-2ff0c0de327d81e295cce527ca68a0dc?source=copy_link](https://www.notion.so/hivetechnologies/When-the-order-has-issues-with-DHL-Packstation-2ff0c0de327d81e295cce527ca68a0dc?source=copy_link)"
+      }
+    ]
   },
   {
     "id": "when_the_order_has_issues_with_postfiliale",

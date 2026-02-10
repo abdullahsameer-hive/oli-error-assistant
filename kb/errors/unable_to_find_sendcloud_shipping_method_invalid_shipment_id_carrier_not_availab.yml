@@ -4,6 +4,9 @@ patterns:
   - 'Unable to find Sendcloud shipping method / Invalid shipment id / Carrier not available/Sendcloud error occurred: non_field_errors: "Service error: Requested service has been denied. Please contact your DPD Account Manager.”: /  No shipping contract method matches the rules or selected one does not exist / This shipment does not match the sendcloud shipping method restrictions'
   - 'sendcloud'
 fixSteps:
-  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Unable%20to%20find%20Sendcloud%20shipping%20method%20Invalid%20s%202ff0c0de327d81b7b1b2c70ba8db72d0.md'
+  - 'Open URL for resolution'
+links:
+  - label: 'Open resolution'
+    url: '[https://www.notion.so/hivetechnologies/Unable-to-find-Sendcloud-shipping-method-Invalid-shipment-id-Carrier-not-available-Sendcloud-err-2ff0c0de327d81b7b1b2c70ba8db72d0?source=copy_link](https://www.notion.so/hivetechnologies/Unable-to-find-Sendcloud-shipping-method-Invalid-shipment-id-Carrier-not-available-Sendcloud-err-2ff0c0de327d81b7b1b2c70ba8db72d0?source=copy_link)'
 tags:
   - '🌏 General'

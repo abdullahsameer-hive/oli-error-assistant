@@ -3,6 +3,9 @@ title: 'When the order has issues with DHL Packstation'
 patterns:
   - 'When the order has issues with DHL Packstation'
 fixSteps:
-  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/When%20the%20order%20has%20issues%20with%20DHL%20Packstation%202ff0c0de327d81e295cce527ca68a0dc.md'
+  - 'Open URL for resolution'
+links:
+  - label: 'Open resolution'
+    url: '[https://www.notion.so/hivetechnologies/When-the-order-has-issues-with-DHL-Packstation-2ff0c0de327d81e295cce527ca68a0dc?source=copy_link](https://www.notion.so/hivetechnologies/When-the-order-has-issues-with-DHL-Packstation-2ff0c0de327d81e295cce527ca68a0dc?source=copy_link)'
 tags:
   - '🌏 General'

@@ -48,6 +48,7 @@ def main():
     error_col = pick_col(headers, ["Error", "Error message", "Error Message", "SendCloud", "Error"])
     resolution_col = pick_col(headers, ["Resolution", "Fix", "Solution"])
     fc_col = pick_col(headers, ["FC", "Warehouse"])
+    url_col = pick_col(headers, ["URL"])
 
     if not error_col:
       raise SystemExit(f"Missing required column 'Error' (or 'Error message'). CSV headers: {headers}")
@@ -59,6 +60,7 @@ def main():
       err = (row.get(error_col) or "").strip()
       res = (row.get(resolution_col) or "").strip()
       fc = (row.get(fc_col) or "").strip() if fc_col else ""
+      url = (row.get(url_col) or "").strip() if url_col else ""
 
       if not err or not res:
         continue
@@ -98,6 +100,10 @@ def main():
       y.append("fixSteps:")
       for st in steps[:12]:
         y.append(f"  - {yaml_escape(st)}")
+      if url:
+        y.append("links:")
+        y.append("  - label: 'Open resolution'")
+        y.append(f"    url: {yaml_escape(url)}")
       if fc:
         y.append("tags:")
         y.append(f"  - {yaml_escape(fc)}")

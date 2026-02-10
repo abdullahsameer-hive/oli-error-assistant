@@ -5,6 +5,9 @@ patterns:
   - 'to_service_point'
   - 'sendcloud'
 fixSteps:
-  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/Mondial%20Relay%20parcel%20points%20(error%20message%20-%20%E2%80%98inva%202ff0c0de327d81b192a9e9a8ced49a1f.md'
+  - 'Open URL for resolution'
+links:
+  - label: 'Open resolution'
+    url: '[https://www.notion.so/hivetechnologies/Mondial-Relay-parcel-points-error-message-invalid-service-point-or-service-point-no-longer-ope-2ff0c0de327d81b192a9e9a8ced49a1f?source=copy_link](https://www.notion.so/hivetechnologies/Mondial-Relay-parcel-points-error-message-invalid-service-point-or-service-point-no-longer-ope-2ff0c0de327d81b192a9e9a8ced49a1f?source=copy_link)'
 tags:
   - '🇩🇪 BER3'

@@ -3,6 +3,9 @@ title: '“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)'
 patterns:
   - '“Unable to create label” (only for Amazon/Exporto/MeinEinkauf)'
 fixSteps:
-  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/%E2%80%9CUnable%20to%20create%20label%E2%80%9D%20(only%20for%20Amazon%20Exporto%20%202ff0c0de327d81e6ba5bf75da1fe6f11.md'
+  - 'Open URL for resolution'
+links:
+  - label: 'Open resolution'
+    url: '[https://www.notion.so/hivetechnologies/Unable-to-create-label-only-for-Amazon-Exporto-MeinEinkauf-2ff0c0de327d81e6ba5bf75da1fe6f11?source=copy_link](https://www.notion.so/hivetechnologies/Unable-to-create-label-only-for-Amazon-Exporto-MeinEinkauf-2ff0c0de327d81e6ba5bf75da1fe6f11?source=copy_link)'
 tags:
   - '🌏 General'

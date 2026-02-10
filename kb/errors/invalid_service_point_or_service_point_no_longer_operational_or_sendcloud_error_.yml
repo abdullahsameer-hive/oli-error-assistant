@@ -5,6 +5,9 @@ patterns:
   - 'to_service_point'
   - 'sendcloud'
 fixSteps:
-  - 'Open page for resolution: Outbound%20Label%20errors%20Database/All%20label%20errors%20-%20Database%20(1)/%E2%80%98invalid%20service%20point%E2%80%99%20or%20%E2%80%98service%20point%20no%20longe%202ff0c0de327d815ca8f7c882b9b2df75.md'
+  - 'Open URL for resolution'
+links:
+  - label: 'Open resolution'
+    url: '[https://www.notion.so/hivetechnologies/invalid-service-point-or-service-point-no-longer-operational-or-Sendcloud-error-occurred-to_serv-2ff0c0de327d815ca8f7c882b9b2df75?source=copy_link](https://www.notion.so/hivetechnologies/invalid-service-point-or-service-point-no-longer-operational-or-Sendcloud-error-occurred-to_serv-2ff0c0de327d815ca8f7c882b9b2df75?source=copy_link)'
 tags:
   - '🇫🇷 PAR1'
