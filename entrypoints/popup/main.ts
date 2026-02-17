@@ -13,7 +13,7 @@ async function safeCapture(tabId: number) {
 }
 
 async function matchError(errorText: string) {
-  return await browser.runtime.sendMessage({ type: "OLI_MATCH_ERROR", errorText });
+  return await browser.runtime.sendMessage({ type: "OLI_MATCH_ERROR_V2", errorText });
 }
 
 function byId<T extends HTMLElement>(id: string) {
@@ -30,27 +30,80 @@ function clearResults() {
   byId<HTMLDivElement>("results").innerHTML = "";
 }
 
-function renderMatch(item: any, score: number) {
-  const card = document.createElement("div");
-  card.style.border = "1px solid #ddd";
-  card.style.padding = "10px";
-  card.style.marginTop = "10px";
-  card.style.borderRadius = "8px";
+function sanitizeUrl(raw: string): string {
+  const t = String(raw || "").trim();
 
-  const title = document.createElement("div");
-  title.style.fontWeight = "600";
-  title.textContent = `${item.title} (${Math.round(score * 100)}%)`;
+  // Match markdown link: [label](url)
+  const md = t.match(/^\[[^\]]*\]\((https?:\/\/[^)]+)\)$/i);
+  if (md) return md[1];
+
+  // If it's something like: [https://..](https://..)
+  const md2 = t.match(/^\[(https?:\/\/[^\]]+)\]\((https?:\/\/[^)]+)\)$/i);
+  if (md2) return md2[2];
+
+  // If it contains a url inside, extract the first http(s) url
+  const any = t.match(/https?:\/\/\S+/i);
+  if (any) return any[0].replace(/[)\]]+$/g, "");
+
+  return t;
+}
+
+function renderMatch(item: any, score: number) {
+  const results = document.getElementById("results");
+  if (!results) throw new Error("Missing element: #results");
+
+  const container = document.createElement("div");
+  container.style.border = "1px solid #ddd";
+  container.style.padding = "10px";
+  container.style.marginTop = "10px";
+  container.style.borderRadius = "8px";
+
+  const header = document.createElement("div");
+  header.style.fontWeight = "600";
+  header.textContent = `${item?.title ?? "Untitled"} (${Math.round((score ?? 0) * 100)}%)`;
+  container.appendChild(header);
 
   const steps = document.createElement("ol");
-  for (const s of item.fixSteps || []) {
+  for (const step of (item?.fixSteps ?? [])) {
     const li = document.createElement("li");
-    li.textContent = s;
+    li.textContent = String(step);
     steps.appendChild(li);
   }
+  container.appendChild(steps);
 
-  card.appendChild(title);
-  card.appendChild(steps);
-  byId<HTMLDivElement>("results").appendChild(card);
+  // Links (from KB URL column -> item.links[])
+  const links = item?.links;
+  if (Array.isArray(links) && links.length) {
+    const linksContainer = document.createElement("div");
+    linksContainer.style.display = "flex";
+    linksContainer.style.flexWrap = "wrap";
+    linksContainer.style.gap = "8px";
+    linksContainer.style.marginTop = "10px";
+
+    for (const link of links) {
+      const url = sanitizeUrl(String(link?.url || ""));
+      if (!url) continue;
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = String(link?.label || "Open link");
+      a.style.display = "inline-block";
+      a.style.padding = "6px 10px";
+      a.style.border = "1px solid #ddd";
+      a.style.borderRadius = "8px";
+      a.style.textDecoration = "none";
+
+      linksContainer.appendChild(a);
+    }
+
+    if (linksContainer.childElementCount > 0) {
+      container.appendChild(linksContainer);
+    }
+  }
+
+  results.appendChild(container);
 }
 
 function buildOutboundPayload(args: {
@@ -135,4 +188,35 @@ async function run() {
 
 document.addEventListener("DOMContentLoaded", () => {
   byId<HTMLButtonElement>("runBtn").addEventListener("click", run);
+
+  // Manual search
+  const searchBtn = document.getElementById("searchBtn") as HTMLButtonElement | null;
+  const searchInput = document.getElementById("searchInput") as HTMLInputElement | null;
+
+  async function runManualSearch() {
+    const q = (searchInput?.value || "").trim();
+    if (!q) {
+      setText("status", "Type something to search.");
+      return;
+    }
+    clearResults();
+    setText("captured", q);
+    setText("payload", "");
+    setText("status", "Searching knowledge base...");
+    const matchRes = await matchError(q);
+    setText("kbinfo", `KB source: ${matchRes?.kbSource ?? "unknown"}  Updated: ${matchRes?.kbUpdatedAt ?? "-"}`);
+    const matches = matchRes?.matches ?? [];
+    if (!matches.length) {
+      setText("status", "No match found.");
+      return;
+    }
+    setText("status", `Found ${matches.length} match(es).`);
+    for (const m of matches) renderMatch(m.item, m.score);
+  }
+
+  searchBtn?.addEventListener("click", runManualSearch);
+  searchInput?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") runManualSearch();
+  });
+
 });
