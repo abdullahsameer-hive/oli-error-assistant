@@ -6,5 +6,4 @@ patterns:
   - 'weight'
 fixSteps:
   - 'Basic checks!! - address → country'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

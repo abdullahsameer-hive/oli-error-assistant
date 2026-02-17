@@ -4,5 +4,4 @@ patterns:
   - 'endcloud error occurred: Please use the normal_printer endpoint when printing A4 labels'
 fixSteps:
   - 'Copy the picking basket -->  On Shipment page, cancel the label --> Press Cmd +Ctrl+ Shift + B  -->  paste the picking basket number --> Retry printing the label.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

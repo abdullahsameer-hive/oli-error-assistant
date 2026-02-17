@@ -8,5 +8,4 @@ fixSteps:
   - 'Check if in the street name or house number has ‘ - ’ , ‘ / ’ sign'
   - 'If yes → then delete these signs and put a space instead. And save the address and resolve the delivery restriction.'
   - 'If not → then check the address and raise address validation issue if the address is not correct .'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

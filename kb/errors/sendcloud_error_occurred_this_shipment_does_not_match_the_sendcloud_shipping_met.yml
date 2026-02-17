@@ -9,5 +9,4 @@ fixSteps:
   - 'if yes> wait, as the first shipment have to be delivered (confirm with the link or sendcloud)before the second shipment can be shipped'
   - 'then the second shipment will be shipped with a non COD service'
   - '→if the first one was returned : contact the merchant and tell them to cancel adn create a new order'
-tags:
-  - '🇮🇹 MIL1'
+fc: '🇮🇹 MIL1'

@@ -4,5 +4,4 @@ patterns:
   - 'Matiere premiere - ”No shipping contract method matches the rules or selected one does not exist”'
 fixSteps:
   - 'Select Chronopost Hive / Chronopost FR Classic DAP Europe if under 0.2kg and no shipping method available and country is on the https://app.hive.app/admin/shipping_rule_sets/10202'
-tags:
-  - '🇫🇷 PAR1'
+fc: '🇫🇷 PAR1'

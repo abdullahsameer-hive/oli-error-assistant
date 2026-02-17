@@ -7,5 +7,4 @@ fixSteps:
   - 'if yes>ignore'
   - 'For FC MIL1,'
   - 'there are three reasons for this error 1- too many characters 2- address is incorrect ( esp check the postal code) 3- incorrect characters'
-tags:
-  - '🇮🇹 MIL1 + 🇬🇧 NOT1'
+fc: '🇮🇹 MIL1 + 🇬🇧 NOT1'

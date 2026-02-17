@@ -32,6 +32,7 @@ function validate(entry, filename) {
   return {
     id,
     title,
+    fc: entry.fc ? norm(entry.fc) : undefined,
     patterns,
     symptoms: entry.symptoms ? norm(entry.symptoms) : undefined,
     rootCause: entry.rootCause ? norm(entry.rootCause) : undefined,

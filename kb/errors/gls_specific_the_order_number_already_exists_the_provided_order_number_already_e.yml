@@ -6,5 +6,4 @@ fixSteps:
   - 'We can only ship one shipment per day with the same order ID across all of our GLS Spain shipments.'
   - 'Wait for one day to resolve the issue.'
   - 'https://hive-logistics.slack.com/archives/C01C81H9KST/p1713187506510009?thread_ts=1713181020.382169&cid=C01C81H9KST for reference'
-tags:
-  - '🇪🇸 MAD3 / 🇪🇸 MAD4'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'

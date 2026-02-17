@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'wait for a day, and retry the OLI tomorrow, should work'
-tags:
-  - '🇪🇸 MAD3 / 🇪🇸 MAD4'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'

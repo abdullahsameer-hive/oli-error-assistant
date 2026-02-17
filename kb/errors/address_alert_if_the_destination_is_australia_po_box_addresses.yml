@@ -6,5 +6,4 @@ fixSteps:
   - 'PO BOX —- street name'
   - 'no. —- house number'
   - 'doesnt need a number in the company name like dhl'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

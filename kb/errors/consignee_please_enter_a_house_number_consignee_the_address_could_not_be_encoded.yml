@@ -8,5 +8,4 @@ fixSteps:
   - '3. Delete it'
   - '4. Save the changes in the address'
   - '5. Try to print the shipping label again'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

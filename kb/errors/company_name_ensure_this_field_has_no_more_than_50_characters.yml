@@ -5,5 +5,4 @@ patterns:
   - 'company_name'
 fixSteps:
   - 'Count the 50 first characters in the company field in the address and delete the rest'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

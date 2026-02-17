@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'If this appears it means there is some issue from sendcloud side. Mostly its a service error between sendcloud and carrier side. It gets solved after sometime or we can see the status in http://status.sendcloud.com or contact sendcloud support chat'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

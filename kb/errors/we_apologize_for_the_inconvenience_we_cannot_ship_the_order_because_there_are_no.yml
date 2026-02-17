@@ -4,5 +4,4 @@ patterns:
   - 'We apologize for the inconvenience. We cannot ship the order because there are no upcoming pickup slots available.Please adjust the pickup slot and retry. (Code: S-503)'
 fixSteps:
   - 'Check address fields - probably an address issue.'
-tags:
-  - '🌏 General -Amazon'
+fc: '🌏 General -Amazon'

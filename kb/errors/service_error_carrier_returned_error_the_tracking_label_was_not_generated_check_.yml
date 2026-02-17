@@ -4,5 +4,4 @@ patterns:
   - '"Service error: Carrier returned error: the tracking label was not generated. Check the shipment documentation and try again.”'
 fixSteps:
   - 'Check for any special characters within the address and name fields - remove them and retry'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

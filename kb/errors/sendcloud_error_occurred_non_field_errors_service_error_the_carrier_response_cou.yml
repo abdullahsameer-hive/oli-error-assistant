@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Look for “;” in the name, company or address fields, → remove it and retry, it should work'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Raise a linear ticket to ask the tech team to reduce the shop order ID to under 15 characters. After they do this we will be able to print the labels.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

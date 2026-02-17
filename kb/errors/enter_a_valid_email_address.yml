@@ -5,5 +5,4 @@ patterns:
   - 'email'
 fixSteps:
   - 'Check if the email address has a â, ë, ï, ö, or ǔ and if yes, change it to the equivalent without umlaut.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

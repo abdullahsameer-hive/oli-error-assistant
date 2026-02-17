@@ -5,5 +5,4 @@ patterns:
 fixSteps:
   - 'Service error: Failed to parse carrier response with the: Parcel label number'
   - 'Reach out to AM, we probably need new parcel label numbers because the carrier ran out.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

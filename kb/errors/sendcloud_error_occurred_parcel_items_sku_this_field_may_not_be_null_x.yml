@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'Check if the SKUs in the order all have SKU IDs.'
   - 'If not, create SKU customs information missing issue.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

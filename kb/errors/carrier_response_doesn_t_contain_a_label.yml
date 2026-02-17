@@ -4,5 +4,4 @@ patterns:
   - 'Carrier response doesn''t contain a label.'
 fixSteps:
   - 'Check if the letters in the address are in the English alphabet; if they are not, ask Chat GPT to translate them for you and enter that into the address instead. You have to delete everything that is not in the English alphabet and then resolve the issue,'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

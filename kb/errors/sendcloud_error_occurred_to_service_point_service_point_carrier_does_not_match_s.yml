@@ -6,5 +6,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Check the parcel point selected in PPP, this error usually indicates that the parcel point selected doesnt match the carrier'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

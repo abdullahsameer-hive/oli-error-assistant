@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'Create an address validation and resolve the delivery restrictions issue.'
   - 'Do not delete the phone number'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

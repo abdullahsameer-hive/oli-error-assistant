@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'This error hints at missing parcel dimensions.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

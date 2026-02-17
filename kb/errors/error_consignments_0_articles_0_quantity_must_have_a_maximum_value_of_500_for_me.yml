@@ -6,5 +6,4 @@ fixSteps:
   - 'The limit is on single SKU.'
   - 'So split the shipment into 2'
   - 'https://hive-app-hq.slack.com/archives/C039C1DQB1R/p1763565749033869'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'If the shipping method is Correos Hive / Correos ES Paq Ligero DAP International  and the order is going to Portugal islands then for the time being we can use CTT Express Hive / CTT Express ES Portugal Madeira'
-tags:
-  - '🇪🇸 MAD3 / 🇪🇸 MAD4'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'

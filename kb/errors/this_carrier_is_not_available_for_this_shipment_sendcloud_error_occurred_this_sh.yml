@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'this error indicates that the shipment doesnt meet the selected shipping method requirments (i.e usually this is due to the shipment destination not being supported by the selected method)'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

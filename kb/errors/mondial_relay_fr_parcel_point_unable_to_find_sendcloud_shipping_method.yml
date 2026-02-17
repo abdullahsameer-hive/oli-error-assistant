@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'Check if weight is below 0.01 kg as Mondial does not accept it.'
   - 'Update weight to 0.015'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

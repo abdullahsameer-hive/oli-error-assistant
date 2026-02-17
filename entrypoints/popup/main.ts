@@ -48,7 +48,30 @@ function sanitizeUrl(raw: string): string {
   return t;
 }
 
-function renderMatch(item: any, score: number) {
+function getFcTag(item: any): string | null {
+  const v =
+    item?.fc ??
+    item?.FC ??
+    item?.fulfillmentCenter ??
+    item?.warehouse ??
+    item?.warehouses ??
+    item?.warehouseIds ??
+    null;
+
+  if (!v) return null;
+
+  if (Array.isArray(v)) {
+    const out = v.map((x) => String(x).trim()).filter(Boolean);
+    return out.length ? out.join(", ") : null;
+  }
+
+  const t = String(v).trim();
+  return t ? t : null;
+}
+
+function renderMatch(
+
+item: any, score: number) {
   const results = document.getElementById("results");
   if (!results) throw new Error("Missing element: #results");
 
@@ -62,6 +85,28 @@ function renderMatch(item: any, score: number) {
   header.style.fontWeight = "600";
   header.textContent = `${item?.title ?? "Untitled"} (${Math.round((score ?? 0) * 100)}%)`;
   container.appendChild(header);
+
+  // OLI_FC_CHIP
+  const fcTag = getFcTag(item);
+  if (fcTag) {
+    const chipRow = document.createElement("div");
+    chipRow.style.display = "flex";
+    chipRow.style.flexWrap = "wrap";
+    chipRow.style.gap = "6px";
+    chipRow.style.marginTop = "8px";
+
+    const chip = document.createElement("span");
+    chip.textContent = "FC: " + fcTag;
+    chip.style.display = "inline-block";
+    chip.style.padding = "3px 8px";
+    chip.style.border = "1px solid #ddd";
+    chip.style.borderRadius = "999px";
+    chip.style.fontSize = "12px";
+    chipRow.appendChild(chip);
+
+    container.appendChild(chipRow);
+  }
+
 
   const steps = document.createElement("ol");
   for (const step of (item?.fixSteps ?? [])) {

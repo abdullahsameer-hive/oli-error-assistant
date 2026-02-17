@@ -105,8 +105,7 @@ def main():
         y.append("  - label: 'Open resolution'")
         y.append(f"    url: {yaml_escape(url)}")
       if fc:
-        y.append("tags:")
-        y.append(f"  - {yaml_escape(fc)}")
+        y.append(f"fc: {yaml_escape(fc)}")
 
       fname.write_text("\n".join(y) + "\n", encoding="utf-8")
       written += 1

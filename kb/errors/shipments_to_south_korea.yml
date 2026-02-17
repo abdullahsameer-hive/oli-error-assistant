@@ -5,5 +5,4 @@ patterns:
 fixSteps:
   - 'Shipment method DHL DE Economy Paket DAP International'
   - 'Maximum weight limit of each shipment is 20 Kgs.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

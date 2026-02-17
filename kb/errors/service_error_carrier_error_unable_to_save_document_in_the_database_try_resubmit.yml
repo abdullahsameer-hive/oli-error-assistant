@@ -4,5 +4,4 @@ patterns:
   - '"Service error: Carrier error: unable to save document in the database; try resubmitting the form.”'
 fixSteps:
   - 'from 🇩🇪BER3 shipping to ITALY 🇮🇹 → solution: remove special characters eg: “ c‘e  ” “D’ aguila”  from ALL FIELDS and retry.'
-tags:
-  - '🇩🇪 BER3'
+fc: '🇩🇪 BER3'

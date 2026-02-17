@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Delete the house number and Apt.0 from the street field only make sure that there is a house number in the ‘house number’ field'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

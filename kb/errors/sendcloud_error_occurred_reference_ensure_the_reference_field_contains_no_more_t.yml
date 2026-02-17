@@ -10,5 +10,4 @@ fixSteps:
   - '3- click on edit and instead of x characters for the shop order id, shorten it to 20'
   - '4- save adn print the label and manually upload it in the fc app( use the same shippping method )'
   - '5- to find the tracking number, maek sure to search the new 20 character shop order id in sendcloud!!!'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

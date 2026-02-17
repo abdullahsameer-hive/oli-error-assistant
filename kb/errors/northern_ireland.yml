@@ -4,5 +4,4 @@ patterns:
   - 'Northern Ireland'
 fixSteps:
   - 'Norther Ireland addresses need to have UK as the country not Ireland.'
-tags:
-  - '🇬🇧 NOT1/MAN1'
+fc: '🇬🇧 NOT1/MAN1'

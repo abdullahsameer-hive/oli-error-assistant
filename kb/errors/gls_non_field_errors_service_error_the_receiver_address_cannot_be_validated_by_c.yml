@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'This is because the City field is not recognized as a city. To fix this take the State/Province code and chop it in the city field, and take what was previously in the city field and put it in address line 2'
   - 'Make sure to write the full state name in city field'
-tags:
-  - '🇮🇹 MIL1'
+fc: '🇮🇹 MIL1'

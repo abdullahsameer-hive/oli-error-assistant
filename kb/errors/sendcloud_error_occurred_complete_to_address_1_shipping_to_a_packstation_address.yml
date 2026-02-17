@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'if the address is to a packstation, this isnt possible with the shipment method wonderpack. Raise an address validation issue for full home address'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

@@ -7,5 +7,4 @@ fixSteps:
   - '1. Check the address in Google Maps'
   - '1. If the street has house numbers, create address validation issue for missing house number'
   - '2. Id the address doesn’t have house numbers, enter a ‘-’ in the House number field.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

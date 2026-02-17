@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'Check the shop order id. Check if its too long then shorten it.'
   - 'Eg Merchant : ExpertWC'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

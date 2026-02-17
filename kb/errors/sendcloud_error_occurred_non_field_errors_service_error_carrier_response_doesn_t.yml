@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'look for unusual accents on the letters, and if you find some, this is likely the issue. Replace them with less unusual (but largely corresponding) letters'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

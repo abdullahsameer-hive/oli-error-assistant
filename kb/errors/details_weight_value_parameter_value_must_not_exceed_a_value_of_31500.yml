@@ -5,5 +5,4 @@ patterns:
   - 'weight'
 fixSteps:
   - 'weight issue either asana or make it multiple shipments'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

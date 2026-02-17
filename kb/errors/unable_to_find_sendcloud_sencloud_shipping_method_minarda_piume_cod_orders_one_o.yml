@@ -7,5 +7,4 @@ fixSteps:
   - 'However, one of the shipments is waiting for pickign and out of stock'
   - '1- if they all shipments are packed, make the label manually'
   - '2- because one is waiting for picking — check if it is out of stock, click on the sku that is out of stock inventory information( check stock levels )-  restock shipment - check if any are shipped or arrived— if if is wait until they are( if it soon) if not contact merchant to let them know about the delay in their shipment and why and what steps they want us to take as it is out of stock'
-tags:
-  - '🇮🇹 MIL1'
+fc: '🇮🇹 MIL1'

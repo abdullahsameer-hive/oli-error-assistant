@@ -6,5 +6,4 @@ patterns:
 “state not found”'
 fixSteps:
   - 'Change the country from USA to Puerto Rico, not only the state'
-tags:
-  - '🇬🇧 NOT1/MAN1'
+fc: '🇬🇧 NOT1/MAN1'

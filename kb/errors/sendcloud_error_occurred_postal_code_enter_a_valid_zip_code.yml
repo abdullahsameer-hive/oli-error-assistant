@@ -6,5 +6,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Check the postal code on G Maps (exceptions: RoyalMail finder → UK orders | GLS Portal for IT orders shipped via GLS)'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

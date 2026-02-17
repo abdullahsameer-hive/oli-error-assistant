@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'If we get an order in PAR1 FC that needs to be shipped to HUB ARMEES (address would be - 00200 HUB ARMEES'
   - 'France). Then change the shipping method to “Colissimo FR Delivery HUB Armee” and try to print the label it would work'
-tags:
-  - '🇫🇷 PAR1'
+fc: '🇫🇷 PAR1'

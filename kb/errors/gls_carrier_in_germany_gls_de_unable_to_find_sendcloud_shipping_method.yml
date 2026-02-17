@@ -6,5 +6,4 @@ patterns:
 fixSteps:
   - 'Check if weight is below 0.1 kg as GLS does not accept it.'
   - 'Update weight to 0.101'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

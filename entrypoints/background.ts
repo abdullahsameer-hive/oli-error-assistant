@@ -38,7 +38,7 @@ async function loadBundledKB(): Promise<KBItem[]> {
   return await res.json();
 }
 
-const REMOTE_KB_URL = "https://abdullahsameer-hive.github.io/oli-error-assistant/errors.json";
+const REMOTE_KB_URL = ""; // TEMP disable remote to force bundled
 const CACHE_TTL_MINUTES = 30;
 
 async function loadCache(): Promise<CachedKB | null> {

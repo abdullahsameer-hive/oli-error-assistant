@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Happens with AVA&MAY in BER3 with their Poste Italiana contract. If there is any ‘ or special characters in the address, edit them to only have regular carachters. For example, Cassano d’Adda→ Cassano de Adda'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

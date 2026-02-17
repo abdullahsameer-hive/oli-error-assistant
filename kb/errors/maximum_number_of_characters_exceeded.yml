@@ -4,5 +4,4 @@ patterns:
   - 'Maximum number of characters exceeded'
 fixSteps:
   - 'This usually happens for the fields City and Street 2 try to put the information somewhere else and if we still can’t create a shipping label, remove the leftovers.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

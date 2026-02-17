@@ -5,5 +5,4 @@ patterns:
   - 'sendcloud'
 fixSteps:
   - 'Usually a message that hints that the shipping method selected is not valid for the destination. Verify the available shipping options on SC and the delivery pricing sheet. consult with the team for more alternatives.'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

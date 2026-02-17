@@ -10,5 +10,4 @@ fixSteps:
   - '2- It is under 5 kg'
   - '3- if both conditions appl >>> change the shipping method to'
   - 'DPD UK - Hive (wonderpack) / DPD UK Direct International'
-tags:
-  - '🇬🇧 NOT1'
+fc: '🇬🇧 NOT1'

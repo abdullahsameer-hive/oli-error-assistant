@@ -4,5 +4,4 @@ patterns:
   - '“Service error: Das angegebene Produkt ist für das Land nicht verfügbar.\'
 fixSteps:
   - 'Check if the line two has too many characters and if so, try to move the information to company field. Then resolve the issue and try again'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

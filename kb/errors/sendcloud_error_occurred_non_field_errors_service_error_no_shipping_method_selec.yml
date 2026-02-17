@@ -7,5 +7,4 @@ fixSteps:
   - 'Check if order is going to France:'
   - '• if the merchant name is Baroni, change shipping method to Chronopost'
   - '• If not, change to Colissimo FR Domicile w/o Signature'
-tags:
-  - '🇫🇷 PAR1'
+fc: '🇫🇷 PAR1'

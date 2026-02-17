@@ -7,5 +7,4 @@ fixSteps:
   - 'United Arab Emirates and Hong Kong do not have postal codes. Therefore:'
   - '• if we receive an error saying that it’s missing, add 00000 to the postal code'
   - '• if we receive an error saying that postal code is not needed, remove it'
-tags:
-  - '🌏 General'
+fc: '🌏 General'

@@ -4,5 +4,4 @@ patterns:
   - '"Service error: Barcode range depleted for current contract.”'
 fixSteps:
   - 'This is an error with Lettre Verte, we need to ask the Ops offering team to ask the carrier for more barcodes (order IDs).'
-tags:
-  - '🌏 General'
+fc: '🌏 General'
