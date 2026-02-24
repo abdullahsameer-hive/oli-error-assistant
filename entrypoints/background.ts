@@ -94,6 +94,11 @@ export default defineBackground(() => {
       return { ok: true, matches, kbSource: kb.source, kbUpdatedAt: kb.updatedAt };
     }
 
+    if (msg?.type === "OLI_KB_CLEAR_CACHE") {
+      await chrome.storage.local.remove("kb_cache");
+      return { ok: true };
+    }
+
     if (msg?.type === "OLI_KB_STATUS") {
       const kb = await getKB();
       return { ok: true, kbSource: kb.source, kbUpdatedAt: kb.updatedAt, count: kb.items.length };
