@@ -48,6 +48,18 @@ function sanitizeUrl(raw: string): string {
   return t;
 }
 
+
+function getFcTag(item: any): string | null {
+  const v = item?.fc ?? item?.FC ?? item?.fulfillmentCenter ?? item?.warehouse ?? item?.warehouses ?? item?.warehouseIds ?? null;
+  if (!v) return null;
+  if (Array.isArray(v)) {
+    const arr = v.map((x: any) => String(x).trim()).filter(Boolean);
+    return arr.length ? arr.join(", ") : null;
+  }
+  const str = String(v).trim();
+  return str || null;
+}
+
 function renderMatch(item: any, score: number) {
   const results = document.getElementById("results");
   if (!results) throw new Error("Missing element: #results");
@@ -62,6 +74,27 @@ function renderMatch(item: any, score: number) {
   header.style.fontWeight = "600";
   header.textContent = `${item?.title ?? "Untitled"} (${Math.round((score ?? 0) * 100)}%)`;
   container.appendChild(header);
+
+  // FC chip
+  const fc = getFcTag(item);
+  if (fc) {
+    const chips = document.createElement("div");
+    chips.style.display = "flex";
+    chips.style.flexWrap = "wrap";
+    chips.style.gap = "6px";
+    chips.style.marginTop = "8px";
+
+    const chip = document.createElement("span");
+    chip.textContent = "FC: " + fc;
+    chip.style.display = "inline-block";
+    chip.style.padding = "3px 8px";
+    chip.style.border = "1px solid #ddd";
+    chip.style.borderRadius = "999px";
+    chip.style.fontSize = "12px";
+
+    chips.appendChild(chip);
+    container.appendChild(chips);
+  }
 
   const steps = document.createElement("ol");
   for (const step of (item?.fixSteps ?? [])) {
@@ -158,6 +191,8 @@ async function run() {
   }
 
   const errorText = String(res.errorText || "");
+  const fcFromPage = ((res as any)?.fcFromPage ?? null) as any;
+
   setText("captured", errorText);
 
   const payload = buildOutboundPayload({

@@ -118,7 +118,16 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   (async () => {
     try {
       if (msg?.type === "OLI_MATCH_ERROR_V2") {
+      function norm2(x: any){ return String(x ?? "").toLowerCase().replace(/\s+/g," ").trim(); }
+      function fcBoost(pageFc: string, item: any){
+        const a = norm2(pageFc);
+        if(!a) return 0;
+        const b = norm2((item as any)?.fc ?? (item as any)?.FC ?? "");
+        if(!b) return 0;
+        return b.includes(a) ? 0.20 : 0;
+      }
         const errorText = String(msg.errorText || "");
+      const fcFromPage = String((msg as any)?.fcFromPage || "");
         const kb = await getKB();
 
         const norm = (x: any) => String(x || "").toLowerCase().replace(/\s+/g, " ").trim();

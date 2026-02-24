@@ -87,13 +87,42 @@ function findGenericErrorMessage(): string | null {
   return null;
 }
 
+
+function extractUnderLabelFromInnerText(label: string): string | null {
+  try {
+    const txt = (document.body?.innerText || document.body?.textContent || "");
+    const lines = txt.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+    const want = label.trim().toUpperCase();
+    for (let i = 0; i < lines.length; i++) {
+      const cur = lines[i].replace(/\s+/g, " ").toUpperCase();
+      if (cur === want) {
+        for (let j = i + 1; j < Math.min(lines.length, i + 15); j++) {
+          const v = lines[j].replace(/\s+/g, " ").trim();
+          if (v) return v;
+        }
+      }
+    }
+  } catch {}
+  return null;
+}
+
+function detectFcFromPage(): string | null {
+  const raw =
+    extractUnderLabelFromInnerText("FULFILLMENT CENTER") ||
+    extractUnderLabelFromInnerText("FULFILMENT CENTRE");
+  if (!raw) return null;
+  const m = raw.match(/\b([A-Z]{3}[0-9]{1,2})\b/);
+  return m ? m[1] : raw;
+}
+
+
 export default defineContentScript({
   matches: ["https://fc.hive.app/*"],
   runAt: "document_idle",
   main() {
     const handler = (msg: any, _sender: any, sendResponse: (res: any) => void) => {
       if (msg?.type === "OLI_PING") {
-        sendResponse({ ok: true, pong: true });
+        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), pong: true });
         return true;
       }
 
@@ -101,19 +130,19 @@ export default defineContentScript({
 
       const selection = getSelectionText();
       if (selection) {
-        sendResponse({ ok: true, errorText: selection, source: "selection" });
+        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), errorText: selection, source: "selection" });
         return true;
       }
 
       const issueNote = findIssueNoteMessage();
       if (issueNote) {
-        sendResponse({ ok: true, errorText: issueNote, source: "issue_note" });
+        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), errorText: issueNote, source: "issue_note" });
         return true;
       }
 
       const generic = findGenericErrorMessage();
       if (generic) {
-        sendResponse({ ok: true, errorText: generic, source: "generic" });
+        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), errorText: generic, source: "generic" });
         return true;
       }
 
