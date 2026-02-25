@@ -3,5 +3,7 @@ title: 'We apologize for the inconvenience. We cannot ship the order because the
 patterns:
   - 'We apologize for the inconvenience. We cannot ship the order because there are currently no shipping services available for the recipient address. Please validate the recipient address and try again. If address is accurate, please ship these orders with a different shipping provider. (Code: A-300)'
 fixSteps:
-  - 'Verify the address on G-Maps, make sure the street, city and zip code match. Check https://weblabeling.gls-italy.com/ if the gls service is down for that area'
+  - 'If the Label API logs on AA contain “NO COVERAGE”, switch to GLS.'
+  - 'If the shipping method is Amazon IT Mainland, select GLS IT National Express Mainland.'
+  - 'If the shipping method is Amazon IT Sicily Calabria Sardinia, select GLS IT National Express Sicily Calabria or GLS IT National Express Sardinia depending on the location (check on Google Maps).'
 fc: '🇮🇹 MIL1'
