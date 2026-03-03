@@ -863,6 +863,10 @@
     "title": "Sendcloud error occurred: non_field_errors: \"Service error: No shipping method selected. Please choose a shipping method to proceed.”",
     "fc": "🇫🇷 PAR1",
     "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"No shipping method selected!\", uncategorized: \"non_field_errors\"",
+      "Sendcloud error occurred: non_field_errors: \"No shipping method selected!\"",
+      "No shipping method selected!",
+      "No shipping method selected",
       "Sendcloud error occurred: non_field_errors: \"Service error: No shipping method selected. Please choose a shipping method to proceed.”",
       "sendcloud"
     ],
