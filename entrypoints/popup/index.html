@@ -5,8 +5,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OLI Error Assistant</title>
     <meta name="manifest.type" content="browser_action" />
-  </head>
+  
+<!-- OLI_UI_V1 -->
+<style>
+  :root{
+    --bg:#ffffff;
+    --text:#111827;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --card:#f9fafb;
+    --shadow:0 1px 2px rgba(0,0,0,.06);
+    --radius:12px;
+  }
+
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--text); }
+  body{
+    width: 360px;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 12px;
+  }
+
+  h3{
+    margin: 14px 0 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  #runBtn, #searchBtn, #refreshBtn, button{
+    background: #111827;
+    color: #fff;
+    border: 1px solid #111827;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  #runBtn:disabled{ opacity:.55; cursor:not-allowed; }
+
+  #searchInput, input[type="text"]{
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 10px;
+    outline: none;
+    background: #fff;
+  }
+
+  /* Make the top row align nicely if you have Search input + button */
+  .row{
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+  .row #searchInput{ flex:1; }
+
+  pre{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+    color: #111827;
+  }
+  #status{ color: var(--muted); }
+  #kbinfo{ color: var(--muted); }
+
+  /* Result cards created by renderMatch */
+  #results > div{
+    border: 1px solid var(--border) !important;
+    background: #fff;
+    border-radius: var(--radius) !important;
+    padding: 12px !important;
+    margin-top: 10px !important;
+    box-shadow: var(--shadow);
+  }
+
+  #results > div > div:first-child{
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  #results ol{
+    margin: 10px 0 0 18px;
+    padding: 0;
+  }
+  #results li{ margin: 6px 0; }
+
+  /* Link buttons inside results */
+  #results a{
+    display:inline-block;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: #111827;
+    background: #fff;
+    box-shadow: var(--shadow);
+  }
+  #results a:hover{ background: var(--card); }
+
+  /* FC chip row if present */
+  #results span{
+    font-size: 12px !important;
+  }
+</style>
+
+
+<style>
+  /* OLI_UI_V2 */
+  :root{
+    --text:#111827;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --card:#ffffff;
+    --shadow:0 1px 2px rgba(0,0,0,.06);
+    --radius:16px;
+    --yellow:#FFDF39;
+  }
+
+  html, body { margin:0; padding:0; }
+  body{
+    width: 360px;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 10px;
+    background: url("glowrise.png") center/cover no-repeat;
+  }
+
+  /* Rounded popup surface */
+  #app{
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: rgba(255,255,255,0.70);
+    border: 1px solid rgba(255,255,255,0.7);
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    padding: 12px;
+    backdrop-filter: blur(6px);
+  }
+
+  h3{
+    margin: 12px 0 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  /* Buttons */
+  button{
+    border-radius: 12px;
+    padding: 8px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    background: #111827;
+    color: #fff;
+  }
+
+  /* Capture and match in yellow */
+  #runBtn{
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: #111827;
+  }
+  #runBtn:disabled{ opacity:.55; cursor:not-allowed; }
+
+  #payloadToggle{
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    color: #111827;
+    border: 1px solid var(--border);
+  }
+
+  input[type="text"]{
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px 10px;
+    outline: none;
+    background: #fff;
+  }
+
+  .row{
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+  .row #searchInput{ flex:1; }
+
+  pre{
+    background: rgba(255,255,255,0.9);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+    color: var(--text);
+  }
+  #status{ color: var(--muted); }
+  #kbinfo{ color: var(--muted); }
+
+  /* Result cards created by renderMatch */
+  #results > div{
+    border: 1px solid var(--border) !important;
+    background: rgba(255,255,255,0.95);
+    border-radius: 14px !important;
+    padding: 12px !important;
+    margin-top: 10px !important;
+    box-shadow: var(--shadow);
+  }
+  #results > div > div:first-child{
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--text);
+  }
+  #results ol{ margin: 10px 0 0 18px; padding: 0; }
+  #results li{ margin: 6px 0; }
+
+  /* Link buttons inside results */
+  #results a{
+    display:inline-block;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: #111827;
+    background: #fff;
+    box-shadow: var(--shadow);
+  }
+  #results a:hover{ background: rgba(255,255,255,0.9); }
+</style>
+</head>
   <body>
+  <div id="app">
     <button id="runBtn">Capture and match</button>
     <button id="refreshBtn" style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; border-radius:8px; cursor:pointer;">Refresh KB</button>
   <div style="margin:10px 0; display:flex; gap:8px;">
@@ -21,12 +265,15 @@
     <pre id="status"></pre>
     <pre id="kbinfo"></pre>
 
-    <h3>Payload to DB</h3>
-    <pre id="payload"></pre>
-
-    <h3>Matches</h3>
+    <h3 id="matchesHeading">Matches</h3>
     <div id="results"></div>
 
+    <button id="payloadToggle" type="button">Payload to DB</button>
+    <div id="payloadWrap" style="display:none; margin-top:8px;">
+      <pre id="payload"></pre>
+    </div>
+
     <script type="module" src="./main.ts"></script>
-  </body>
+    </div>
+</body>
 </html>

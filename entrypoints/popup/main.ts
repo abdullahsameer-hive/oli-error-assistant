@@ -222,6 +222,16 @@ async function run() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  // Payload dropdown
+  const payloadToggle = document.getElementById("payloadToggle") as HTMLButtonElement | null;
+  const payloadWrap = document.getElementById("payloadWrap") as HTMLDivElement | null;
+  payloadToggle?.addEventListener("click", () => {
+    if (!payloadWrap) return;
+    const open = payloadWrap.style.display !== "none";
+    payloadWrap.style.display = open ? "none" : "block";
+  });
+
   byId<HTMLButtonElement>("runBtn").addEventListener("click", run);
 
   // Manual search
