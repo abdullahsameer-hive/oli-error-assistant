@@ -283,7 +283,18 @@ const eTokens = new Set(normTokenize(primaryText || errorText));
             sc = Math.max(sc, 0.55 + Math.min(0.35, hit * 0.08));
           }
 
-          return { item: it, score: sc };
+          return {
+  item: it,
+  score: (() => {
+    const base = sc;
+    if (!(base > 0)) return base;
+    const pageFc = String((msg as any)?.fcFromPage || "").toLowerCase().trim();
+    if (!pageFc) return base;
+    const itFc = String((it as any)?.fc ?? (it as any)?.FC ?? "").toLowerCase().trim();
+    const boost = (itFc && itFc.includes(pageFc)) ? 0.12 : 0;
+    return Math.min(1, base + boost);
+  })()
+};
         });
 
         const fuzzy = scored

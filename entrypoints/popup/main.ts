@@ -12,8 +12,8 @@ async function safeCapture(tabId: number) {
   }
 }
 
-async function matchError(errorText: string) {
-  return await browser.runtime.sendMessage({ type: "OLI_MATCH_ERROR_V2", errorText });
+async function matchError(errorText: string, fcFromPage?: any) {
+  return await browser.runtime.sendMessage({ type: "OLI_MATCH_ERROR_V2", errorText, fcFromPage });
 }
 
 function byId<T extends HTMLElement>(id: string) {
@@ -205,6 +205,35 @@ function setPageContext(fc: any, country: any, shippingMethod: any) {
   setChip("carrierChip", mVal ? "Carrier: " + mVal : null);
 }
 
+
+function setHints(errorText: string, countryFromPage: any) {
+  const el = document.getElementById("hints");
+  if (!el) return;
+
+  const hints: string[] = [];
+  const e = String(errorText || "");
+
+  // Hint 1: Retry for transient errors
+  if (/(\bapi\b|\b500\b|\bserver\b)/i.test(e)) {
+    hints.push("<div class=\"hint\"><b>Hint:</b> Hit Retry (this often resolves transient API/server errors).</div>");
+  }
+
+  // Hint 2: Check past orders for uncommon destinations
+  const allowed = new Set([
+    "united kingdom","uk","great britain","england",
+    "france","germany","italy","spain","poland","austria","netherlands","the netherlands","portugal"
+  ]);
+
+  const cRaw = String(countryFromPage || "").trim();
+  const c = cRaw.toLowerCase();
+
+  if (cRaw && !allowed.has(c)) {
+    hints.push("<div class=\"hint\"><b>Hint:</b> Check past orders sent to this destination from the FC (same carrier/method) for a working precedent.</div>");
+  }
+
+  el.innerHTML = hints.length ? hints.join("") : "";
+}
+
 async function run() {
   const btn = byId<HTMLButtonElement>("runBtn");
   btn.disabled = true;
@@ -244,6 +273,8 @@ async function run() {
   const fcFromPage = ((res as any)?.fcFromPage ?? null) as any;
 
   setText("captured", errorText);
+  setHints(errorText, (res as any)?.countryFromPage ?? (captureRes as any)?.countryFromPage ?? null);
+
   setPageContext((res as any)?.fcFromPage ?? null, (res as any)?.countryFromPage ?? null, (res as any)?.shippingMethodFromPage ?? null);
 
 
@@ -298,10 +329,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     clearResults();
     setText("captured", q);
+    setHints(q, null);
+
     setPageContext(null, null, null);
     setText("payload", "");
     setText("status", "Searching knowledge base...");
-    const matchRes = await matchError(q);
+    const matchRes = await matchError(q, null);
     setText("kbinfo", `KB source: ${matchRes?.kbSource ?? "unknown"}  Updated: ${matchRes?.kbUpdatedAt ?? "-"}`);
     const matches = matchRes?.matches ?? [];
     if (!matches.length) {
