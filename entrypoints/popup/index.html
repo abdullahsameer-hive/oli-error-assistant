@@ -116,6 +116,210 @@
   #results span{
     font-size: 12px !important;
   }
+
+/* OLI_HINTS_V1 */
+#hints{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hint{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+.hint b{ font-weight: 800; }
+
+/* OLI_HEADER_V1 */
+#oliHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom: 10px;
+}
+
+#oliTitle{
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .2px;
+  color: #111827;
+}
+
+#helpBtn{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.9);
+  text-decoration:none;
+  color:#111827;
+  font-weight: 800;
+  box-shadow: var(--shadow);
+}
+#helpBtn:hover{
+  background: rgba(255,255,255,1);
+}
+
+/* OLI_QOL_V1 */
+#pageContext{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
+  margin-bottom:6px;
+}
+.chip{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.9);
+  font-weight: 800;
+  color: #111827;
+  box-shadow: var(--shadow);
+  font-size: 12px;
+}
+
+.btn-secondary{
+  background: rgba(255,255,255,0.9) !important;
+  color: #111827 !important;
+  border: 1px solid var(--border) !important;
+}
+
+#noMatchPanel{
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 10px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: var(--shadow);
+}
+#noMatchPanel b{ font-weight: 900; }
+#noMatchPanel .actions{
+  margin-top: 8px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+#noMatchPanel .small{
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* OLI_COLLAPSIBLE_CSS */
+details.collapsible{
+  margin-top: 10px;
+}
+details.collapsible > summary{
+  cursor: pointer;
+  user-select: none;
+  font-weight: 900;
+  color: #111827;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: var(--shadow);
+  list-style: none;
+}
+details.collapsible > summary::-webkit-details-marker{ display:none; }
+details.collapsible[open] > summary{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+details.collapsible pre{
+  margin-top: 8px;
+}
+
+/* OLI_DARKMODE_V1 */
+:root{
+  --bg:#ffffff;
+  --fg:#111827;
+  --muted:#6b7280;
+  --panel: rgba(255,255,255,0.88);
+  --panel2: rgba(255,255,255,0.85);
+}
+
+/* Default to system theme */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#000000;
+    --fg:#f3f4f6;
+    --muted:#9ca3af;
+    --panel: rgba(17,24,39,0.78);
+    --panel2: rgba(17,24,39,0.72);
+  }
+}
+
+/* Manual toggle overrides */
+body.dark{
+  --bg:#000000;
+  --fg:#f3f4f6;
+  --muted:#9ca3af;
+  --panel: rgba(17,24,39,0.78);
+  --panel2: rgba(17,24,39,0.72);
+}
+body.light{
+  --bg:#ffffff;
+  --fg:#111827;
+  --muted:#6b7280;
+  --panel: rgba(255,255,255,0.88);
+  --panel2: rgba(255,255,255,0.85);
+}
+
+/* Apply vars */
+body{
+  background: var(--bg);
+}
+#app{
+  background: var(--panel);
+}
+details.collapsible > summary{
+  background: var(--panel2);
+  color: var(--fg);
+}
+pre{
+  background: var(--panel2);
+  color: var(--fg);
+}
+#status, #kbinfo{
+  color: var(--muted);
+}
+#oliTitle{
+  color: var(--fg);
+}
+
+/* OLI_TEXT_TONE_V1 */
+/* Make main heading black */
+#oliTitle{
+  color: #000 !important;
+}
+
+/* Make these headings darker: CAPTURED TEXT, STATUS, HINTS, MATCHES (all are h3/summary) */
+h3{
+  color: #111827 !important;
+  opacity: 0.92;
+}
+
+/* Collapsible summary headers darker too */
+details.collapsible > summary{
+  color: #111827 !important;
+}
+
+/* Muted text slightly darker (status/kb info labels still readable) */
+#status, #kbinfo{
+  color: rgba(17,24,39,0.75) !important;
+}
+
+/* OLI_PILL_SUMMARY_TEXT_V1 */
+/* Keep main headings dark (h3), but make the pill (collapsible summary) text white */
+details.collapsible > summary{
+  color: #ffffff !important;
+}
 </style>
 
 
@@ -138,7 +342,7 @@
     font-size: 13px;
     line-height: 1.4;
     padding: 10px;
-    background: url("glowrise.png") center/cover no-repeat;
+    background: #000;
   }
 
   /* Rounded popup surface */
@@ -251,21 +455,52 @@
 </head>
   <body>
   <div id="app">
-    <button id="runBtn">Capture and match</button>
+    <div id="oliHeader">
+      <div id="oliTitle">OLI Error Scanner</div>
+      <a id="helpBtn" href="https://www.notion.so/hivetechnologies/OLI-Knowledge-base-Tool-31a0c0de327d80c7a8b1e9c0d9ba24e1?source=copy_link" target="_blank" rel="noopener noreferrer">Help</a>
+      <button id="themeToggle" class="btn-secondary" type="button" style="padding:6px 10px; border-radius:999px;">Theme</button>
+    </div>
+<button id="runBtn">Capture and match</button>
     <button id="refreshBtn" style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; border-radius:8px; cursor:pointer;">Refresh KB</button>
   <div style="margin:10px 0; display:flex; gap:8px;">
     <input id="searchInput" type="text" placeholder="Search errors (paste or type)" style="flex:1; padding:6px 8px; border:1px solid #ddd; border-radius:8px;" />
     <button id="searchBtn" style="padding:6px 10px; border:1px solid #ddd; border-radius:8px; cursor:pointer;">Search</button>
   </div>
 
-    <h3>Captured text</h3>
-    <pre id="captured"></pre>
+    <div class="row" style="justify-content:space-between; margin-top:14px;">
+        <h3 style="margin:0;">Captured text</h3>
+        <button id="copyCapturedBtn" class="btn-secondary" type="button">Copy</button>
+      </div>
+    <!-- OLI_COLLAPSIBLE_V1 -->
+    <details class="collapsible" id="capturedDetails" open>
+      <summary>Captured text</summary>
+      <pre id="captured"></pre>
+    </details>
 
     <h3>Status</h3>
-    <pre id="status"></pre>
-    <pre id="kbinfo"></pre>
+    <details class="collapsible" id="statusDetails" open>
+      <summary>Status</summary>
+      <pre id="status"></pre>
+    </details>
+    <details class="collapsible" id="kbDetails">
+      <summary>KB info</summary>
+      <pre id="kbinfo"></pre>
+    </details>
+
+    <div id="pageContext">
+      <span class="chip" id="fcChip" style="display:none;"></span>
+      <span class="chip" id="countryChip" style="display:none;"></span>
+      <span class="chip" id="methodChip" style="display:none;"></span>
+      <span class="chip" id="carrierChip" style="display:none;"></span>
+    </div>
+
+
+    <h3 id="hintsHeading">Hints</h3>
+    <div id="hints"></div>
+
 
     <h3 id="matchesHeading">Matches</h3>
+    <div id="noMatchPanel" style="display:none;"></div>
     <div id="results"></div>
 
     <button id="payloadToggle" type="button">Payload to DB</button>

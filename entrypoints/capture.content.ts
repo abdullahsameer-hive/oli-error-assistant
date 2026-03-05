@@ -116,13 +116,24 @@ function detectFcFromPage(): string | null {
 }
 
 
+
+function detectCountryFromPage(): string | null {
+  return extractUnderLabelFromInnerText("COUNTRY");
+}
+
+
+function detectShippingMethodFromPage(): string | null {
+  // Label in Hive FC: "Shipping contract method (by delivery rules)"
+  return extractUnderLabelFromInnerText("SHIPPING CONTRACT METHOD (BY DELIVERY RULES)");
+}
+
 export default defineContentScript({
   matches: ["https://fc.hive.app/*"],
   runAt: "document_idle",
   main() {
     const handler = (msg: any, _sender: any, sendResponse: (res: any) => void) => {
       if (msg?.type === "OLI_PING") {
-        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), pong: true });
+        sendResponse({ ok: true, shippingMethodFromPage: detectShippingMethodFromPage(), countryFromPage: detectCountryFromPage(), fcFromPage: detectFcFromPage(), pong: true });
         return true;
       }
 
@@ -130,19 +141,19 @@ export default defineContentScript({
 
       const selection = getSelectionText();
       if (selection) {
-        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), errorText: selection, source: "selection" });
+        sendResponse({ ok: true, shippingMethodFromPage: detectShippingMethodFromPage(), countryFromPage: detectCountryFromPage(), fcFromPage: detectFcFromPage(), errorText: selection, source: "selection" });
         return true;
       }
 
       const issueNote = findIssueNoteMessage();
       if (issueNote) {
-        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), errorText: issueNote, source: "issue_note" });
+        sendResponse({ ok: true, shippingMethodFromPage: detectShippingMethodFromPage(), countryFromPage: detectCountryFromPage(), fcFromPage: detectFcFromPage(), errorText: issueNote, source: "issue_note" });
         return true;
       }
 
       const generic = findGenericErrorMessage();
       if (generic) {
-        sendResponse({ ok: true, fcFromPage: detectFcFromPage(), errorText: generic, source: "generic" });
+        sendResponse({ ok: true, shippingMethodFromPage: detectShippingMethodFromPage(), countryFromPage: detectCountryFromPage(), fcFromPage: detectFcFromPage(), errorText: generic, source: "generic" });
         return true;
       }
 

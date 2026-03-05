@@ -155,6 +155,56 @@ function buildOutboundPayload(args: {
   };
 }
 
+
+function carrierFromMethod(method: any): string | null {
+  const t = String(method || "").toLowerCase();
+  if (!t) return null;
+
+  if (t.includes("dhl")) return "DHL";
+  if (t.includes("dpd")) return "DPD";
+  if (t.includes("gls")) return "GLS";
+  if (t.includes("ups")) return "UPS";
+  if (t.includes("colissimo")) return "Colissimo";
+  if (t.includes("mondial")) return "Mondial Relay";
+  if (t.includes("correos")) return "Correos";
+  if (t.includes("delivengo")) return "Delivengo";
+  if (t.includes("spring")) return "Spring";
+  if (t.includes("amazon")) return "Amazon";
+  if (t.includes("parcelforce") || t.includes("parcel force")) return "Parcelforce";
+  if (t.includes("royal mail")) return "Royal Mail";
+  if (t.includes("paack")) return "Paack";
+  if (t.includes("inpost") || t.includes("in post")) return "InPost";
+  if (t.includes("meineinkauf") || t.includes("mein einkauf") || t.includes("meinenkauf")) return "MeinEinkauf";
+
+  // Sendcloud is a label platform, not a carrier.
+  return null;
+}
+
+function setChip(id: string, text: string | null) {
+  const el = document.getElementById(id) as HTMLElement | null;
+  if (!el) return;
+  const v = String(text || "").trim();
+  if (!v) {
+    el.style.display = "none";
+    el.textContent = "";
+    return;
+  }
+  el.textContent = v;
+  el.style.display = "inline-block";
+}
+
+function setPageContext(fc: any, country: any, shippingMethod: any) {
+  const fcVal = String(fc || "").trim();
+  const cVal = String(country || "").trim();
+  const mVal = String(shippingMethod || "").trim();
+
+  setChip("fcChip", fcVal ? "FC: " + fcVal : null);
+  setChip("countryChip", cVal ? "Country: " + cVal : null);
+
+  const carrier = carrierFromMethod(mVal);
+  setChip("carrierChip", mVal ? "Carrier: " + mVal : null);
+}
+
 async function run() {
   const btn = byId<HTMLButtonElement>("runBtn");
   btn.disabled = true;
@@ -194,6 +244,8 @@ async function run() {
   const fcFromPage = ((res as any)?.fcFromPage ?? null) as any;
 
   setText("captured", errorText);
+  setPageContext((res as any)?.fcFromPage ?? null, (res as any)?.countryFromPage ?? null, (res as any)?.shippingMethodFromPage ?? null);
+
 
   const payload = buildOutboundPayload({
     errorText,
@@ -246,6 +298,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     clearResults();
     setText("captured", q);
+    setPageContext(null, null, null);
     setText("payload", "");
     setText("status", "Searching knowledge base...");
     const matchRes = await matchError(q);
