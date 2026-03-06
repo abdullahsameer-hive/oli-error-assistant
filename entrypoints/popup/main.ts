@@ -206,7 +206,7 @@ function setPageContext(fc: any, country: any, shippingMethod: any) {
 }
 
 
-function setHints(errorText: string, countryFromPage: any) {
+function setHints(errorText: string, countryFromPage: any, fcFromPage: any, shippingMethodFromPage: any) {
   const el = document.getElementById("hints");
   if (!el) return;
 
@@ -229,6 +229,42 @@ function setHints(errorText: string, countryFromPage: any) {
 
   if (cRaw && !allowed.has(c)) {
     hints.push("<div class=\"hint\"><b>Hint:</b> Check past orders sent to this destination from the FC (same carrier/method) for a working precedent.</div>");
+  }
+
+  // OLI_DOMESTIC_INTL_METHOD_HINT_V1
+  // Domestic detection: FC country == destination country
+  const fc = String(fcFromPage || "").trim().toUpperCase();
+  const method = String(shippingMethodFromPage || "").trim();
+  const destRaw = String(countryFromPage || "").trim();
+
+  const fcToCountry: Record<string, string> = {
+    POZ1: "poland",
+    POZ2: "poland",
+    BER3: "germany",
+    MAD3: "spain",
+    MAD4: "spain",
+    MIL1: "italy",
+    NOT1: "united kingdom",
+    MAN1: "united kingdom",
+    AMS1: "netherlands",
+    PAR1: "france",
+  };
+
+  const normalizeCountry = (c: string) => {
+    const x = c.toLowerCase().trim();
+    if (["uk","u.k.","great britain","britain","england","scotland","wales","northern ireland","united kingdom"].includes(x)) return "united kingdom";
+    if (["the netherlands","netherlands","holland"].includes(x)) return "netherlands";
+    return x;
+  };
+
+  const fcCountry = fcToCountry[fc] || "";
+  const destCountry = normalizeCountry(destRaw);
+  const isDomestic = fcCountry && destCountry && fcCountry === destCountry;
+
+  const looksInternational = /\b(global|international|intl|worldwide|europe)\b/i.test(method);
+
+  if (isDomestic && looksInternational) {
+    hints.push("<div class=\"hint\"><b>Hint:</b> This shipping method looks international for a domestic order. Double-check the delivery rules / selected method.</div>");
   }
 
   el.innerHTML = hints.length ? hints.join("") : "";
@@ -273,7 +309,12 @@ async function run() {
   const fcFromPage = ((res as any)?.fcFromPage ?? null) as any;
 
   setText("captured", errorText);
-  setHints(errorText, (res as any)?.countryFromPage ?? (captureRes as any)?.countryFromPage ?? null);
+  setHints(
+    errorText,
+    (res as any)?.countryFromPage ?? null,
+    (res as any)?.fcFromPage ?? null,
+    (res as any)?.shippingMethodFromPage ?? null
+  );
 
   setPageContext((res as any)?.fcFromPage ?? null, (res as any)?.countryFromPage ?? null, (res as any)?.shippingMethodFromPage ?? null);
 
@@ -329,7 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     clearResults();
     setText("captured", q);
-    setHints(q, null);
+    setHints(q, null, null, null);
 
     setPageContext(null, null, null);
     setText("payload", "");
