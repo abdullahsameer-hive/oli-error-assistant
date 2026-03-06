@@ -335,14 +335,90 @@ async function run() {
   const matches = matchRes?.matches ?? [];
   if (!matches.length) {
     setText("status", "No match found.");
-    btn.disabled = false;
-    return;
+  showNoMatchUI(errorText);
+  btn.disabled = false;
+  return;
   }
 
   setText("status", `Found ${matches.length} match(es).`);
+  hideNoMatchUI();
   for (const m of matches) renderMatch(m.item, m.score);
+  postProcessMatchCards();
 
   btn.disabled = false;
+}
+
+
+// OLI_BEHAVIOR_POLISH_V1
+
+function showNoMatchUI(query: string) {
+  const box = document.getElementById("noMatchBox") as HTMLDivElement | null;
+  if (!box) return;
+  box.style.display = "block";
+  box.innerHTML = `
+    <div class="title">No match found</div>
+    <div style="color: rgba(17,24,39,0.75); font-weight: 700;">Try one of these:</div>
+    <ul>
+      <li>Select the exact error line on the page and rerun Capture and match</li>
+      <li>Try searching only the quoted part of the error</li>
+      <li>Remove extra metadata like "non_field_errors", "uncategorized", or IDs</li>
+    </ul>
+    <div style="margin-top:10px; color: rgba(17,24,39,0.65); font-weight: 700;">Query:</div>
+    <div style="margin-top:4px; padding:8px 10px; border:1px solid rgba(0,0,0,0.10); border-radius:12px; background: rgba(255,255,255,0.85); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;">${escapeHtml(String(query||""))}</div>
+  `;
+}
+
+function hideNoMatchUI() {
+  const box = document.getElementById("noMatchBox") as HTMLDivElement | null;
+  if (!box) return;
+  box.style.display = "none";
+  box.innerHTML = "";
+}
+
+function escapeHtml(s: string) {
+  return s.replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" } as any)[c] || c);
+}
+
+// Collapse long step lists after render
+function postProcessMatchCards() {
+  const root = document.getElementById("results");
+  if (!root) return;
+
+  const cards = Array.from(root.children) as HTMLElement[];
+  for (const card of cards) {
+    if (card.getAttribute("data-oli-steps") === "1") continue;
+
+    const ol = card.querySelector("ol");
+    if (!ol) continue;
+    const lis = Array.from(ol.querySelectorAll("li"));
+    if (lis.length <= 3) {
+      card.setAttribute("data-oli-steps", "1");
+      continue;
+    }
+
+    for (let i = 3; i < lis.length; i++) (lis[i] as HTMLElement).style.display = "none";
+
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = "Show more";
+    btn.style.marginTop = "10px";
+    btn.style.padding = "6px 10px";
+    btn.style.border = "1px solid rgba(0,0,0,0.12)";
+    btn.style.borderRadius = "10px";
+    btn.style.background = "rgba(255,255,255,0.92)";
+    btn.style.cursor = "pointer";
+    btn.style.fontWeight = "800";
+
+    let open = false;
+    btn.addEventListener("click", () => {
+      open = !open;
+      btn.textContent = open ? "Show less" : "Show more";
+      for (let i = 3; i < lis.length; i++) (lis[i] as HTMLElement).style.display = open ? "" : "none";
+    });
+
+    card.appendChild(btn);
+    card.setAttribute("data-oli-steps", "1");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -380,10 +456,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const matches = matchRes?.matches ?? [];
     if (!matches.length) {
       setText("status", "No match found.");
-      return;
+    showNoMatchUI(q);
+    return;
     }
     setText("status", `Found ${matches.length} match(es).`);
+    hideNoMatchUI();
     for (const m of matches) renderMatch(m.item, m.score);
+    postProcessMatchCards();
   }
 
   searchBtn?.addEventListener("click", runManualSearch);

@@ -406,6 +406,146 @@ details.collapsible pre{
   border: 1px solid rgba(0,0,0,0.10) !important;
   box-shadow: 0 10px 24px rgba(0,0,0,0.10) !important;
 }
+
+/* OLI_UI_POLISH_ALL_V1 */
+
+/* Spacing rhythm */
+:root{
+  --gap-1: 8px;
+  --gap-2: 12px;
+  --gap-3: 16px;
+
+  --panel: rgba(255,255,255,0.86);
+  --panel-strong: rgba(255,255,255,0.95);
+  --border-soft: rgba(0,0,0,0.10);
+  --shadow-soft: 0 8px 20px rgba(0,0,0,0.10);
+
+  --hint-bg: rgba(255,255,255,0.92);
+  --hint-border: rgba(0,0,0,0.10);
+  --hint-accent: #FFDF39;
+}
+
+/* Page background and container */
+body{
+  background: #f3f4f6;
+}
+#app{
+  background: var(--panel);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Tighten header spacing */
+.headerRow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: var(--gap-2);
+}
+.headerRow h1, #oliTitle{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+/* Make section headings cleaner */
+h3{
+  margin-top: var(--gap-3);
+  margin-bottom: var(--gap-1);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(17,24,39,0.85) !important;
+}
+
+/* Buttons: keep capture yellow, make others calmer */
+#runBtn{
+  background: #FFEFA0 !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.10) !important;
+}
+#refreshBtn, #searchBtn, #themeToggle, #helpBtn{
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08) !important;
+}
+
+/* Inputs and "white pills" */
+input, pre{
+  border: 1px solid var(--border-soft) !important;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06) !important;
+}
+
+/* Context bar: make it feel like a header status row */
+#pageContext{
+  margin-top: var(--gap-2);
+  margin-bottom: var(--gap-2);
+  padding: 8px 10px;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  background: var(--panel-strong);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+#pageContext .chip{
+  box-shadow: none !important;
+}
+
+/* Hints: card style */
+#hints{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.hintCard{
+  background: rgba(255,223,57,0.28);
+  border: 1px solid rgba(255,223,57,0.75);
+  border-left: 6px solid #FFDF39;
+  border-radius: 14px;
+  padding: 10px 12px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  color: #111827;
+}
+.hintCard b{
+  color: #111827;
+}
+
+/* Empty state */
+.noMatchBox{
+  margin-top: 10px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+.noMatchBox .title{
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+.noMatchBox ul{
+  margin: 8px 0 0 18px;
+}
+
+/* Match cards: consistent spacing */
+#results > div{
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10) !important;
+}
+
+/* OLI_HINT_YELLOW_V2 */
+/* Some builds still render hints with class="hint". Style both. */
+.hint, .hintCard{
+  background: #FFEFA0 !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  border-left: 6px solid #FFDF39 !important;
+  border-radius: 14px !important;
+  padding: 10px 12px !important;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08) !important;
+  color: #111827 !important;
+}
+.hint b, .hintCard b{
+  color: #111827 !important;
+}
 </style>
 
 
@@ -588,6 +728,7 @@ details.collapsible pre{
     <h3 id="matchesHeading">Matches</h3>
     <div id="noMatchPanel" style="display:none;"></div>
     <div id="results"></div>
+    <div id="noMatchBox" class="noMatchBox" style="display:none;"></div>
 
     <button id="payloadToggle" type="button">Payload to DB</button>
     <div id="payloadWrap" style="display:none; margin-top:8px;">
