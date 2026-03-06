@@ -320,6 +320,92 @@ details.collapsible > summary{
 details.collapsible > summary{
   color: #ffffff !important;
 }
+
+/* OLI_UI_CLEAN_V1 */
+
+/* Neutral palette */
+:root{
+  --oli-yellow:#FFDF39;
+  --oli-bg:#f4f4f5;
+  --oli-panel:#ffffff;
+  --oli-text:#0b0f1a;
+  --oli-muted:#4b5563;
+  --oli-border:#d1d5db;
+  --oli-darkpill:#374151;
+  --oli-darkpillText:#ffffff;
+}
+
+/* Main container: keep layout, make it cleaner */
+body{
+  color: var(--oli-text);
+}
+#app{
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Section headings (CAPTURED TEXT, STATUS, HINTS, MATCHES) */
+h3{
+  color: rgba(17,24,39,0.9) !important;
+  letter-spacing: 0.02em;
+}
+
+/* Buttons */
+#runBtn{
+  background: var(--oli-yellow) !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  color: #111827 !important;
+}
+.btn-secondary, #refreshBtn, #searchBtn{
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08) !important;
+}
+
+/* Inputs and "white pill" fields */
+input, pre{
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06) !important;
+}
+
+/* Collapsible pill headers: remove double border look */
+details.collapsible > summary{
+  background: var(--oli-darkpill) !important;
+  color: var(--oli-darkpillText) !important;
+
+  /* Single border only */
+  border: 1px solid rgba(255,255,255,0.18) !important;
+
+  /* Remove stacked shadows/outlines that create double border */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Remove focus ring double-outline on summaries (keep a subtle focus) */
+details.collapsible > summary:focus{
+  box-shadow: 0 0 0 2px rgba(255,223,57,0.55) !important;
+}
+
+/* The content inside collapsibles */
+details.collapsible pre{
+  background: rgba(255,255,255,0.9) !important;
+  color: var(--oli-text) !important;
+  border: 1px solid rgba(0,0,0,0.10) !important;
+}
+
+/* Chips (FC/Country/Carrier) */
+.chip{
+  background: rgba(255,255,255,0.92) !important;
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  color: #111827 !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06) !important;
+}
+
+/* Match cards: slightly cleaner borders */
+#results > div{
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10) !important;
+}
 </style>
 
 
