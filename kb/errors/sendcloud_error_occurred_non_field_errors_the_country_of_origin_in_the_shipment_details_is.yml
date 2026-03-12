@@ -1,0 +1,10 @@
+id: 'sendcloud_error_occurred_non_field_errors_the_country_of_origin_in_the_shipment_details_is'
+title: 'Sendcloud error occurred: non_field_errors: "The country of origin in the shipment details is invalid; please verify and correct the country code.", uncategorized: "non_field_errors"'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "The country of origin in the shipment details is invalid; please verify and correct the country code.", uncategorized: "non_field_errors"'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'country of origin'
+fixSteps:
+  - 'Issue with Country of origin, check with SC to see if there is a restriction for the said COO'

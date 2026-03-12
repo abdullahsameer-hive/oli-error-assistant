@@ -1,0 +1,9 @@
+id: 'gls_issues_non_field_errors_service_error_internal_system_error_15f55177_c271_4e9c_a457_97'
+title: 'GLS issues: non_field_errors: "Service error: Internal system error [15f55177-c271-4e9c-a457-9758e07f15db]. Please try again later."'
+fc: '🇵🇱 POZ1 + POZ2'
+patterns:
+  - 'GLS issues: non_field_errors: "Service error: Internal system error [15f55177-c271-4e9c-a457-9758e07f15db]. Please try again later."'
+  - 'non_field_errors'
+  - 'gls'
+fixSteps:
+  - 'GLS system error. Contact Sendcloud and then ops_offering if Sendcloud confirms it is a GLS issue.'

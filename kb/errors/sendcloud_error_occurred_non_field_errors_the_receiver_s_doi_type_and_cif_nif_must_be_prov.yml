@@ -1,0 +1,13 @@
+id: 'sendcloud_error_occurred_non_field_errors_the_receiver_s_doi_type_and_cif_nif_must_be_prov'
+title: 'Sendcloud error occurred: non_field_errors: "The receiver''s DOI type and CIF/NIF must be provided and valid; please check and update these details.", categories: "receiver_address"'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "The receiver''s DOI type and CIF/NIF must be provided and valid; please check and update these details.", categories: "receiver_address"'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'receiver_address'
+  - 'doi'
+  - 'cif'
+  - 'nif'
+fixSteps:
+  - 'Known SC bug, reach out to SC support'

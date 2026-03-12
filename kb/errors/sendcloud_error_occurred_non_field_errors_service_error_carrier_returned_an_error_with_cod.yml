@@ -1,0 +1,10 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_carrier_returned_an_error_with_cod'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: Carrier returned an error with code 10081 and message: Call to hermes api for shipping x failed with following error: Label data is not supported for international shipment and return orders.", Service error: The label cannot be generated from this request; please verify the shipping method and try again.'
+fc: '🇫🇷 PAR1'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: Carrier returned an error with code 10081 and message: Call to hermes api for shipping x failed with following error: Label data is not supported for international shipment and return orders.", Service error: The label cannot be generated from this request; please verify the shipping method and try again.'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'hermes'
+fixSteps:
+  - 'Carrier issue. Escalate to ops offering.'

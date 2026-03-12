@@ -1,0 +1,11 @@
+id: 'sendcloud_error_occurred_non_field_errors_the_specified_country_of_origin_does_not_exist_p'
+title: 'Sendcloud error occurred: non_field_errors: "The specified country of origin does not exist; please verify the country code in the shipment details.", uncategorized: "non_field_errors"'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "The specified country of origin does not exist; please verify the country code in the shipment details.", uncategorized: "non_field_errors"'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'cif'
+  - 'country of origin'
+fixSteps:
+  - 'Issue with Country of origin, check with SC to see if there is a restriction for the said COO'

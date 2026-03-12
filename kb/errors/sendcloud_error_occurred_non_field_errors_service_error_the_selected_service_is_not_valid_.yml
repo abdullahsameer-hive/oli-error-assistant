@@ -1,0 +1,16 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_the_selected_service_is_not_valid_'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: The selected service is not valid for the shipment contents to the destination; please choose a different shipping method."'
+fc: '🇬🇧 NOT1/MAN1'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: The selected service is not valid for the shipment contents to the destination; please choose a different shipping method."'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'service error'
+  - 'selected service'
+fixSteps:
+  - 'If the order has the following shipping methods:'
+  - 'Royal Mail UK Tracked 24 Letter'
+  - 'Royal Mail UK Tracked 48 Letter'
+  - 'Solution: Use the methods:'
+  - 'Royal Mail - Hive/ Royal Mail Tracked Letter High Volume - Boxable 24 (TRMN)'
+  - 'Royal Mail - Hive / Royal Mail UK Tracked Letter High Volume - Boxable 48 (TRLN)'

@@ -1,0 +1,8 @@
+id: 'billingnumber_the_selected_billing_number_is_not_available'
+title: 'billingNumber: The selected billing number is not available.'
+fc: '🇩🇪 BER3 + 🇵🇱 POZ1 + 🇵🇱 POZ2'
+patterns:
+  - 'billingNumber: The selected billing number is not available.'
+  - 'billingnumber'
+fixSteps:
+  - 'DHL reactivated the billing number. We are currently doing a clean-up of billing numbers (there are many that are not used / old ones) and this one was mistakenly deactivated'

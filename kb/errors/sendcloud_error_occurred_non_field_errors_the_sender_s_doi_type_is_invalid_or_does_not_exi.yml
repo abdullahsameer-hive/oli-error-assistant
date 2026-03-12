@@ -1,0 +1,11 @@
+id: 'sendcloud_error_occurred_non_field_errors_the_sender_s_doi_type_is_invalid_or_does_not_exi'
+title: 'Sendcloud error occurred: non_field_errors: "The sender''s DOI type is invalid or does not exist; please verify the DOI type and correct it.", categories: "sender_address"'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "The sender''s DOI type is invalid or does not exist; please verify the DOI type and correct it.", categories: "sender_address"'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'sender_address'
+  - 'doi'
+fixSteps:
+  - 'Issue with VAT number, reach out to SendCloud'

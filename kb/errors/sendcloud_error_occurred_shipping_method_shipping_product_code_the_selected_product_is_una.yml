@@ -1,0 +1,11 @@
+id: 'sendcloud_error_occurred_shipping_method_shipping_product_code_the_selected_product_is_una'
+title: 'Sendcloud error occurred: shipping_method.shipping_product_code: "The selected product is unavailable with your contract; contact the carrier to enable it.", categories: "shipment_data"'
+fc: '🇫🇷 PAR1'
+patterns:
+  - 'Sendcloud error occurred: shipping_method.shipping_product_code: "The selected product is unavailable with your contract; contact the carrier to enable it.", categories: "shipment_data"'
+  - 'sendcloud'
+  - 'shipment_data'
+  - 'selected product'
+  - 'shipping_product_code'
+fixSteps:
+  - 'Contract issue. Escalate to ops offering / carrier to enable the product.'

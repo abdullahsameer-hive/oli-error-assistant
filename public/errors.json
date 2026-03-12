@@ -66,6 +66,35 @@
     ]
   },
   {
+    "id": "api_error_appeared_status_401_message_title_unauthorized_status_401_detail_die_von_ihnen_a",
+    "title": "Api error appeared: status: 401, message: {title: \"Unauthorized\", status: 401, detail: \"Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.\", statusCode: 401}",
+    "fc": "🇩🇪 BER3 + 🇵🇱 POZ1 + 🇵🇱 POZ2",
+    "patterns": [
+      "Api error appeared: status: 401, message: {title: \"Unauthorized\", status: 401, detail: \"Die von Ihnen angegebenen Anmeldeinformationen sind ungültig.\", statusCode: 401}",
+      "401",
+      "unauthorized"
+    ],
+    "fixSteps": [
+      "Merchant needs to update their GKP password for DHL."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "billingnumber_the_selected_billing_number_is_not_available",
+    "title": "billingNumber: The selected billing number is not available.",
+    "fc": "🇩🇪 BER3 + 🇵🇱 POZ1 + 🇵🇱 POZ2",
+    "patterns": [
+      "billingNumber: The selected billing number is not available.",
+      "billingnumber"
+    ],
+    "fixSteps": [
+      "DHL reactivated the billing number. We are currently doing a clean-up of billing numbers (there are many that are not used / old ones) and this one was mistakenly deactivated"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
     "id": "carrier_response_doesn_t_contain_a_label",
     "title": "Carrier response doesn't contain a label.",
     "fc": "🌏 General",
@@ -416,6 +445,21 @@
     "links": []
   },
   {
+    "id": "gls_issues_non_field_errors_service_error_internal_system_error_15f55177_c271_4e9c_a457_97",
+    "title": "GLS issues: non_field_errors: \"Service error: Internal system error [15f55177-c271-4e9c-a457-9758e07f15db]. Please try again later.\"",
+    "fc": "🇵🇱 POZ1 + POZ2",
+    "patterns": [
+      "GLS issues: non_field_errors: \"Service error: Internal system error [15f55177-c271-4e9c-a457-9758e07f15db]. Please try again later.\"",
+      "non_field_errors",
+      "gls"
+    ],
+    "fixSteps": [
+      "GLS system error. Contact Sendcloud and then ops_offering if Sendcloud confirms it is a GLS issue."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
     "id": "gls_non_field_errors_service_error_the_receiver_address_cannot_be_validated_by_c",
     "title": "GLS non_field_errors: \"Service error: The receiver address cannot be validated by carrier. Please check city and state.\"",
     "fc": "🇮🇹 MIL1",
@@ -571,6 +615,50 @@
     "fixSteps": [
       "Usually a time out error. Try to print the label again.",
       "If it doesn’t work, you’ll need to continue investigations as usual."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "merchant_contract_issues_non_field_errors_service_error_the_shipper_s_shipper_number_canno",
+    "title": "Merchant contract issues: non_field_errors: \"Service error: The Shipper's shipper number cannot be used for the shipment\"",
+    "fc": "🇬🇧 NOT1/MAN1",
+    "patterns": [
+      "Merchant contract issues: non_field_errors: \"Service error: The Shipper's shipper number cannot be used for the shipment\"",
+      "non_field_errors",
+      "shipper number"
+    ],
+    "fixSteps": [
+      "Merchant UPS account was deactivated. Reactivating it fixed the issue."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "merchant_name_was_too_long_non_field_errors_ensure_that_sender_company_name_has_at_most_25",
+    "title": "Merchant name was too long: non_field_errors: \"Ensure that sender company name has at most 25 characters (it has 27). please edit your sender address or change the carrier.\"",
+    "fc": "🌏 General",
+    "patterns": [
+      "Merchant name was too long: non_field_errors: \"Ensure that sender company name has at most 25 characters (it has 27). please edit your sender address or change the carrier.\"",
+      "non_field_errors"
+    ],
+    "fixSteps": [
+      "Merchant name too long. Use format: [Merchantname C/o Hive]"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "merchants_amazon_contract_issue_non_field_errors_service_error_exception_encountered_from_",
+    "title": "Merchants amazon contract issue : non_field_errors: \"Service error: Exception encountered from Promise Engine Cause : [Shipper is not allowed to ship DG packages to these postal codes due to safety constraints]\"",
+    "fc": "🇮🇹 MIL1",
+    "patterns": [
+      "Merchants amazon contract issue : non_field_errors: \"Service error: Exception encountered from Promise Engine Cause : [Shipper is not allowed to ship DG packages to these postal codes due to safety constraints]\"",
+      "non_field_errors",
+      "amazon"
+    ],
+    "fixSteps": [
+      "Issue with Amazon contract. Check with Sendcloud and ops offering. Offer alternatives to the merchant (GLS)."
     ],
     "tags": [],
     "links": []
@@ -846,6 +934,22 @@
     "links": []
   },
   {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_carrier_returned_an_error_with_cod",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: Carrier returned an error with code 10081 and message: Call to hermes api for shipping x failed with following error: Label data is not supported for international shipment and return orders.\", Service error: The label cannot be generated from this request; please verify the shipping method and try again.",
+    "fc": "🇫🇷 PAR1",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: Carrier returned an error with code 10081 and message: Call to hermes api for shipping x failed with following error: Label data is not supported for international shipment and return orders.\", Service error: The label cannot be generated from this request; please verify the shipping method and try again.",
+      "sendcloud",
+      "non_field_errors",
+      "hermes"
+    ],
+    "fixSteps": [
+      "Carrier issue. Escalate to ops offering."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
     "id": "sendcloud_error_occurred_non_field_errors_service_error_failed_to_parse_carrier_",
     "title": "Sendcloud error occurred: non_field_errors: \"Service error: Failed to parse carrier response with the: {http://error.global/}\"",
     "fc": "🌏 General",
@@ -855,6 +959,22 @@
     ],
     "fixSteps": [
       "Happens with AVA&MAY in BER3 with their Poste Italiana contract. If there is any ‘ or special characters in the address, edit them to only have regular carachters. For example, Cassano d’Adda→ Cassano de Adda"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_invalid_customs_value",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: Invalid Customs Value\"",
+    "fc": "🇮🇹 MIL1",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: Invalid Customs Value\"",
+      "sendcloud",
+      "non_field_errors",
+      "customs"
+    ],
+    "fixSteps": [
+      "FedEx requires minimum SKU value of 1.1 EUR for international orders, so the merchant has to update the product cost."
     ],
     "tags": [],
     "links": []
@@ -923,6 +1043,23 @@
     "links": []
   },
   {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_the_customer_number_is_invalid_ple",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: The customer number is invalid. Please verify and correct it to proceed.\" with the shipping method: Correos Hive / Correos ES Paq Ligero DAP International",
+    "fc": "🇪🇸 MAD3 / 🇪🇸 MAD4",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: The customer number is invalid. Please verify and correct it to proceed.\" with the shipping method: Correos Hive / Correos ES Paq Ligero DAP International",
+      "sendcloud",
+      "non_field_errors",
+      "customer number",
+      "correos"
+    ],
+    "fixSteps": [
+      "Contract issue. Escalate to ops offering."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
     "id": "sendcloud_error_occurred_non_field_errors_service_error_the_order_number_you_pro",
     "title": "Sendcloud error occurred: non_field_errors: \"Service error: The order number you provided is already in use, please verify it and try again.”",
     "fc": "🇪🇸 MAD3 / 🇪🇸 MAD4",
@@ -951,6 +1088,28 @@
       "2- It is under 5 kg",
       "3- if both conditions appl >>> change the shipping method to",
       "DPD UK - Hive (wonderpack) / DPD UK Direct International"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_service_error_the_selected_service_is_not_valid_",
+    "title": "Sendcloud error occurred: non_field_errors: \"Service error: The selected service is not valid for the shipment contents to the destination; please choose a different shipping method.\"",
+    "fc": "🇬🇧 NOT1/MAN1",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"Service error: The selected service is not valid for the shipment contents to the destination; please choose a different shipping method.\"",
+      "sendcloud",
+      "non_field_errors",
+      "service error",
+      "selected service"
+    ],
+    "fixSteps": [
+      "If the order has the following shipping methods:",
+      "Royal Mail UK Tracked 24 Letter",
+      "Royal Mail UK Tracked 48 Letter",
+      "Solution: Use the methods:",
+      "Royal Mail - Hive/ Royal Mail Tracked Letter High Volume - Boxable 24 (TRMN)",
+      "Royal Mail - Hive / Royal Mail UK Tracked Letter High Volume - Boxable 48 (TRLN)"
     ],
     "tags": [],
     "links": []
@@ -993,6 +1152,92 @@
     ],
     "fixSteps": [
       "If this appears it means there is some issue from sendcloud side. Mostly its a service error between sendcloud and carrier side. It gets solved after sometime or we can see the status in http://status.sendcloud.com or contact sendcloud support chat"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_the_country_of_origin_in_the_shipment_details_is",
+    "title": "Sendcloud error occurred: non_field_errors: \"The country of origin in the shipment details is invalid; please verify and correct the country code.\", uncategorized: \"non_field_errors\"",
+    "fc": "🇪🇸 MAD3 / 🇪🇸 MAD4",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"The country of origin in the shipment details is invalid; please verify and correct the country code.\", uncategorized: \"non_field_errors\"",
+      "sendcloud",
+      "non_field_errors",
+      "country of origin"
+    ],
+    "fixSteps": [
+      "Issue with Country of origin, check with SC to see if there is a restriction for the said COO"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_the_receiver_s_doi_type_and_cif_nif_must_be_prov",
+    "title": "Sendcloud error occurred: non_field_errors: \"The receiver's DOI type and CIF/NIF must be provided and valid; please check and update these details.\", categories: \"receiver_address\"",
+    "fc": "🇪🇸 MAD3 / 🇪🇸 MAD4",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"The receiver's DOI type and CIF/NIF must be provided and valid; please check and update these details.\", categories: \"receiver_address\"",
+      "sendcloud",
+      "non_field_errors",
+      "receiver_address",
+      "doi",
+      "cif",
+      "nif"
+    ],
+    "fixSteps": [
+      "Known SC bug, reach out to SC support"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_the_request_contains_an_invalid_token_please_ver",
+    "title": "Sendcloud error occurred: non_field_errors: \"The request contains an invalid token; please verify your credentials and try again.\", categories: \"shipment_data\"",
+    "fc": "🌏 General",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"The request contains an invalid token; please verify your credentials and try again.\", categories: \"shipment_data\"",
+      "sendcloud",
+      "non_field_errors",
+      "shipment_data",
+      "invalid token"
+    ],
+    "fixSteps": [
+      "Merchant contract issue, wait for a while and retry, can take a day to resolve"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_the_sender_s_doi_type_is_invalid_or_does_not_exi",
+    "title": "Sendcloud error occurred: non_field_errors: \"The sender's DOI type is invalid or does not exist; please verify the DOI type and correct it.\", categories: \"sender_address\"",
+    "fc": "🇪🇸 MAD3 / 🇪🇸 MAD4",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"The sender's DOI type is invalid or does not exist; please verify the DOI type and correct it.\", categories: \"sender_address\"",
+      "sendcloud",
+      "non_field_errors",
+      "sender_address",
+      "doi"
+    ],
+    "fixSteps": [
+      "Issue with VAT number, reach out to SendCloud"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_non_field_errors_the_specified_country_of_origin_does_not_exist_p",
+    "title": "Sendcloud error occurred: non_field_errors: \"The specified country of origin does not exist; please verify the country code in the shipment details.\", uncategorized: \"non_field_errors\"",
+    "fc": "🇪🇸 MAD3 / 🇪🇸 MAD4",
+    "patterns": [
+      "Sendcloud error occurred: non_field_errors: \"The specified country of origin does not exist; please verify the country code in the shipment details.\", uncategorized: \"non_field_errors\"",
+      "sendcloud",
+      "non_field_errors",
+      "cif",
+      "country of origin"
+    ],
+    "fixSteps": [
+      "Issue with Country of origin, check with SC to see if there is a restriction for the said COO"
     ],
     "tags": [],
     "links": []
@@ -1056,6 +1301,23 @@
       "3- click on edit and instead of x characters for the shop order id, shorten it to 20",
       "4- save adn print the label and manually upload it in the fc app( use the same shippping method )",
       "5- to find the tracking number, maek sure to search the new 20 character shop order id in sendcloud!!!"
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "sendcloud_error_occurred_shipping_method_shipping_product_code_the_selected_product_is_una",
+    "title": "Sendcloud error occurred: shipping_method.shipping_product_code: \"The selected product is unavailable with your contract; contact the carrier to enable it.\", categories: \"shipment_data\"",
+    "fc": "🇫🇷 PAR1",
+    "patterns": [
+      "Sendcloud error occurred: shipping_method.shipping_product_code: \"The selected product is unavailable with your contract; contact the carrier to enable it.\", categories: \"shipment_data\"",
+      "sendcloud",
+      "shipment_data",
+      "selected product",
+      "shipping_product_code"
+    ],
+    "fixSteps": [
+      "Contract issue. Escalate to ops offering / carrier to enable the product."
     ],
     "tags": [],
     "links": []
@@ -1218,6 +1480,21 @@
     "links": []
   },
   {
+    "id": "sku_weight_missing_sendcloud_error_occurred_sku_weight_should_present_and_be_greater_than_",
+    "title": "SKU weight missing: Sendcloud error occurred: Sku weight should present and be greater than or equal to 0.00099",
+    "fc": "🌏 General",
+    "patterns": [
+      "SKU weight missing: Sendcloud error occurred: Sku weight should present and be greater than or equal to 0.00099",
+      "sendcloud",
+      "weight"
+    ],
+    "fixSteps": [
+      "SKU missing weight. Add/update SKU weight and retry label creation."
+    ],
+    "tags": [],
+    "links": []
+  },
+  {
     "id": "the_customer_has_asked_to_cancel_could_you_kindly_cancel_this_order_for_us_on_yo",
     "title": "”The customer has asked to cancel. Could you kindly cancel this order for us on your end, please?” - in address fields",
     "fc": "🇬🇧 MAN1",
@@ -1261,6 +1538,21 @@
         "url": "[https://www.notion.so/hivetechnologies/This-field-may-not-be-null-2ff0c0de327d8141985ef81078696306?source=copy_link](https://www.notion.so/hivetechnologies/This-field-may-not-be-null-2ff0c0de327d8141985ef81078696306?source=copy_link)"
       }
     ]
+  },
+  {
+    "id": "this_order_contains_errors_please_check_the_errors_before_processing_the_order_non_field_e",
+    "title": "This order contains errors. Please check the errors before processing the order. non_field_errors: Announcement failed unexpectedly. Please double check the parcel details and retry. If the problem persists, contact support.",
+    "fc": "🌏 General",
+    "patterns": [
+      "This order contains errors. Please check the errors before processing the order. non_field_errors: Announcement failed unexpectedly. Please double check the parcel details and retry. If the problem persists, contact support.",
+      "non_field_errors",
+      "announcement failed"
+    ],
+    "fixSteps": [
+      "Check parcel details and retry. If it persists, contact support."
+    ],
+    "tags": [],
+    "links": []
   },
   {
     "id": "unable_to_create_label_only_for_amazon_exporto_meineinkauf",

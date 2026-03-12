@@ -1,0 +1,9 @@
+id: 'sku_weight_missing_sendcloud_error_occurred_sku_weight_should_present_and_be_greater_than_'
+title: 'SKU weight missing: Sendcloud error occurred: Sku weight should present and be greater than or equal to 0.00099'
+fc: '🌏 General'
+patterns:
+  - 'SKU weight missing: Sendcloud error occurred: Sku weight should present and be greater than or equal to 0.00099'
+  - 'sendcloud'
+  - 'weight'
+fixSteps:
+  - 'SKU missing weight. Add/update SKU weight and retry label creation.'

@@ -1,0 +1,9 @@
+id: 'this_order_contains_errors_please_check_the_errors_before_processing_the_order_non_field_e'
+title: 'This order contains errors. Please check the errors before processing the order. non_field_errors: Announcement failed unexpectedly. Please double check the parcel details and retry. If the problem persists, contact support.'
+fc: '🌏 General'
+patterns:
+  - 'This order contains errors. Please check the errors before processing the order. non_field_errors: Announcement failed unexpectedly. Please double check the parcel details and retry. If the problem persists, contact support.'
+  - 'non_field_errors'
+  - 'announcement failed'
+fixSteps:
+  - 'Check parcel details and retry. If it persists, contact support.'

@@ -1,0 +1,8 @@
+id: 'merchant_name_was_too_long_non_field_errors_ensure_that_sender_company_name_has_at_most_25'
+title: 'Merchant name was too long: non_field_errors: "Ensure that sender company name has at most 25 characters (it has 27). please edit your sender address or change the carrier."'
+fc: '🌏 General'
+patterns:
+  - 'Merchant name was too long: non_field_errors: "Ensure that sender company name has at most 25 characters (it has 27). please edit your sender address or change the carrier."'
+  - 'non_field_errors'
+fixSteps:
+  - 'Merchant name too long. Use format: [Merchantname C/o Hive]'

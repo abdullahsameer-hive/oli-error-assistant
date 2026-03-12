@@ -1,0 +1,11 @@
+id: 'sendcloud_error_occurred_non_field_errors_the_request_contains_an_invalid_token_please_ver'
+title: 'Sendcloud error occurred: non_field_errors: "The request contains an invalid token; please verify your credentials and try again.", categories: "shipment_data"'
+fc: '🌏 General'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "The request contains an invalid token; please verify your credentials and try again.", categories: "shipment_data"'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'shipment_data'
+  - 'invalid token'
+fixSteps:
+  - 'Merchant contract issue, wait for a while and retry, can take a day to resolve'

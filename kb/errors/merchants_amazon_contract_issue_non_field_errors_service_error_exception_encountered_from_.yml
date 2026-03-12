@@ -1,0 +1,9 @@
+id: 'merchants_amazon_contract_issue_non_field_errors_service_error_exception_encountered_from_'
+title: 'Merchants amazon contract issue : non_field_errors: "Service error: Exception encountered from Promise Engine Cause : [Shipper is not allowed to ship DG packages to these postal codes due to safety constraints]"'
+fc: '🇮🇹 MIL1'
+patterns:
+  - 'Merchants amazon contract issue : non_field_errors: "Service error: Exception encountered from Promise Engine Cause : [Shipper is not allowed to ship DG packages to these postal codes due to safety constraints]"'
+  - 'non_field_errors'
+  - 'amazon'
+fixSteps:
+  - 'Issue with Amazon contract. Check with Sendcloud and ops offering. Offer alternatives to the merchant (GLS).'

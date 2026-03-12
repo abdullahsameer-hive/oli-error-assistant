@@ -1,0 +1,9 @@
+id: 'merchant_contract_issues_non_field_errors_service_error_the_shipper_s_shipper_number_canno'
+title: 'Merchant contract issues: non_field_errors: "Service error: The Shipper''s shipper number cannot be used for the shipment"'
+fc: '🇬🇧 NOT1/MAN1'
+patterns:
+  - 'Merchant contract issues: non_field_errors: "Service error: The Shipper''s shipper number cannot be used for the shipment"'
+  - 'non_field_errors'
+  - 'shipper number'
+fixSteps:
+  - 'Merchant UPS account was deactivated. Reactivating it fixed the issue.'

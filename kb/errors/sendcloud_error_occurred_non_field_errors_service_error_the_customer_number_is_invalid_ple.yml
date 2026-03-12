@@ -1,0 +1,11 @@
+id: 'sendcloud_error_occurred_non_field_errors_service_error_the_customer_number_is_invalid_ple'
+title: 'Sendcloud error occurred: non_field_errors: "Service error: The customer number is invalid. Please verify and correct it to proceed." with the shipping method: Correos Hive / Correos ES Paq Ligero DAP International'
+fc: '🇪🇸 MAD3 / 🇪🇸 MAD4'
+patterns:
+  - 'Sendcloud error occurred: non_field_errors: "Service error: The customer number is invalid. Please verify and correct it to proceed." with the shipping method: Correos Hive / Correos ES Paq Ligero DAP International'
+  - 'sendcloud'
+  - 'non_field_errors'
+  - 'customer number'
+  - 'correos'
+fixSteps:
+  - 'Contract issue. Escalate to ops offering.'
