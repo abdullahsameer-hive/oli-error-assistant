@@ -546,6 +546,75 @@ input, pre{
 .hint b, .hintCard b{
   color: #111827 !important;
 }
+
+/* OLI_USABILITY_UI_V1 */
+
+/* Carrier chip: allow wrapping to 2 lines */
+#carrierChip{
+  max-width: 100%;
+  white-space: normal !important;
+  line-height: 1.25;
+}
+
+/* Slightly calmer buttons in context row */
+#copyMethodBtn{
+  background: rgba(255,255,255,0.92);
+}
+
+/* Filters row */
+#filtersRow{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items:center;
+  margin-top: 10px;
+}
+#filtersRow label{
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(17,24,39,0.80);
+}
+#matchFilter{
+  padding: 6px 10px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.92);
+  font-weight: 800;
+}
+
+/* Tiny inline loader */
+#loaderDot{
+  display:none;
+  width:8px; height:8px;
+  border-radius:999px;
+  background:#111827;
+  opacity:0.5;
+  animation: oliPulse 1s infinite ease-in-out;
+}
+@keyframes oliPulse { 0%{opacity:0.2} 50%{opacity:0.7} 100%{opacity:0.2} }
+
+/* OLI_COPYMETHODBTN_FIX_V1 */
+#copyMethodBtn{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 110px !important;
+  height: 34px !important;
+  padding: 0 10px !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,0.92) !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06) !important;
+  font-weight: 900 !important;
+  color: #111827 !important;
+  white-space: nowrap !important;
+}
+
+/* OLI_KB_CHIPS_YELLOW_V1 */
+/* Only outline the context chips (FC/Country/Carrier) */
+#pageContext .chip{
+  border: 2px solid #FFDF39 !important;
+}
 </style>
 
 
@@ -684,14 +753,14 @@ input, pre{
     <div id="oliHeader">
       <div id="oliTitle">OLI Error Scanner</div>
       <a id="helpBtn" href="https://www.notion.so/hivetechnologies/OLI-Knowledge-base-Tool-31a0c0de327d80c7a8b1e9c0d9ba24e1?source=copy_link" target="_blank" rel="noopener noreferrer">Help</a>
-      <button id="themeToggle" class="btn-secondary" type="button" style="padding:6px 10px; border-radius:999px;">Theme</button>
-    </div>
+      </div>
 <button id="runBtn">Capture and match</button>
     <button id="refreshBtn" style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; border-radius:8px; cursor:pointer;">Refresh KB</button>
   <div style="margin:10px 0; display:flex; gap:8px;">
     <input id="searchInput" type="text" placeholder="Search errors (paste or type)" style="flex:1; padding:6px 8px; border:1px solid #ddd; border-radius:8px;" />
+    <button id="searchClearBtn" type="button" style="padding:6px 10px; border:1px solid rgba(0,0,0,0.12); border-radius:10px; cursor:pointer;">Clear</button>
     <button id="searchBtn" style="padding:6px 10px; border:1px solid #ddd; border-radius:8px; cursor:pointer;">Search</button>
-  </div>
+    </div>
 
     <div class="row" style="justify-content:space-between; margin-top:14px;">
         <h3 style="margin:0;">Captured text</h3>
@@ -708,6 +777,26 @@ input, pre{
       <summary>Status</summary>
       <pre id="status"></pre>
     </details>
+
+<details class="collapsible" id="advancedControls" style="margin-top:12px;">
+    <summary style="background: rgba(255,255,255,0.9); color:#111827; border:1px solid rgba(0,0,0,0.12); border-radius:14px; padding:10px 12px; font-weight:900; cursor:pointer;">
+      Advanced
+    </summary>
+    <div id="filtersRow" style="margin-top:10px;">
+      <span id="loaderDot"></span>
+      <label>Match filter</label>
+      <select id="matchFilter">
+        <option value="exact100" selected>100% only</option>
+        <option value="le95">95% and below</option>
+        <option value="le80">80% and below</option>
+      </select>
+      <label style="display:flex; gap:6px; align-items:center;">
+        <input id="fcOnlyToggle" type="checkbox" />
+        Show only matching FC
+      </label>
+    </div>
+  </details>
+    
     <details class="collapsible" id="kbDetails">
       <summary>KB info</summary>
       <pre id="kbinfo"></pre>
@@ -718,7 +807,7 @@ input, pre{
       <span class="chip" id="countryChip" style="display:none;"></span>
       <span class="chip" id="methodChip" style="display:none;"></span>
       <span class="chip" id="carrierChip" style="display:none;"></span>
-    </div>
+      </div>
 
 
     <h3 id="hintsHeading">Hints</h3>
